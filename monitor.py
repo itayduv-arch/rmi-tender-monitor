@@ -7,7 +7,7 @@ import json
 import os
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 from urllib.parse import urlparse
 import requests
@@ -166,42 +166,66 @@ def compare(previous: dict | None, current: dict, label: str) -> list[dict]:
                 changed.append({"tender": label, "field": key, "previous": previous.get(key), "current": current.get(key)})
     return changed
 
-def discover(items: list[dict], prev: dict | None) -> dict:
-    """Broad tender discovery by locality code. RMI details remain authoritative."""
-    candidates = {city: [] for city in LOCATION_CODES}
-    candidates["כפר אז״ר"] = []
-    for row in items:
-        # Official category IDs 1 and 2 are clues only; retain both and label category.
-        purpose = row.get("KodYeudMichraz")
-        if purpose not in (1, 2):
-            continue
-        code = row.get("KodYeshuv")
-        name = str(row.get("Shchuna") or "").replace('"', "").replace("״", "").replace("׳", "")
-        for city, location_code in LOCATION_CODES.items():
-            if str(code) == str(location_code):
-                candidates[city].append(row)
-        # Kfar Azar can appear as a neighborhood inside a larger municipality.
-        if "כפר אז" in name or "כפר-אז" in name:
-            candidates["כפר אז״ר"].append(row)
+def normalize_neighborhood(v: object) -> str:
+    # Include historical spellings for the Kfar Azar area, e.g. "גני אז״ר".
+    return (str(v or "").lower().replace('"',"").replace("״","")
+            .replace("׳","").replace("'","").replace("-","")
+            .replace(" ","").replace("־",""))
 
-    selected = {}
+
+def is_kfar_azar_neighborhood(name: object) -> bool:
+    value=normalize_neighborhood(name)
+    return any(term in value for term in ("כפראזר", "גניאזר"))
+
+
+def discover(items: list[dict], prev: dict | None) -> dict:
+    """Search direct municipality aliases and broader Ramat Gan as a review-only pool."""
+    candidates = {city: [] for city in LOCATION_CODES}
+    candidates["כפר אז״ר"]=[]
+    ramat_gan_review=[]
+    for row in items:
+        purpose=row.get("KodYeudMichraz")
+        code=str(row.get("KodYeshuv") or "")
+        name=row.get("Shchuna")
+        if code=="8600" and purpose in (1,2):
+            ramat_gan_review.append(row)
+        # Even historical Kfar Azar records may be in 'mixed use' categories:
+        # only their original official RMI details can confirm residential relevance.
+        if is_kfar_azar_neighborhood(name) and (code=="8600" or not code):
+            candidates["כפר אז״ר"].append(row)
+        if purpose not in (1,2):
+            continue
+        for city, location_code in LOCATION_CODES.items():
+            if code==str(location_code):
+                candidates[city].append(row)
+
+    def pack(rec: dict) -> dict:
+        return {k: rec.get(k) for k in (
+            "MichrazID","MichrazName","Shchuna","KodYeshuv","KodYeudMichraz",
+            "PirsumDate","SgiraDate","PublishedChoveret","PtichaDate",
+        )}
+
+    selected={}
     for city, records in candidates.items():
-        # Persist the most recent records for the first-run baseline.
-        latest = sorted(records, key=lambda x: str(x.get("PirsumDate") or ""), reverse=True)[:30]
-        selected[city] = [
-            {k: rec.get(k) for k in ("MichrazID", "MichrazName", "Shchuna",
-                                    "KodYeshuv", "KodYeudMichraz", "PirsumDate",
-                                    "SgiraDate", "PublishedChoveret")}
-            for rec in latest
-        ]
+        latest=sorted(records,key=lambda x:str(x.get("PirsumDate") or ""),reverse=True)[:40]
+        selected[city]=[pack(rec) for rec in latest]
+    review=sorted(ramat_gan_review,key=lambda x:str(x.get("PirsumDate") or ""),reverse=True)[:50]
     return {
-        "candidates": selected,
-        "candidate_count": {k: len(v) for k, v in candidates.items()},
+        "candidates":selected,
+        "candidate_count":{k:len(v) for k,v in candidates.items()},
+        "municipality_review": {
+            "municipality": "רמת גן",
+            "code":8600,
+            "purpose":"Review unlabeled residential tenders whose location could be in Kfar Azar; do not notify as Kfar Azar without official geographic match.",
+            "residential_candidates": [pack(rec) for rec in review],
+            "total_municipality_residential":len(ramat_gan_review),
+        },
         "coverage_warning": (
-            "Location codes are only discovery clues. Not every residential-category tender "
-            "is a self-build plot or open for individual bids. Kfar Azar may not appear "
-            "in a neighborhood name: zero candidates does not prove no tender exists."
-        ),
+            "Kfar Azar belongs to Ramat Gan; aliases גני אזר/גני אז״ר are included, "
+            "and broader Ramat Gan residential entries are reviewed separately. "
+            "A record without a locality label may require parcel/map confirmation; "
+            "zero verified entries does not prove no tender exists."
+        )
     }
 
 def main() -> int:
@@ -234,9 +258,20 @@ def main() -> int:
         for city, candidates in out["discovery"]["candidates"].items():
             before_ids = {x.get("MichrazID") for x in past_candidates.get(city, [])}
             if old is not None and city in past_candidates:
+                last_checked = old.get("checked_at_utc")
                 for item in candidates:
-                    if item["MichrazID"] not in before_ids:
-                        out["changes"].append({"tender": item.get("MichrazName"), "city": city, "field": "new_location_candidate_unverified", "official_candidate": item})
+                    if item.get("MichrazID") in before_ids:
+                        continue
+                    try:
+                        publication = datetime.fromisoformat(item.get("PirsumDate") or "")
+                        last = datetime.fromisoformat(last_checked)
+                        # Introducing a historical neighborhood alias must not create fake new-tender alerts.
+                        # Allow a week for publication/indexing delays.
+                        if publication < last - timedelta(days=7):
+                            continue
+                    except (TypeError, ValueError):
+                        continue
+                    out["changes"].append({"tender": item.get("MichrazName"), "city": city, "field": "new_location_candidate_unverified", "official_candidate": item})
     except Exception as exc:
         out["errors"].append({"part": "all_tenders_search", "type": type(exc).__name__, "message": str(exc)[:400]})
         out["status"] = "partial"
