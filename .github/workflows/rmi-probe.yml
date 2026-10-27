@@ -8,7 +8,7 @@ on:
       - 'check_rmi.py'
       - '.github/workflows/rmi-probe.yml'
   schedule:
-    - cron: '15 18 * * *'  # Daily, 18:15 UTC
+    - cron: '15 17 * * *'  # Daily, 17:15 UTC; before ChatGPT RMI monitoring
 
 permissions:
   contents: read
