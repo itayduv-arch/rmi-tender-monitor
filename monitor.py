@@ -111,7 +111,8 @@ def discover(items: list[dict], prev: dict | None) -> dict:
         if t not in (1, 2):  # residential low-rise / dense; confirm purpose via detail API
             continue
         name = str(row.get("Shchuna") or "").replace('"', "").replace("״", "").replace("׳", "")
-        if row.get("KodYeshuv") == 587 or "סביון" in name:
+        # Exclude misleading names such as "צומת סביון" in a different municipality.
+        if row.get("KodYeshuv") == 587:
             candidates["סביון"].append(row)
         if "כפר אז" in name or "כפר-אז" in name:
             candidates["כפר אז״ר"].append(row)
