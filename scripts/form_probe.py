@@ -10,7 +10,7 @@ NEGATIVE=("טרם נפתח", "טרם פורסמה חוברת", "לא ניתן ל
 WORD_RE=re.compile(r"הגשת|להגיש|הרשמה|כניסה למערכת|טופס|הצעה|submit|apply|register",re.I)
 
 async def test_one(browser, num, id_):
-    page=await browser.new_page(locale="he-IL", viewport={"width":1280,"height":1000}, accept_downloads=False)
+    page=await browser.new_page(locale="he-IL", timezone_id="Asia/Jerusalem", viewport={"width":1280,"height":1000}, accept_downloads=False)
     data={"number":num,"official_url":ROOT+f"#/michraz/{id_}", "readiness":"unverified","visible_links":[],"errors":[]}
     api=[]
     def on_response(response):
@@ -25,6 +25,7 @@ async def test_one(browser, num, id_):
         data["body_excerpt"]=body[:2600]
         data["negative_message_visible"]=any(x in body for x in NEGATIVE)
         data["body_has_tender_number"]=num in body
+        data["browser_timezone"]="Asia/Jerusalem"
         controls=await page.locator("a,button,[role='button'],input[type='submit']").all()
         for ctl in controls[:400]:
             try:
