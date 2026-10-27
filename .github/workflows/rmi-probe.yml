@@ -1,23 +1,29 @@
-name: RMI official API connectivity pilot
+name: RMI official tender monitor
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '15 17 * * *' # Daily 17:15 UTC, before ChatGPT's evening review
   push:
     branches: [main]
     paths:
+      - 'monitor.py'
       - 'check_rmi.py'
+      - 'tests/**'
       - '.github/workflows/rmi-probe.yml'
-  schedule:
-    - cron: '15 17 * * *'  # Daily, 17:15 UTC; before ChatGPT RMI monitoring
 
 permissions:
-  contents: read
+  contents: write # Only this isolated repository, to store official snapshots
+
+concurrency:
+  group: rmi-monitor-state
+  cancel-in-progress: false
 
 jobs:
-  probe:
-    name: Read-only official RMI API probe
+  monitor:
+    name: Verify RMI and compare snapshots
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 8
     steps:
       - name: Check out isolated repository
         uses: actions/checkout@v4
@@ -27,19 +33,31 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install HTTP dependency
+      - name: Install dependencies
         run: python -m pip install requests==2.32.5
 
-      - name: Probe RMI for Hod Hasharon 470/2025
-        env:
-          TENDER_NUMBER: '470/2025'
-        run: python check_rmi.py
+      - name: Regression tests (no network)
+        run: python -m unittest discover -s tests -v
 
-      - name: Upload official response/error report
+      - name: Fetch official RMI data and compare
+        run: python monitor.py
+
+      - name: Commit verified snapshot to this repository only
+        if: success()
+        run: |
+          git config user.name "rmi-monitor-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add state/latest.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore: update verified official RMI tender snapshot [skip ci]"
+            git push origin HEAD:main
+          fi
+
+      - name: Save report even when access fails
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: rmi-pilot-report
-          path: reports/last-check.json
+          name: rmi-monitor-report
+          path: reports/latest-run.json
           if-no-files-found: warn
           retention-days: 30
