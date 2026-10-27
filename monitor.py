@@ -17,6 +17,16 @@ ROOT = "https://apps.land.gov.il"
 BASE = ROOT + "/MichrazimSite/"
 API = BASE + "api/"
 WATCH = {"470/2025": "הוד השרון", "182/2025": "גנות", "149/2025": "צופית"}
+# Location code lists help to discover candidates, not establish tender status.
+# Confirm every potential tender from official RMI details before notifying users.
+LOCATION_CODES = {
+    "סביון": 587, "כפר מעש": 230, "מגשימים": 722, "גת רימון": 128,
+    "בני עטרות": 448, "כפר סירקין": 249, "מזור": 606,
+    "נופך": 257, "רינתיה": 616, "גבעת חן": 207,
+    "ירקונה": 183, "רמות השבים": 206,
+    "רשפון": 247, "כפר שמריהו": 267,
+}
+
 STATE = Path("state/latest.json")
 ARTIFACT = Path("reports/latest-run.json")
 DOCUMENT_FIELDS = ("RowID", "DocName", "Teur", "UpdateDate", "PirsumType", "MahutMismachID", "FileType")
@@ -157,26 +167,42 @@ def compare(previous: dict | None, current: dict, label: str) -> list[dict]:
     return changed
 
 def discover(items: list[dict], prev: dict | None) -> dict:
-    # Codes and neighborhood strings are only candidate discovery clues, never proof of a new tender.
-    # 587 is the settlement code for Savyon; verify every candidate via official tender details.
-    candidates = {"סביון": [], "כפר אז״ר": []}
+    """Broad tender discovery by locality code. RMI details remain authoritative."""
+    candidates = {city: [] for city in LOCATION_CODES}
+    candidates["כפר אז״ר"] = []
     for row in items:
-        t = row.get("KodYeudMichraz")
-        if t not in (1, 2):  # residential low-rise / dense; confirm purpose via detail API
+        # Official category IDs 1 and 2 are clues only; retain both and label category.
+        purpose = row.get("KodYeudMichraz")
+        if purpose not in (1, 2):
             continue
+        code = row.get("KodYeshuv")
         name = str(row.get("Shchuna") or "").replace('"', "").replace("״", "").replace("׳", "")
-        # Exclude misleading names such as "צומת סביון" in a different municipality.
-        if row.get("KodYeshuv") == 587:
-            candidates["סביון"].append(row)
+        for city, location_code in LOCATION_CODES.items():
+            if str(code) == str(location_code):
+                candidates[city].append(row)
+        # Kfar Azar can appear as a neighborhood inside a larger municipality.
         if "כפר אז" in name or "כפר-אז" in name:
             candidates["כפר אז״ר"].append(row)
-    selected: dict[str, list[dict]] = {}
+
+    selected = {}
     for city, records in candidates.items():
-        latest = sorted(records, key=lambda x: str(x.get("PirsumDate") or ""), reverse=True)[:25]
-        selected[city] = [{k: rec.get(k) for k in ("MichrazID", "MichrazName", "Shchuna", "KodYeshuv", "KodYeudMichraz", "PirsumDate", "SgiraDate", "PublishedChoveret")} for rec in latest]
-    return {"candidates": selected,
-            "coverage_warning": "Kfar Azar may not be named in the neighborhood field: absence is NOT proof no tender exists. Candidate list is not an eligibility check.",
-            "candidate_count": {k: len(v) for k, v in candidates.items()}}
+        # Persist the most recent records for the first-run baseline.
+        latest = sorted(records, key=lambda x: str(x.get("PirsumDate") or ""), reverse=True)[:30]
+        selected[city] = [
+            {k: rec.get(k) for k in ("MichrazID", "MichrazName", "Shchuna",
+                                    "KodYeshuv", "KodYeudMichraz", "PirsumDate",
+                                    "SgiraDate", "PublishedChoveret")}
+            for rec in latest
+        ]
+    return {
+        "candidates": selected,
+        "candidate_count": {k: len(v) for k, v in candidates.items()},
+        "coverage_warning": (
+            "Location codes are only discovery clues. Not every residential-category tender "
+            "is a self-build plot or open for individual bids. Kfar Azar may not appear "
+            "in a neighborhood name: zero candidates does not prove no tender exists."
+        ),
+    }
 
 def main() -> int:
     old = None
@@ -207,10 +233,10 @@ def main() -> int:
             past_candidates = {}
         for city, candidates in out["discovery"]["candidates"].items():
             before_ids = {x.get("MichrazID") for x in past_candidates.get(city, [])}
-            if old is not None:
+            if old is not None and city in past_candidates:
                 for item in candidates:
                     if item["MichrazID"] not in before_ids:
-                        out["changes"].append({"tender": item.get("MichrazName"), "city": city, "field": "new_location_candidate", "official_candidate": item})
+                        out["changes"].append({"tender": item.get("MichrazName"), "city": city, "field": "new_location_candidate_unverified", "official_candidate": item})
     except Exception as exc:
         out["errors"].append({"part": "all_tenders_search", "type": type(exc).__name__, "message": str(exc)[:400]})
         out["status"] = "partial"
