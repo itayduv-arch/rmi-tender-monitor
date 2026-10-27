@@ -3,7 +3,7 @@ name: RMI official tender monitor
 on:
   workflow_dispatch:
   schedule:
-    - cron: '15 17 * * *' # Daily 17:15 UTC, before ChatGPT's evening review
+    - cron: '15 16 * * *' # Daily 16:15 UTC, ahead of 16:58 UTC ChatGPT review
   push:
     branches: [main]
     paths:
@@ -35,13 +35,26 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: python -m pip install requests==2.32.5 'pypdf>=5,<7'
+        run: python -m pip install requests==2.32.5 'pypdf>=5,<7' playwright==1.58.0
 
       - name: Regression tests (no network)
         run: python -m unittest discover -s tests -v
 
       - name: Fetch official RMI data and compare
         run: python monitor.py
+
+      - name: Official locality diagnostic
+        if: success()
+        run: python -m scripts.location_probe
+
+      - name: Install read-only browser
+        if: success()
+        run: python -m playwright install chromium --with-deps
+
+      - name: Inspect official form entry points
+        if: success()
+        continue-on-error: true
+        run: python -m scripts.form_probe
 
       - name: Commit verified snapshot to this repository only
         if: success()
@@ -62,6 +75,6 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: rmi-monitor-report
-          path: reports/*.json
+          path: reports/
           if-no-files-found: warn
           retention-days: 30
