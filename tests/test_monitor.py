@@ -54,6 +54,17 @@ class MonitorTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             normalize_tender(data,"182/2025","גנות")
 
+    def test_expanded_village_discovery(self):
+        sample=[
+            {"MichrazID": 20260004, "MichrazName": "4/2026", "KodYeshuv": 230, "KodYeudMichraz": 1},
+            {"MichrazID": 20260005, "MichrazName": "5/2026", "KodYeshuv": 722, "KodYeudMichraz": 1},
+            {"MichrazID": 20260006, "MichrazName": "6/2026", "KodYeshuv": 9999, "Shchuna": "צומת סביון", "KodYeudMichraz": 2},
+        ]
+        candidates = discover(sample, None)["candidate_count"]
+        self.assertEqual(candidates["כפר מעש"], 1)
+        self.assertEqual(candidates["מגשימים"], 1)
+        self.assertEqual(candidates["סביון"], 0)
+
     def test_location_discovery_reports_incomplete_coverage(self):
         rows=[{"MichrazID":20260123,"MichrazName":"123/2026","KodYeshuv":587,"KodYeudMichraz":1},
               {"MichrazID":20260456,"MichrazName":"456/2026","KodYeudMichraz":1,"Shchuna":"כפר אז״ר"}]
