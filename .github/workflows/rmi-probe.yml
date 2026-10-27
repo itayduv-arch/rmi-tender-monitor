@@ -51,6 +51,9 @@ jobs:
           git add state/latest.json
           if ! git diff --cached --quiet; then
             git commit -m "chore: update verified official RMI tender snapshot [skip ci]"
+            # Other edits may land while RMI is responding; reconcile before pushing.
+            git fetch origin main
+            git rebase origin/main
             git push origin HEAD:main
           fi
 
