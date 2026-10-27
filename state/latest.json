@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "checked_at_utc": "2026-10-27T09:44:53.818552+00:00",
+  "checked_at_utc": "2026-10-27T09:49:28.217229+00:00",
   "source_host": "apps.land.gov.il",
   "api_base": "https://apps.land.gov.il/MichrazimSite/api/",
   "status": "ok",
@@ -170,7 +170,12 @@
       },
       "pdf_errors": [],
       "pdf_count_expected": 7,
-      "pdf_count_verified": 7
+      "pdf_count_verified": 7,
+      "browser_form_state": "official_page_explicitly_not_open",
+      "browser_checked_at_utc": "2026-10-27T09:51:50.099378+00:00",
+      "browser_checked_official_page": true,
+      "browser_negative_message_visible": true,
+      "browser_visible_links": []
     },
     "182/2025": {
       "MichrazID": 20250182,
@@ -356,7 +361,12 @@
       },
       "pdf_errors": [],
       "pdf_count_expected": 8,
-      "pdf_count_verified": 8
+      "pdf_count_verified": 8,
+      "browser_form_state": "official_page_explicitly_not_open",
+      "browser_checked_at_utc": "2026-10-27T09:51:50.099378+00:00",
+      "browser_checked_official_page": true,
+      "browser_negative_message_visible": true,
+      "browser_visible_links": []
     },
     "149/2025": {
       "MichrazID": 20250149,
@@ -543,7 +553,12 @@
       },
       "pdf_errors": [],
       "pdf_count_expected": 8,
-      "pdf_count_verified": 8
+      "pdf_count_verified": 8,
+      "browser_form_state": "official_page_explicitly_not_open",
+      "browser_checked_at_utc": "2026-10-27T09:51:50.099378+00:00",
+      "browser_checked_official_page": true,
+      "browser_negative_message_visible": true,
+      "browser_visible_links": []
     }
   },
   "discovery": {
@@ -557,7 +572,8 @@
           "KodYeudMichraz": 1,
           "PirsumDate": "2019-01-23T00:00:00+02:00",
           "SgiraDate": "2019-04-01T12:00:00+03:00",
-          "PublishedChoveret": true
+          "PublishedChoveret": true,
+          "PtichaDate": "2019-02-04T00:00:00+02:00"
         },
         {
           "MichrazID": 20180365,
@@ -567,7 +583,8 @@
           "KodYeudMichraz": 1,
           "PirsumDate": "2018-11-05T00:00:00+02:00",
           "SgiraDate": "2019-01-14T12:00:00+02:00",
-          "PublishedChoveret": true
+          "PublishedChoveret": true,
+          "PtichaDate": "2018-11-14T00:00:00+02:00"
         },
         {
           "MichrazID": 20180110,
@@ -577,7 +594,8 @@
           "KodYeudMichraz": 1,
           "PirsumDate": "2018-05-02T00:00:00+03:00",
           "SgiraDate": "2018-08-27T12:00:00+03:00",
-          "PublishedChoveret": false
+          "PublishedChoveret": false,
+          "PtichaDate": "2018-05-23T00:00:00+03:00"
         },
         {
           "MichrazID": 20180073,
@@ -587,7 +605,8 @@
           "KodYeudMichraz": 1,
           "PirsumDate": "2018-05-01T00:00:00+03:00",
           "SgiraDate": "2018-07-23T12:00:00+03:00",
-          "PublishedChoveret": true
+          "PublishedChoveret": true,
+          "PtichaDate": "2018-05-23T00:00:00+03:00"
         },
         {
           "MichrazID": 20090183,
@@ -597,7 +616,8 @@
           "KodYeudMichraz": 1,
           "PirsumDate": "2009-08-09T00:00:00+03:00",
           "SgiraDate": "2009-10-18T12:00:00+02:00",
-          "PublishedChoveret": true
+          "PublishedChoveret": true,
+          "PtichaDate": "2009-08-18T00:00:00+03:00"
         }
       ],
       "כפר מעש": [],
@@ -612,7 +632,8 @@
           "KodYeudMichraz": 1,
           "PirsumDate": "2007-06-17T00:00:00+03:00",
           "SgiraDate": "2007-07-22T12:00:00+03:00",
-          "PublishedChoveret": true
+          "PublishedChoveret": true,
+          "PtichaDate": "2007-06-24T00:00:00+03:00"
         },
         {
           "MichrazID": 20060144,
@@ -622,7 +643,8 @@
           "KodYeudMichraz": 1,
           "PirsumDate": "2006-06-11T00:00:00+03:00",
           "SgiraDate": "2006-09-17T12:00:00+03:00",
-          "PublishedChoveret": true
+          "PublishedChoveret": true,
+          "PtichaDate": "2006-06-18T00:00:00+03:00"
         }
       ],
       "כפר סירקין": [],
@@ -639,7 +661,8 @@
           "KodYeudMichraz": 1,
           "PirsumDate": "2003-09-04T00:00:00+03:00",
           "SgiraDate": "2004-02-01T12:00:00+02:00",
-          "PublishedChoveret": false
+          "PublishedChoveret": false,
+          "PtichaDate": "2003-09-07T00:00:00+03:00"
         }
       ],
       "רמות השבים": [],
@@ -652,7 +675,8 @@
           "KodYeudMichraz": 1,
           "PirsumDate": "2005-06-07T00:00:00+03:00",
           "SgiraDate": "2005-12-11T12:00:00+02:00",
-          "PublishedChoveret": false
+          "PublishedChoveret": false,
+          "PtichaDate": "2005-06-22T00:00:00+03:00"
         },
         {
           "MichrazID": 20040189,
@@ -662,7 +686,8 @@
           "KodYeudMichraz": 1,
           "PirsumDate": "2004-07-22T00:00:00+03:00",
           "SgiraDate": "2004-11-07T12:00:00+02:00",
-          "PublishedChoveret": false
+          "PublishedChoveret": false,
+          "PtichaDate": "2004-08-09T00:00:00+03:00"
         }
       ],
       "כפר שמריהו": [
@@ -674,10 +699,83 @@
           "KodYeudMichraz": 1,
           "PirsumDate": "2009-02-12T00:00:00+02:00",
           "SgiraDate": "2009-03-15T12:00:00+02:00",
-          "PublishedChoveret": true
+          "PublishedChoveret": true,
+          "PtichaDate": "2009-02-17T00:00:00+02:00"
         }
       ],
-      "כפר אז״ר": []
+      "חמד": [],
+      "משמר השבעה": [],
+      "ניר צבי": [],
+      "טירת יהודה": [
+        {
+          "MichrazID": 20060010,
+          "MichrazName": "10/2006",
+          "Shchuna": " ",
+          "KodYeshuv": 663,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2006-01-23T00:00:00+02:00",
+          "SgiraDate": "2006-04-02T12:00:00+03:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2006-02-01T00:00:00+02:00"
+        }
+      ],
+      "כפר אז״ר": [
+        {
+          "MichrazID": 20240007,
+          "MichrazName": "7/2024",
+          "Shchuna": "גני אזר",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2024-01-10T00:00:00+02:00",
+          "SgiraDate": "2024-07-08T12:00:00+03:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2024-03-25T14:00:00+02:00"
+        },
+        {
+          "MichrazID": 20230049,
+          "MichrazName": "49/2023",
+          "Shchuna": "גני אז\"ר",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 20,
+          "PirsumDate": "2023-03-02T00:00:00+02:00",
+          "SgiraDate": "2023-12-18T12:00:00+02:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2023-08-21T00:00:00+03:00"
+        },
+        {
+          "MichrazID": 20230051,
+          "MichrazName": "51/2023",
+          "Shchuna": "גני אז\"ר",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 20,
+          "PirsumDate": "2023-03-02T00:00:00+02:00",
+          "SgiraDate": "2023-09-11T12:00:00+03:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2023-07-03T00:00:00+03:00"
+        },
+        {
+          "MichrazID": 20230052,
+          "MichrazName": "52/2023",
+          "Shchuna": "גני א\"זר",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 3,
+          "PirsumDate": "2023-03-02T00:00:00+02:00",
+          "SgiraDate": "2023-09-13T12:00:00+03:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2023-06-01T00:00:00+03:00"
+        },
+        {
+          "MichrazID": 20230011,
+          "MichrazName": "11/2023",
+          "Shchuna": "גני אזר",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2023-03-02T00:00:00+02:00",
+          "SgiraDate": "2023-08-28T12:00:00+03:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2023-06-07T00:00:00+03:00"
+        }
+      ]
     },
     "candidate_count": {
       "סביון": 5,
@@ -694,9 +792,274 @@
       "רמות השבים": 0,
       "רשפון": 2,
       "כפר שמריהו": 1,
-      "כפר אז״ר": 0
+      "חמד": 0,
+      "משמר השבעה": 0,
+      "ניר צבי": 0,
+      "טירת יהודה": 1,
+      "כפר אז״ר": 5
     },
-    "coverage_warning": "Location codes are only discovery clues. Not every residential-category tender is a self-build plot or open for individual bids. Kfar Azar may not appear in a neighborhood name: zero candidates does not prove no tender exists."
+    "municipality_review": {
+      "municipality": "רמת גן",
+      "code": 8600,
+      "purpose": "Review unlabeled residential tenders whose location could be in Kfar Azar; do not notify as Kfar Azar without official geographic match.",
+      "residential_candidates": [
+        {
+          "MichrazID": 20240190,
+          "MichrazName": "190/2024",
+          "Shchuna": "מחנה גנים",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2024-07-10T00:00:00+03:00",
+          "SgiraDate": "2025-12-31T13:00:00+02:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2025-09-30T00:00:00+03:00"
+        },
+        {
+          "MichrazID": 20240222,
+          "MichrazName": "222/2024",
+          "Shchuna": "תל השומר צפון",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2024-07-04T00:00:00+03:00",
+          "SgiraDate": "2025-04-07T12:00:00+03:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2024-11-12T00:00:00+02:00"
+        },
+        {
+          "MichrazID": 20240007,
+          "MichrazName": "7/2024",
+          "Shchuna": "גני אזר",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2024-01-10T00:00:00+02:00",
+          "SgiraDate": "2024-07-08T12:00:00+03:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2024-03-25T14:00:00+02:00"
+        },
+        {
+          "MichrazID": 20230011,
+          "MichrazName": "11/2023",
+          "Shchuna": "גני אזר",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2023-03-02T00:00:00+02:00",
+          "SgiraDate": "2023-08-28T12:00:00+03:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2023-06-07T00:00:00+03:00"
+        },
+        {
+          "MichrazID": 20220395,
+          "MichrazName": "395/2022",
+          "Shchuna": "תל השומר מערב",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2022-11-14T00:00:00+02:00",
+          "SgiraDate": "2022-12-28T12:00:00+02:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2022-11-28T00:00:00+02:00"
+        },
+        {
+          "MichrazID": 20220396,
+          "MichrazName": "396/2022",
+          "Shchuna": "תל השומר דרום",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2022-11-14T00:00:00+02:00",
+          "SgiraDate": "2022-12-28T12:00:00+02:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2022-11-28T00:00:00+02:00"
+        },
+        {
+          "MichrazID": 20200276,
+          "MichrazName": "276/2020",
+          "Shchuna": " ",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2020-11-19T00:00:00+02:00",
+          "SgiraDate": "2020-12-30T12:00:00+02:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2020-11-19T00:00:00+02:00"
+        },
+        {
+          "MichrazID": 20190459,
+          "MichrazName": "459/2019",
+          "Shchuna": " ",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2019-12-30T00:00:00+02:00",
+          "SgiraDate": "2020-12-28T12:00:00+02:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2020-11-19T00:00:00+02:00"
+        },
+        {
+          "MichrazID": 20180398,
+          "MichrazName": "398/2018",
+          "Shchuna": " רחוב הירדן",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2018-11-22T00:00:00+02:00",
+          "SgiraDate": "2019-02-04T12:00:00+02:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2018-12-05T00:00:00+02:00"
+        },
+        {
+          "MichrazID": 20180138,
+          "MichrazName": "138/2018",
+          "Shchuna": " ",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2018-05-23T00:00:00+03:00",
+          "SgiraDate": "2018-07-02T12:00:00+03:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2018-05-31T00:00:00+03:00"
+        },
+        {
+          "MichrazID": 20160360,
+          "MichrazName": "360/2016",
+          "Shchuna": " קריית חינוך",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2016-12-28T00:00:00+02:00",
+          "SgiraDate": "2017-07-05T12:00:00+03:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2017-05-25T00:00:00+03:00"
+        },
+        {
+          "MichrazID": 20150263,
+          "MichrazName": "263/2015",
+          "Shchuna": " שיכון הצנחנים",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2015-11-25T00:00:00+02:00",
+          "SgiraDate": "2016-02-01T12:00:00+02:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2015-11-30T00:00:00+02:00"
+        },
+        {
+          "MichrazID": 20150027,
+          "MichrazName": "27/2015",
+          "Shchuna": " ",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2015-01-29T00:00:00+02:00",
+          "SgiraDate": "2015-06-15T12:00:00+03:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2015-03-30T00:00:00+03:00"
+        },
+        {
+          "MichrazID": 20150026,
+          "MichrazName": "26/2015",
+          "Shchuna": " ",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2015-01-29T00:00:00+02:00",
+          "SgiraDate": "2015-06-29T12:00:00+03:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2015-03-30T00:00:00+03:00"
+        },
+        {
+          "MichrazID": 20140246,
+          "MichrazName": "246/2014",
+          "Shchuna": " שיכון הצנחנים",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2014-08-06T00:00:00+03:00",
+          "SgiraDate": "2014-12-15T12:00:00+02:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2014-09-29T00:00:00+03:00"
+        },
+        {
+          "MichrazID": 20140245,
+          "MichrazName": "245/2014",
+          "Shchuna": " הצנחנים לנכים",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2014-08-06T00:00:00+03:00",
+          "SgiraDate": "2014-12-15T12:00:00+02:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2014-10-06T00:00:00+03:00"
+        },
+        {
+          "MichrazID": 20140247,
+          "MichrazName": "247/2014",
+          "Shchuna": " שיכון הצנחנים",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2014-08-06T00:00:00+03:00",
+          "SgiraDate": "2014-12-08T13:00:00+02:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2014-10-06T00:00:00+03:00"
+        },
+        {
+          "MichrazID": 20140179,
+          "MichrazName": "179/2014",
+          "Shchuna": " ",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2014-06-18T00:00:00+03:00",
+          "SgiraDate": "2014-12-01T12:00:00+02:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2014-09-30T00:00:00+03:00"
+        },
+        {
+          "MichrazID": 20130128,
+          "MichrazName": "128/2013",
+          "Shchuna": " יוסף הגליל פינת ז'בוטינסקי",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2013-06-10T00:00:00+03:00",
+          "SgiraDate": "2014-03-31T12:00:00+03:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2013-06-11T00:00:00+03:00"
+        },
+        {
+          "MichrazID": 20110140,
+          "MichrazName": "140/2011",
+          "Shchuna": " יוסף הגליל פינת ז'בוטינסקי",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2011-05-26T00:00:00+03:00",
+          "SgiraDate": "2012-10-28T12:00:00+02:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2011-06-12T00:00:00+03:00"
+        },
+        {
+          "MichrazID": 20090295,
+          "MichrazName": "295/2009",
+          "Shchuna": " רח' אחד העם",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2009-11-19T00:00:00+02:00",
+          "SgiraDate": "2010-01-17T12:00:00+02:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2009-11-19T00:00:00+02:00"
+        },
+        {
+          "MichrazID": 20080002,
+          "MichrazName": "2/2008",
+          "Shchuna": " יוסף הגליל פינת זבוטינסקי",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2008-01-10T00:00:00+02:00",
+          "SgiraDate": "2008-04-13T12:00:00+03:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2008-01-17T00:00:00+02:00"
+        },
+        {
+          "MichrazID": 20000113,
+          "MichrazName": "113/2000",
+          "Shchuna": " רח' ארנון",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2000-06-08T00:00:00+03:00",
+          "SgiraDate": "2000-07-30T12:00:00+03:00",
+          "PublishedChoveret": false,
+          "PtichaDate": "2000-06-26T00:00:00+03:00"
+        }
+      ],
+      "total_municipality_residential": 23
+    },
+    "coverage_warning": "Kfar Azar belongs to Ramat Gan; aliases גני אזר/גני אז״ר are included, and broader Ramat Gan residential entries are reviewed separately. A record without a locality label may require parcel/map confirmation; zero verified entries does not prove no tender exists."
   },
   "changes": [],
   "errors": [],
@@ -707,5 +1070,8 @@
   "search_rows": 10214,
   "pdf_complete": true,
   "verified_coverage": "All three named tender detail endpoints and complete RMI search were readable.",
-  "changes_count": 0
+  "changes_count": 0,
+  "browser_coverage_verified": 3,
+  "browser_coverage_expected": 3,
+  "browser_coverage_complete": true
 }
