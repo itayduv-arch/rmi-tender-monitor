@@ -1,0 +1,418 @@
+{
+  "schema_version": 2,
+  "checked_at_utc": "2026-10-27T09:10:32.454793+00:00",
+  "source_host": "apps.land.gov.il",
+  "api_base": "https://apps.land.gov.il/MichrazimSite/api/",
+  "status": "ok",
+  "tenders": {
+    "470/2025": {
+      "MichrazID": 20250470,
+      "MichrazName": "470/2025",
+      "PirsumDate": "2025-11-17T00:00:00+02:00",
+      "PtichaDate": "2026-11-16T00:00:00+02:00",
+      "SgiraDate": "2026-12-28T12:00:00+02:00",
+      "UpdateDate": "2026-10-12T14:58:34.18+03:00",
+      "StatusMichraz": 1,
+      "StatusMichrazMurchav": 1,
+      "ReadyForHagasha": null,
+      "YechidotDiur": 3,
+      "KodYeudMichraz": 1,
+      "KodYeshuv": 9700,
+      "Shchuna": "",
+      "Uchlusiyot": [
+        6
+      ],
+      "HagashaMekuvenet": true,
+      "MechirSafMichraz": null,
+      "SchumArvut": 0,
+      "SchumHishtatfut": null,
+      "MichrazFullDocument": {
+        "MichrazID": 20250470,
+        "Size": 641955,
+        "FileType": "application/pdf",
+        "RowID": -1,
+        "Teur": "מסמך הפרסום המלא",
+        "DocName": "מסמך הפרסום המלא.pdf",
+        "UpdateDate": "2026-10-12T14:58:38.077+03:00",
+        "Url": null,
+        "MahutMismachID": 0,
+        "PirsumType": 2
+      },
+      "KhalYaadRashi": 1,
+      "MaxToWin": 1,
+      "MatziaCanLimit": false,
+      "location_label": "הוד השרון",
+      "official_url": "https://apps.land.gov.il/MichrazimSite/#/michraz/20250470",
+      "official_message": "המכרז טרם נפתח להגשת הצעות",
+      "documents": [
+        {
+          "RowID": 135312,
+          "DocName": "פרסום דחיית מועדים.pdf",
+          "Teur": "פרסום דחיית מועדים",
+          "UpdateDate": "2026-10-12T00:00:00+03:00",
+          "PirsumType": 3,
+          "MahutMismachID": 0,
+          "FileType": "application/pdf"
+        },
+        {
+          "RowID": 135313,
+          "DocName": "פרסום דחיית מועדים.pdf",
+          "Teur": "פרסום דחיית מועדים",
+          "UpdateDate": "2026-09-02T00:00:00+03:00",
+          "PirsumType": 3,
+          "MahutMismachID": 0,
+          "FileType": "application/pdf"
+        },
+        {
+          "RowID": 135314,
+          "DocName": "פרסום דחיית מועדים.pdf",
+          "Teur": "פרסום דחיית מועדים",
+          "UpdateDate": "2026-06-01T00:00:00+03:00",
+          "PirsumType": 3,
+          "MahutMismachID": 0,
+          "FileType": "application/pdf"
+        },
+        {
+          "RowID": 135315,
+          "DocName": "פרסום דחיית מועדים.pdf",
+          "Teur": "פרסום דחיית מועדים",
+          "UpdateDate": "2026-03-11T00:00:00+02:00",
+          "PirsumType": 3,
+          "MahutMismachID": 0,
+          "FileType": "application/pdf"
+        },
+        {
+          "RowID": 135316,
+          "DocName": "פרסום דחיית מועדים.pdf",
+          "Teur": "פרסום דחיית מועדים",
+          "UpdateDate": "2025-12-30T00:00:00+02:00",
+          "PirsumType": 3,
+          "MahutMismachID": 0,
+          "FileType": "application/pdf"
+        },
+        {
+          "RowID": 135317,
+          "DocName": "פרסום ראשון.pdf",
+          "Teur": "פרסום ראשון",
+          "UpdateDate": "2025-11-17T00:00:00+02:00",
+          "PirsumType": 3,
+          "MahutMismachID": 0,
+          "FileType": "application/pdf"
+        }
+      ],
+      "document_count": 6,
+      "submission_state": "not_open_according_to_official_message",
+      "fingerprint": "6f8c5b324cad352677a79a9a1692b34acfffb57069aac7cf42de150e955f52c4"
+    },
+    "182/2025": {
+      "MichrazID": 20250182,
+      "MichrazName": "182/2025",
+      "PirsumDate": "2025-04-30T00:00:00+03:00",
+      "PtichaDate": "2026-09-07T00:00:00+03:00",
+      "SgiraDate": "2026-11-09T12:00:00+02:00",
+      "UpdateDate": "2026-08-09T13:00:12.597+03:00",
+      "StatusMichraz": 1,
+      "StatusMichrazMurchav": 2,
+      "ReadyForHagasha": null,
+      "YechidotDiur": 26,
+      "KodYeudMichraz": 1,
+      "KodYeshuv": 836,
+      "Shchuna": "גנות",
+      "Uchlusiyot": [
+        6,
+        3
+      ],
+      "HagashaMekuvenet": true,
+      "MechirSafMichraz": null,
+      "SchumArvut": 0,
+      "SchumHishtatfut": null,
+      "MichrazFullDocument": {
+        "MichrazID": 20250182,
+        "Size": 749028,
+        "FileType": "application/pdf",
+        "RowID": -1,
+        "Teur": "מסמך הפרסום המלא",
+        "DocName": "מסמך הפרסום המלא.pdf",
+        "UpdateDate": "2026-08-09T13:00:16.073+03:00",
+        "Url": null,
+        "MahutMismachID": 0,
+        "PirsumType": 2
+      },
+      "KhalYaadRashi": 1,
+      "MaxToWin": null,
+      "MatziaCanLimit": false,
+      "location_label": "גנות",
+      "official_url": "https://apps.land.gov.il/MichrazimSite/#/michraz/20250182",
+      "official_message": "המכרז טרם נפתח להגשת הצעות,עדיין לא פורסמה חוברת למכרז",
+      "documents": [
+        {
+          "RowID": 131922,
+          "DocName": "פרסום דחיית מועדים.pdf",
+          "Teur": "פרסום דחיית מועדים",
+          "UpdateDate": "2026-08-09T00:00:00+03:00",
+          "PirsumType": 3,
+          "MahutMismachID": 0,
+          "FileType": "application/pdf"
+        },
+        {
+          "RowID": 131923,
+          "DocName": "פרסום דחיית מועדים.pdf",
+          "Teur": "פרסום דחיית מועדים",
+          "UpdateDate": "2026-04-27T00:00:00+03:00",
+          "PirsumType": 3,
+          "MahutMismachID": 0,
+          "FileType": "application/pdf"
+        },
+        {
+          "RowID": 131924,
+          "DocName": "פרסום דחיית מועדים.pdf",
+          "Teur": "פרסום דחיית מועדים",
+          "UpdateDate": "2026-03-16T00:00:00+02:00",
+          "PirsumType": 3,
+          "MahutMismachID": 0,
+          "FileType": "application/pdf"
+        },
+        {
+          "RowID": 131925,
+          "DocName": "פרסום דחיית מועדים.pdf",
+          "Teur": "פרסום דחיית מועדים",
+          "UpdateDate": "2025-12-09T00:00:00+02:00",
+          "PirsumType": 3,
+          "MahutMismachID": 0,
+          "FileType": "application/pdf"
+        },
+        {
+          "RowID": 131926,
+          "DocName": "פרסום דחיית מועדים.pdf",
+          "Teur": "פרסום דחיית מועדים",
+          "UpdateDate": "2025-10-22T00:00:00+03:00",
+          "PirsumType": 3,
+          "MahutMismachID": 0,
+          "FileType": "application/pdf"
+        },
+        {
+          "RowID": 131927,
+          "DocName": "פרסום דחיית מועדים.pdf",
+          "Teur": "פרסום דחיית מועדים",
+          "UpdateDate": "2025-08-27T00:00:00+03:00",
+          "PirsumType": 3,
+          "MahutMismachID": 0,
+          "FileType": "application/pdf"
+        },
+        {
+          "RowID": 131928,
+          "DocName": "פרסום ראשון.pdf",
+          "Teur": "פרסום ראשון",
+          "UpdateDate": "2025-04-30T00:00:00+03:00",
+          "PirsumType": 3,
+          "MahutMismachID": 0,
+          "FileType": "application/pdf"
+        }
+      ],
+      "document_count": 7,
+      "submission_state": "not_open_according_to_official_message",
+      "fingerprint": "0eb0ff2e9c525da9748ac55d18112198721966a0a61ee2a161f007cd82357521"
+    },
+    "149/2025": {
+      "MichrazID": 20250149,
+      "MichrazName": "149/2025",
+      "PirsumDate": "2025-04-30T00:00:00+03:00",
+      "PtichaDate": "2026-09-23T00:00:00+03:00",
+      "SgiraDate": "2026-11-23T12:00:00+02:00",
+      "UpdateDate": "2026-07-21T11:14:40.553+03:00",
+      "StatusMichraz": 1,
+      "StatusMichrazMurchav": 2,
+      "ReadyForHagasha": null,
+      "YechidotDiur": 1,
+      "KodYeudMichraz": 1,
+      "KodYeshuv": 198,
+      "Shchuna": "צופית",
+      "Uchlusiyot": [
+        1,
+        6,
+        3
+      ],
+      "HagashaMekuvenet": true,
+      "MechirSafMichraz": null,
+      "SchumArvut": 0,
+      "SchumHishtatfut": null,
+      "MichrazFullDocument": {
+        "MichrazID": 20250149,
+        "Size": 748352,
+        "FileType": "application/pdf",
+        "RowID": -1,
+        "Teur": "מסמך הפרסום המלא",
+        "DocName": "מסמך הפרסום המלא.pdf",
+        "UpdateDate": "2026-07-21T11:14:51.547+03:00",
+        "Url": null,
+        "MahutMismachID": 0,
+        "PirsumType": 2
+      },
+      "KhalYaadRashi": 1,
+      "MaxToWin": null,
+      "MatziaCanLimit": false,
+      "location_label": "צופית",
+      "official_url": "https://apps.land.gov.il/MichrazimSite/#/michraz/20250149",
+      "official_message": "המכרז טרם נפתח להגשת הצעות,עדיין לא פורסמה חוברת למכרז",
+      "documents": [
+        {
+          "RowID": 130593,
+          "DocName": "פרסום דחיית מועדים.pdf",
+          "Teur": "פרסום דחיית מועדים",
+          "UpdateDate": "2026-07-21T00:00:00+03:00",
+          "PirsumType": 3,
+          "MahutMismachID": 0,
+          "FileType": "application/pdf"
+        },
+        {
+          "RowID": 130594,
+          "DocName": "פרסום דחיית מועדים.pdf",
+          "Teur": "פרסום דחיית מועדים",
+          "UpdateDate": "2026-04-13T00:00:00+03:00",
+          "PirsumType": 3,
+          "MahutMismachID": 0,
+          "FileType": "application/pdf"
+        },
+        {
+          "RowID": 130595,
+          "DocName": "פרסום דחיית מועדים.pdf",
+          "Teur": "פרסום דחיית מועדים",
+          "UpdateDate": "2026-02-09T00:00:00+02:00",
+          "PirsumType": 3,
+          "MahutMismachID": 0,
+          "FileType": "application/pdf"
+        },
+        {
+          "RowID": 130596,
+          "DocName": "פרסום דחיית מועדים.pdf",
+          "Teur": "פרסום דחיית מועדים",
+          "UpdateDate": "2025-11-24T00:00:00+02:00",
+          "PirsumType": 3,
+          "MahutMismachID": 0,
+          "FileType": "application/pdf"
+        },
+        {
+          "RowID": 130597,
+          "DocName": "פרסום דחיית מועדים.pdf",
+          "Teur": "פרסום דחיית מועדים",
+          "UpdateDate": "2025-10-22T00:00:00+03:00",
+          "PirsumType": 3,
+          "MahutMismachID": 0,
+          "FileType": "application/pdf"
+        },
+        {
+          "RowID": 130598,
+          "DocName": "פרסום דחיית מועדים.pdf",
+          "Teur": "פרסום דחיית מועדים",
+          "UpdateDate": "2025-07-16T00:00:00+03:00",
+          "PirsumType": 3,
+          "MahutMismachID": 0,
+          "FileType": "application/pdf"
+        },
+        {
+          "RowID": 130599,
+          "DocName": "פרסום ראשון.pdf",
+          "Teur": "פרסום ראשון",
+          "UpdateDate": "2025-04-30T00:00:00+03:00",
+          "PirsumType": 3,
+          "MahutMismachID": 0,
+          "FileType": "application/pdf"
+        }
+      ],
+      "document_count": 7,
+      "submission_state": "not_open_according_to_official_message",
+      "fingerprint": "2c8f3f6f86fc22ed36f041c1d32f995251ccf1862f37708ea7b8fcf71bdda6cd"
+    }
+  },
+  "discovery": {
+    "candidates": {
+      "סביון": [
+        {
+          "MichrazID": 20240127,
+          "MichrazName": "127/2024",
+          "Shchuna": "צומת סביון",
+          "KodYeshuv": 2620,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2024-04-04T00:00:00+03:00",
+          "SgiraDate": "2024-07-15T12:00:00+03:00",
+          "PublishedChoveret": true
+        },
+        {
+          "MichrazID": 20190017,
+          "MichrazName": "17/2019",
+          "Shchuna": " ",
+          "KodYeshuv": 587,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2019-01-23T00:00:00+02:00",
+          "SgiraDate": "2019-04-01T12:00:00+03:00",
+          "PublishedChoveret": true
+        },
+        {
+          "MichrazID": 20180365,
+          "MichrazName": "365/2018",
+          "Shchuna": " ",
+          "KodYeshuv": 587,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2018-11-05T00:00:00+02:00",
+          "SgiraDate": "2019-01-14T12:00:00+02:00",
+          "PublishedChoveret": true
+        },
+        {
+          "MichrazID": 20180110,
+          "MichrazName": "110/2018",
+          "Shchuna": " נכים",
+          "KodYeshuv": 587,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2018-05-02T00:00:00+03:00",
+          "SgiraDate": "2018-08-27T12:00:00+03:00",
+          "PublishedChoveret": false
+        },
+        {
+          "MichrazID": 20180073,
+          "MichrazName": "73/2018",
+          "Shchuna": " ",
+          "KodYeshuv": 587,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2018-05-01T00:00:00+03:00",
+          "SgiraDate": "2018-07-23T12:00:00+03:00",
+          "PublishedChoveret": true
+        },
+        {
+          "MichrazID": 20170351,
+          "MichrazName": "351/2017",
+          "Shchuna": " צומת סביון ",
+          "KodYeshuv": 2620,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2017-12-06T00:00:00+02:00",
+          "SgiraDate": "2018-06-04T12:00:00+03:00",
+          "PublishedChoveret": true
+        },
+        {
+          "MichrazID": 20090183,
+          "MichrazName": "183/2009",
+          "Shchuna": " ",
+          "KodYeshuv": 587,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2009-08-09T00:00:00+03:00",
+          "SgiraDate": "2009-10-18T12:00:00+02:00",
+          "PublishedChoveret": true
+        }
+      ],
+      "כפר אז״ר": []
+    },
+    "coverage_warning": "Kfar Azar may not be named in the neighborhood field: absence is NOT proof no tender exists. Candidate list is not an eligibility check.",
+    "candidate_count": {
+      "סביון": 7,
+      "כפר אז״ר": 0
+    }
+  },
+  "changes": [],
+  "errors": [],
+  "notes": [
+    "No submission-open claim without direct official confirmation of an active application form.",
+    "A newly detected tender is a candidate until its official details have been verified."
+  ],
+  "search_rows": 10214,
+  "verified_coverage": "All three named tender detail endpoints and complete RMI search were readable.",
+  "changes_count": 0
+}
