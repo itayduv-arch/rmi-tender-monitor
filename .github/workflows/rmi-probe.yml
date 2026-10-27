@@ -10,6 +10,7 @@ on:
       - 'monitor.py'
       - 'check_rmi.py'
       - 'tests/**'
+      - 'scripts/**'
       - '.github/workflows/rmi-probe.yml'
 
 permissions:
@@ -53,11 +54,15 @@ jobs:
             git push origin HEAD:main
           fi
 
+      - name: Check access to official PDF document endpoint
+        if: always()
+        run: python scripts/document_api_probe.py
+
       - name: Save report even when access fails
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: rmi-monitor-report
-          path: reports/latest-run.json
+          path: reports/*.json
           if-no-files-found: warn
           retention-days: 30
