@@ -150,6 +150,8 @@ def compare(previous: dict | None, current: dict, label: str) -> list[dict]:
     for key in sorted(set(previous) | set(current)):
         if key in ("fingerprint", "official_url", "location_label", "pdf_errors", "pdf_count_expected", "pdf_count_verified"):
             continue
+        if key.startswith('browser_'):
+            continue
         if previous.get(key) != current.get(key):
             if key == "pdf_checks":
                 # A transient network error must not be mistaken for a changed document.
