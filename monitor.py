@@ -2,6 +2,7 @@
 """Daily, read-only RMI API monitoring. Only apps.land.gov.il is an authority."""
 from __future__ import annotations
 import hashlib
+import io
 import json
 import os
 import sys
@@ -10,6 +11,7 @@ from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urlparse
 import requests
+from pypdf import PdfReader
 
 ROOT = "https://apps.land.gov.il"
 BASE = ROOT + "/MichrazimSite/"
@@ -26,7 +28,7 @@ DETAIL_FIELDS = (
     "MichrazFullDocument", "KhalYaadRashi", "MaxToWin", "MatziaCanLimit",
 )
 REQUEST_TIMEOUT = 40
-LAST_RUN_REPORT_VERSION = 2
+LAST_RUN_REPORT_VERSION = 3
 
 def tender_id(number: str) -> int:
     n, year = number.split("/")
@@ -86,15 +88,67 @@ def normalize_tender(raw: dict, number: str, city: str) -> dict:
     result["fingerprint"] = digest({key: val for key, val in result.items() if key != "fingerprint"})
     return result
 
+def collect_official_pdfs(session: requests.Session, raw: dict) -> tuple[dict, list[dict]]:
+    """Download public documents using the exact official site's POST schema."""
+    id_ = raw["MichrazID"]
+    objects = [("full_publication", raw.get("MichrazFullDocument"))]
+    objects += [(str(doc.get("RowID")), doc) for doc in (raw.get("MichrazDocList") or []) if isinstance(doc, dict)]
+    verified: dict = {}
+    errors: list[dict] = []
+    for key, doc in objects:
+        if not isinstance(doc, dict):
+            continue
+        if doc.get("MichrazID") != id_:
+            errors.append({"key": key, "problem": "Document belonged to unexpected tender"})
+            continue
+        try:
+            res = official_request(session, "POST", API + "MichrazDetailsApi/GetFileContent", json=doc)
+            if not res.content.startswith(b"%PDF"):
+                raise ValueError(f"RMI document response was not a PDF; HTTP {res.status_code}")
+            if len(res.content) > 40_000_000:
+                raise ValueError("Unexpectedly large PDF; manual review needed")
+            entry = {"sha256": hashlib.sha256(res.content).hexdigest(), "bytes": len(res.content),
+                     "document_title": doc.get("Teur") or doc.get("DocName"),
+                     "document_update_date": doc.get("UpdateDate")}
+            # Extracted text is just a clue. Scanned or RTL-heavy documents need manual visual review.
+            try:
+                reader = PdfReader(io.BytesIO(res.content))
+                entry["pages"] = len(reader.pages)
+                samples = []
+                for p in reader.pages[:min(len(reader.pages), 8)]:
+                    if sum(len(t) for t in samples) > 3500:
+                        break
+                    samples.append(p.extract_text() or "")
+                entry["text_excerpt_unreviewed"] = " ".join(samples)[:3500]
+                entry["text_extraction_succeeded"] = bool(entry["text_excerpt_unreviewed"].strip())
+            except Exception as error:
+                entry["text_extraction_succeeded"] = False
+                entry["text_extraction_error"] = type(error).__name__
+            verified[key] = entry
+        except Exception as ex:
+            errors.append({"key": key, "document": doc.get("DocName"), "problem": f"{type(ex).__name__}: {str(ex)[:220]}"})
+        time.sleep(0.15)
+    return verified, errors
+
+
 def compare(previous: dict | None, current: dict, label: str) -> list[dict]:
     if previous is None:
         return []  # First successful observation establishes a baseline, not a change event.
     changed = []
     for key in sorted(set(previous) | set(current)):
-        if key in ("fingerprint", "official_url", "location_label"):
+        if key in ("fingerprint", "official_url", "location_label", "pdf_errors", "pdf_count_expected", "pdf_count_verified"):
             continue
         if previous.get(key) != current.get(key):
-            if key == "documents":
+            if key == "pdf_checks":
+                # A transient network error must not be mistaken for a changed document.
+                older, newer = previous.get("pdf_checks") or {}, current.get("pdf_checks") or {}
+                for identifier in sorted(older.keys() & newer.keys()):
+                    if older[identifier].get("sha256") != newer[identifier].get("sha256"):
+                        changed.append({"tender": label, "field": "pdf_document_content_sha256",
+                                        "document_key": identifier,
+                                        "previous_hash": older[identifier].get("sha256"),
+                                        "current_hash": newer[identifier].get("sha256")})
+            elif key == "documents":
                 before = {str(d.get("RowID")): d for d in previous.get("documents", [])}
                 after = {str(d.get("RowID")): d for d in current.get("documents", [])}
                 changed.append({"tender": label, "field": "documents", "added": [v for k, v in after.items() if k not in before], "removed": [v for k, v in before.items() if k not in after], "modified": [after[k] for k in after.keys() & before.keys() if after[k] != before[k]]})
@@ -167,6 +221,11 @@ def main() -> int:
             if not isinstance(raw, dict):
                 raise ValueError("Tender detail response is not an object")
             tender = normalize_tender(raw, number, city)
+            pdf, pdf_errors = collect_official_pdfs(session, raw)
+            tender["pdf_checks"] = pdf
+            tender["pdf_errors"] = pdf_errors
+            tender["pdf_count_expected"] = len(raw.get("MichrazDocList") or []) + (1 if raw.get("MichrazFullDocument") else 0)
+            tender["pdf_count_verified"] = len(pdf)
             out["tenders"][number] = tender
             old_tender = (old or {}).get("tenders", {}).get(number)
             out["changes"].extend(compare(old_tender, tender, number))
@@ -176,6 +235,8 @@ def main() -> int:
             out["errors"].append({"part": f"tender:{number}", "type": type(exc).__name__, "message": str(exc)[:400]})
     if not out["tenders"]:
         out["status"] = "failed"
+    out["pdf_complete"] = len(out["tenders"]) == len(WATCH) and all(
+        t["pdf_count_verified"] == t["pdf_count_expected"] for t in out["tenders"].values())
     if out["status"] == "ok":
         out["verified_coverage"] = "All three named tender detail endpoints and complete RMI search were readable."
     else:
