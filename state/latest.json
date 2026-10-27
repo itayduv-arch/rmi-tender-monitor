@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "checked_at_utc": "2026-10-27T09:39:23.262649+00:00",
+  "checked_at_utc": "2026-10-27T09:41:40.087622+00:00",
   "source_host": "apps.land.gov.il",
   "api_base": "https://apps.land.gov.il/MichrazimSite/api/",
   "status": "ok",
@@ -600,13 +600,103 @@
           "PublishedChoveret": true
         }
       ],
+      "כפר מעש": [],
+      "מגשימים": [],
+      "גת רימון": [],
+      "בני עטרות": [
+        {
+          "MichrazID": 20070135,
+          "MichrazName": "135/2007",
+          "Shchuna": " ",
+          "KodYeshuv": 448,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2007-06-17T00:00:00+03:00",
+          "SgiraDate": "2007-07-22T12:00:00+03:00",
+          "PublishedChoveret": true
+        },
+        {
+          "MichrazID": 20060144,
+          "MichrazName": "144/2006",
+          "Shchuna": " ",
+          "KodYeshuv": 448,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2006-06-11T00:00:00+03:00",
+          "SgiraDate": "2006-09-17T12:00:00+03:00",
+          "PublishedChoveret": true
+        }
+      ],
+      "כפר סירקין": [],
+      "מזור": [],
+      "נופך": [],
+      "רינתיה": [],
+      "גבעת חן": [],
+      "ירקונה": [
+        {
+          "MichrazID": 20030217,
+          "MichrazName": "217/2003",
+          "Shchuna": " ",
+          "KodYeshuv": 183,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2003-09-04T00:00:00+03:00",
+          "SgiraDate": "2004-02-01T12:00:00+02:00",
+          "PublishedChoveret": false
+        }
+      ],
+      "רמות השבים": [],
+      "רשפון": [
+        {
+          "MichrazID": 20050112,
+          "MichrazName": "112/2005",
+          "Shchuna": " ",
+          "KodYeshuv": 247,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2005-06-07T00:00:00+03:00",
+          "SgiraDate": "2005-12-11T12:00:00+02:00",
+          "PublishedChoveret": false
+        },
+        {
+          "MichrazID": 20040189,
+          "MichrazName": "189/2004",
+          "Shchuna": " ",
+          "KodYeshuv": 247,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2004-07-22T00:00:00+03:00",
+          "SgiraDate": "2004-11-07T12:00:00+02:00",
+          "PublishedChoveret": false
+        }
+      ],
+      "כפר שמריהו": [
+        {
+          "MichrazID": 20090027,
+          "MichrazName": "27/2009",
+          "Shchuna": " נרקיסים",
+          "KodYeshuv": 267,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2009-02-12T00:00:00+02:00",
+          "SgiraDate": "2009-03-15T12:00:00+02:00",
+          "PublishedChoveret": true
+        }
+      ],
       "כפר אז״ר": []
     },
-    "coverage_warning": "Kfar Azar may not be named in the neighborhood field: absence is NOT proof no tender exists. Candidate list is not an eligibility check.",
     "candidate_count": {
       "סביון": 5,
+      "כפר מעש": 0,
+      "מגשימים": 0,
+      "גת רימון": 0,
+      "בני עטרות": 2,
+      "כפר סירקין": 0,
+      "מזור": 0,
+      "נופך": 0,
+      "רינתיה": 0,
+      "גבעת חן": 0,
+      "ירקונה": 1,
+      "רמות השבים": 0,
+      "רשפון": 2,
+      "כפר שמריהו": 1,
       "כפר אז״ר": 0
-    }
+    },
+    "coverage_warning": "Location codes are only discovery clues. Not every residential-category tender is a self-build plot or open for individual bids. Kfar Azar may not appear in a neighborhood name: zero candidates does not prove no tender exists."
   },
   "changes": [],
   "errors": [],
