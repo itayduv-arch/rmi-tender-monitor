@@ -2,6 +2,11 @@ name: RMI official API connectivity pilot
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - 'check_rmi.py'
+      - '.github/workflows/rmi-probe.yml'
   schedule:
     - cron: '15 18 * * *'  # Daily, 18:15 UTC
 
