@@ -1,6 +1,6 @@
 {
   "schema_version": 2,
-  "checked_at_utc": "2026-10-27T09:15:27.185153+00:00",
+  "checked_at_utc": "2026-10-27T09:18:07.420758+00:00",
   "source_host": "apps.land.gov.il",
   "api_base": "https://apps.land.gov.il/MichrazimSite/api/",
   "status": "ok",
@@ -328,16 +328,6 @@
     "candidates": {
       "סביון": [
         {
-          "MichrazID": 20240127,
-          "MichrazName": "127/2024",
-          "Shchuna": "צומת סביון",
-          "KodYeshuv": 2620,
-          "KodYeudMichraz": 2,
-          "PirsumDate": "2024-04-04T00:00:00+03:00",
-          "SgiraDate": "2024-07-15T12:00:00+03:00",
-          "PublishedChoveret": true
-        },
-        {
           "MichrazID": 20190017,
           "MichrazName": "17/2019",
           "Shchuna": " ",
@@ -378,16 +368,6 @@
           "PublishedChoveret": true
         },
         {
-          "MichrazID": 20170351,
-          "MichrazName": "351/2017",
-          "Shchuna": " צומת סביון ",
-          "KodYeshuv": 2620,
-          "KodYeudMichraz": 2,
-          "PirsumDate": "2017-12-06T00:00:00+02:00",
-          "SgiraDate": "2018-06-04T12:00:00+03:00",
-          "PublishedChoveret": true
-        },
-        {
           "MichrazID": 20090183,
           "MichrazName": "183/2009",
           "Shchuna": " ",
@@ -402,7 +382,7 @@
     },
     "coverage_warning": "Kfar Azar may not be named in the neighborhood field: absence is NOT proof no tender exists. Candidate list is not an eligibility check.",
     "candidate_count": {
-      "סביון": 7,
+      "סביון": 5,
       "כפר אז״ר": 0
     }
   },
