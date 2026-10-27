@@ -65,6 +65,23 @@ class MonitorTests(unittest.TestCase):
         self.assertEqual(candidates["מגשימים"], 1)
         self.assertEqual(candidates["סביון"], 0)
 
+    def test_ganei_azar_is_listed_under_ramat_gan_code(self):
+        rows=[{"MichrazID":20240007,"MichrazName":"7/2024",
+               "KodYeshuv":8600,"KodYeudMichraz":2,"Shchuna":"גני אז\"ר",
+               "PirsumDate":"2024-01-10T00:00:00+02:00"}]
+        data=discover(rows,None)
+        self.assertEqual(data["candidate_count"]["כפר אז״ר"],1)
+        self.assertEqual(data["municipality_review"]["code"],8600)
+        self.assertEqual(data["municipality_review"]["total_municipality_residential"],1)
+
+    def test_alias_can_be_mixed_use_and_still_needs_review(self):
+        rows=[{"MichrazID":20230049,"MichrazName":"49/2023",
+               "KodYeshuv":8600,"KodYeudMichraz":20,"Shchuna":"גני אזר",
+               "PirsumDate":"2023-03-02T00:00:00+02:00"}]
+        data=discover(rows,None)
+        self.assertEqual(data["candidate_count"]["כפר אז״ר"],1)
+        self.assertEqual(data["municipality_review"]["total_municipality_residential"],0)
+
     def test_location_discovery_reports_incomplete_coverage(self):
         rows=[{"MichrazID":20260123,"MichrazName":"123/2026","KodYeshuv":587,"KodYeudMichraz":1},
               {"MichrazID":20260456,"MichrazName":"456/2026","KodYeudMichraz":1,"Shchuna":"כפר אז״ר"}]
