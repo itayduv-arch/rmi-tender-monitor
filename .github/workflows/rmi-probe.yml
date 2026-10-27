@@ -56,6 +56,10 @@ jobs:
         continue-on-error: true
         run: python -m scripts.form_probe
 
+      - name: Persist browser check results
+        if: success()
+        run: python -m scripts.merge_browser
+
       - name: Commit verified snapshot to this repository only
         if: success()
         run: |
