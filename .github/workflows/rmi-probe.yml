@@ -58,6 +58,10 @@ jobs:
         if: always()
         run: python scripts/document_api_probe.py
 
+      - name: Inspect official frontend for document API routes
+        if: always()
+        run: python scripts/inspect_frontend.py
+
       - name: Save report even when access fails
         if: always()
         uses: actions/upload-artifact@v4
