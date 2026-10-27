@@ -76,6 +76,29 @@ def main() -> int:
         result["homepage_http_code"] = homepage.status_code
         homepage.raise_for_status()
 
+        # RMI IDs in search results use YYYYNNNN (e.g. 300/2022 -> 20220300).
+        # Try the tender detail endpoint directly, even if SearchApi ignores filters.
+        tender_part, year_part = TENDER.split("/")
+        internal_id = int(year_part + str(int(tender_part)).zfill(4))
+        result["direct_details_requested_id"] = internal_id
+        try:
+            direct = session.get(
+                API + "MichrazDetailsApi/Get",
+                params={"michrazID": internal_id},
+                timeout=TIMEOUT,
+            )
+            verify_origin(direct)
+            result["direct_details_http_code"] = direct.status_code
+            if direct.ok:
+                direct_data = direct.json()
+                result["official_direct_details_preview"] = preview(direct_data)
+                result["direct_details_response_type"] = type(direct_data).__name__
+                if isinstance(direct_data, dict):
+                    result["direct_details_keys"] = list(direct_data)[:50]
+                result["status"] = "official_api_direct_details_reachable"
+        except (requests.RequestException, ValueError) as err:
+            result["direct_details_note"] = f"{type(err).__name__}: {str(err)[:500]}"
+
         payload = {
             "MisMichraz": TENDER,
             "ActiveQuickSearch": False,
@@ -99,7 +122,8 @@ def main() -> int:
             and TENDER in json.dumps(rec, ensure_ascii=False, default=str)
         ]
         result["matching_record_count"] = len(matching)
-        result["status"] = "official_api_reachable"
+        if result["status"] == "not_checked":
+            result["status"] = "official_api_reachable"
         if matching:
             tender_id = find_id(matching[0])
             if tender_id is not None:
