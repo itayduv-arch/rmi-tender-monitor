@@ -60,7 +60,7 @@ class MonitorTests(unittest.TestCase):
         x=discover(rows,None)
         self.assertEqual(x["candidate_count"]["סביון"],1)
         self.assertEqual(x["candidate_count"]["כפר אז״ר"],1)
-        self.assertIn("NOT proof",x["coverage_warning"])
+        self.assertIn("does not prove",x["coverage_warning"])
 
 if __name__ == "__main__":
     unittest.main()
