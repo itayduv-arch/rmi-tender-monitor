@@ -4,7 +4,7 @@ An **isolated, read-only** daily monitor of the Israel Land Authority's official
 
 ## Scope and official source
 
-The monitor checks the exact official tender detail API for **470/2025 – הוד השרון**, **182/2025 – גנות** and **149/2025 – צופית**. It also scans the official tender search results for residential-land candidates in **סביון** (RMI settlement code 587) and for neighborhood names mentioning **כפר אז״ר**. Note that the latter is an **incomplete discovery method**, and zero candidates are not proof that no tenders exist.
+The monitor checks the exact official tender detail API for **470/2025 – הוד השרון**, **182/2025 – גנות** and **149/2025 – צופית**. It also scans the official tender search results for residential-land candidates in **סביון**, **כפר אז״ר**, and nearby village-style localities: **כפר מעש**, **מגשימים**, **גת רימון**, **בני עטרות**, **כפר סירקין**, **מזור**, **נופך**, **רינתיה**, **גבעת חן**, **ירקונה**, **רמות השבים**, **רשפון** and **כפר שמריהו**. Identification relies on settlement-code clues and official tender category fields; candidates are **not** proof of live self-build availability. Detection for כפר אז״ר is incomplete because it may be categorized under a neighboring municipality.
 
 For each named tender, it records original and revised publication/open/close dates, current official message, submission-readiness clues, eligibility/population codes, counts, official annex/document metadata and prices if supplied by RMI.
 
