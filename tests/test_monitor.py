@@ -34,6 +34,21 @@ class MonitorTests(unittest.TestCase):
         t=normalize_tender(self.make(),"470/2025","הוד השרון")
         self.assertEqual(compare(None,t,"470/2025"),[])
 
+    def test_pdf_content_change_is_not_silently_ignored(self):
+        before=normalize_tender(self.make(),"470/2025","הוד השרון")
+        after=normalize_tender(self.make(),"470/2025","הוד השרון")
+        before["pdf_checks"]={"135312":{"sha256":"old"}}
+        after["pdf_checks"]={"135312":{"sha256":"new"}}
+        result=compare(before,after,"470/2025")
+        self.assertTrue(any(x["field"]=="pdf_document_content_sha256" for x in result))
+
+    def test_pdf_network_gap_does_not_claim_content_change(self):
+        before=normalize_tender(self.make(),"470/2025","הוד השרון")
+        after=normalize_tender(self.make(),"470/2025","הוד השרון")
+        before["pdf_checks"]={"135312":{"sha256":"known"}}
+        after["pdf_checks"]={}
+        self.assertFalse(any(x["field"]=="pdf_document_content_sha256" for x in compare(before,after,"470/2025")))
+
     def test_wrong_tender_refused(self):
         data=self.make()
         with self.assertRaises(ValueError):
