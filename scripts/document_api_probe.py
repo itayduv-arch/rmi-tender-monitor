@@ -5,11 +5,11 @@ import requests
 
 url = "https://apps.land.gov.il/MichrazimSite/api/MichrazDetailsApi/GetFileContent"
 options = [
-    ("GET", {"rowID": 135312}),
-    ("GET", {"RowID": 135312}),
-    ("GET", {"id": 135312}),
-    ("GET", {"fileId": 135312}),
-    ("GET", {"rowId": 135312, "michrazID": 20250470}),
+    ("POST", {"rowID": 135312, "michrazID": 20250470}),
+    ("POST", {"RowID": 135312, "MichrazID": 20250470}),
+    ("POST", {"MichrazID": 20250470, "RowID": -1}),
+    ("GET", {"michrazID": 20250470, "rowID": -1}),
+    ("GET", {"MichrazID": 20250470, "RowID": -1}),
 ]
 session = requests.Session()
 session.headers.update({
@@ -19,7 +19,7 @@ session.headers.update({
 results = []
 for verb, args in options:
     try:
-        resp=session.get(url,params=args,timeout=18,allow_redirects=False)
+        resp=(session.post(url,json=args,timeout=18,allow_redirects=False) if verb == "POST" else session.get(url,params=args,timeout=18,allow_redirects=False))
         ok=resp.ok and resp.content.startswith(b"%PDF")
         results.append({"method":verb,"params":list(args),"http_code":resp.status_code,
                         "content_type":resp.headers.get("content-type"),
