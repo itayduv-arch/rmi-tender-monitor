@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "checked_at_utc": "2026-11-01T07:35:21.396950+00:00",
+  "checked_at_utc": "2026-11-01T07:39:22.592460+00:00",
   "source_host": "apps.land.gov.il",
   "api_base": "https://apps.land.gov.il/MichrazimSite/api/",
   "status": "ok",
@@ -172,7 +172,7 @@
       "pdf_count_expected": 7,
       "pdf_count_verified": 7,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-11-01T07:38:26.308322+00:00",
+      "browser_checked_at_utc": "2026-11-01T07:42:36.547258+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
@@ -381,7 +381,7 @@
       "pdf_count_expected": 9,
       "pdf_count_verified": 9,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-11-01T07:38:26.308322+00:00",
+      "browser_checked_at_utc": "2026-11-01T07:42:36.547258+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
@@ -573,7 +573,7 @@
       "pdf_count_expected": 8,
       "pdf_count_verified": 8,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-11-01T07:38:26.308322+00:00",
+      "browser_checked_at_utc": "2026-11-01T07:42:36.547258+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
@@ -671,7 +671,7 @@
       "pdf_count_expected": 3,
       "pdf_count_verified": 3,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-11-01T07:38:26.308322+00:00",
+      "browser_checked_at_utc": "2026-11-01T07:42:36.547258+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
@@ -835,6 +835,126 @@
           "PtichaDate": "2006-02-01T00:00:00+02:00"
         }
       ],
+      "כפר טרומן": [
+        {
+          "MichrazID": 20040327,
+          "MichrazName": "327/2004",
+          "Shchuna": " ",
+          "KodYeshuv": 673,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2004-11-28T00:00:00+02:00",
+          "SgiraDate": "2005-02-13T12:00:00+02:00",
+          "PublishedChoveret": false,
+          "PtichaDate": "2004-12-06T00:00:00+02:00"
+        }
+      ],
+      "בית עובד": [],
+      "אבן יהודה": [
+        {
+          "MichrazID": 20220217,
+          "MichrazName": "217/2022",
+          "Shchuna": "מושע",
+          "KodYeshuv": 182,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2022-07-14T00:00:00+03:00",
+          "SgiraDate": "2022-10-24T12:00:00+03:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2022-08-22T00:00:00+03:00"
+        },
+        {
+          "MichrazID": 20200049,
+          "MichrazName": "49/2020",
+          "Shchuna": " ",
+          "KodYeshuv": 182,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2020-02-13T00:00:00+02:00",
+          "SgiraDate": "2020-06-01T12:00:00+03:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2020-02-24T00:00:00+02:00"
+        },
+        {
+          "MichrazID": 20190301,
+          "MichrazName": "301/2019",
+          "Shchuna": " ",
+          "KodYeshuv": 182,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2019-09-26T00:00:00+03:00",
+          "SgiraDate": "2019-12-30T12:00:00+02:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2019-10-28T00:00:00+02:00"
+        },
+        {
+          "MichrazID": 20190124,
+          "MichrazName": "124/2019",
+          "Shchuna": " ",
+          "KodYeshuv": 182,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2019-05-08T00:00:00+03:00",
+          "SgiraDate": "2019-08-19T12:00:00+03:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2019-05-21T00:00:00+03:00"
+        },
+        {
+          "MichrazID": 20190034,
+          "MichrazName": "34/2019",
+          "Shchuna": " ",
+          "KodYeshuv": 182,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2019-04-28T00:00:00+03:00",
+          "SgiraDate": "2019-07-15T12:00:00+03:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2019-05-15T00:00:00+03:00"
+        },
+        {
+          "MichrazID": 20190005,
+          "MichrazName": "5/2019",
+          "Shchuna": " ",
+          "KodYeshuv": 182,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2019-01-29T00:00:00+02:00",
+          "SgiraDate": null,
+          "PublishedChoveret": true,
+          "PtichaDate": "2019-02-25T00:00:00+02:00"
+        },
+        {
+          "MichrazID": 20170361,
+          "MichrazName": "361/2017",
+          "Shchuna": " ",
+          "KodYeshuv": 182,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2017-12-26T00:00:00+02:00",
+          "SgiraDate": "2019-03-18T12:00:00+02:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2019-01-07T00:00:00+02:00"
+        },
+        {
+          "MichrazID": 20110005,
+          "MichrazName": "5/2011",
+          "Shchuna": " ",
+          "KodYeshuv": 182,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2011-01-17T00:00:00+02:00",
+          "SgiraDate": "2011-02-20T12:00:00+02:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2011-01-19T00:00:00+02:00"
+        },
+        {
+          "MichrazID": 20070296,
+          "MichrazName": "296/2007",
+          "Shchuna": " ",
+          "KodYeshuv": 182,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2007-12-19T00:00:00+02:00",
+          "SgiraDate": "2008-01-27T12:00:00+02:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2007-12-24T00:00:00+02:00"
+        }
+      ],
+      "משמר איילון": [],
+      "בית נחמיה": [],
+      "גינתון": [],
+      "בית חנן": [],
+      "כפר דניאל": [],
       "כפר אז״ר": [
         {
           "MichrazID": 20240007,
@@ -912,6 +1032,14 @@
       "משמר השבעה": 0,
       "ניר צבי": 0,
       "טירת יהודה": 1,
+      "כפר טרומן": 1,
+      "בית עובד": 0,
+      "אבן יהודה": 9,
+      "משמר איילון": 0,
+      "בית נחמיה": 0,
+      "גינתון": 0,
+      "בית חנן": 0,
+      "כפר דניאל": 0,
       "כפר אז״ר": 5
     },
     "municipality_review": {
@@ -1175,7 +1303,7 @@
       ],
       "total_municipality_residential": 23
     },
-    "coverage_warning": "Kfar Azar belongs to Ramat Gan; aliases גני אזר/גני אז״ר are included, and broader Ramat Gan residential entries are reviewed separately. A record without a locality label may require parcel/map confirmation; zero verified entries does not prove no tender exists."
+    "coverage_warning": "Kfar Azar belongs to Ramat Gan; aliases גני אזר/גני אז״ר are included, and broader Ramat Gan residential entries are reviewed separately. A record without a locality label may require parcel/map confirmation; zero verified entries does not prove no tender exists. For בית נחמיה, גינתון, בית חנן and כפר דניאל coverage is name-based pending official municipality code confirmation; do not treat a zero count as exhaustive."
   },
   "changes": [],
   "errors": [],
