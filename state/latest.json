@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "checked_at_utc": "2026-10-31T19:59:45.187441+00:00",
+  "checked_at_utc": "2026-11-01T06:09:16.993493+00:00",
   "source_host": "apps.land.gov.il",
   "api_base": "https://apps.land.gov.il/MichrazimSite/api/",
   "status": "ok",
@@ -172,7 +172,7 @@
       "pdf_count_expected": 7,
       "pdf_count_verified": 7,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-10-31T20:01:42.551046+00:00",
+      "browser_checked_at_utc": "2026-11-01T06:12:07.950332+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
@@ -381,7 +381,7 @@
       "pdf_count_expected": 9,
       "pdf_count_verified": 9,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-10-31T20:01:42.551046+00:00",
+      "browser_checked_at_utc": "2026-11-01T06:12:07.950332+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
@@ -573,10 +573,103 @@
       "pdf_count_expected": 8,
       "pdf_count_verified": 8,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-10-31T20:01:42.551046+00:00",
+      "browser_checked_at_utc": "2026-11-01T06:12:07.950332+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
+    },
+    "112/2026": {
+      "MichrazID": 20260112,
+      "MichrazName": "112/2026",
+      "PirsumDate": "2026-05-06T00:00:00+03:00",
+      "PtichaDate": "2026-10-04T00:00:00+03:00",
+      "SgiraDate": "2026-12-07T12:00:00+02:00",
+      "UpdateDate": "2026-08-16T13:33:44.797+03:00",
+      "StatusMichraz": 1,
+      "StatusMichrazMurchav": 2,
+      "ReadyForHagasha": null,
+      "YechidotDiur": 1,
+      "KodYeudMichraz": 1,
+      "KodYeshuv": 673,
+      "Shchuna": "",
+      "Uchlusiyot": [],
+      "HagashaMekuvenet": true,
+      "MechirSafMichraz": null,
+      "SchumArvut": 0,
+      "SchumHishtatfut": null,
+      "MichrazFullDocument": {
+        "MichrazID": 20260112,
+        "Size": 216048,
+        "FileType": "application/pdf",
+        "RowID": -1,
+        "Teur": "מסמך הפרסום המלא",
+        "DocName": "מסמך הפרסום המלא.pdf",
+        "UpdateDate": "2026-08-16T13:33:55.547+03:00",
+        "Url": null,
+        "MahutMismachID": 0,
+        "PirsumType": 2
+      },
+      "KhalYaadRashi": 1,
+      "MaxToWin": null,
+      "MatziaCanLimit": false,
+      "location_label": "כפר טרומן",
+      "official_url": "https://apps.land.gov.il/MichrazimSite/#/michraz/20260112",
+      "official_message": "המכרז טרם נפתח להגשת הצעות,עדיין לא פורסמה חוברת למכרז",
+      "documents": [
+        {
+          "RowID": 132454,
+          "DocName": "פרסום דחיית מועדים.pdf",
+          "Teur": "פרסום דחיית מועדים",
+          "UpdateDate": "2026-08-16T00:00:00+03:00",
+          "PirsumType": 3,
+          "MahutMismachID": 0,
+          "FileType": "application/pdf"
+        },
+        {
+          "RowID": 132455,
+          "DocName": "פרסום ראשון.pdf",
+          "Teur": "פרסום ראשון",
+          "UpdateDate": "2026-05-06T00:00:00+03:00",
+          "PirsumType": 3,
+          "MahutMismachID": 0,
+          "FileType": "application/pdf"
+        }
+      ],
+      "document_count": 2,
+      "submission_state": "not_open_according_to_official_message",
+      "fingerprint": "8445389faa0c1b5cbe72d5199f3eb3f8e4dc97cffea76c93f1dd7f110c2f2a65",
+      "pdf_checks": {
+        "full_publication": {
+          "sha256": "b5e57f9fc97f7dc39c9493f32cc78fa30c049271d6ecb5827c983f6df389b6f6",
+          "bytes": 216048,
+          "document_title": "מסמך הפרסום המלא",
+          "document_update_date": "2026-08-16T13:33:55.547+03:00",
+          "pages": 2,
+          "text_excerpt_unreviewed": "מקוון מכרז\nמועדים דחיית\n פומבי במכרז הצעות לקבלת הזמנה\n חכירה זכויות לרכישת\n מתחמים 1 ב ד\"יח 1 לבניית\nטרומן בכפר קרקע צמודת/נמוכה בבנייה\n112/2026/מר מספר מכרז\n:להלן כמפורט מועדים דחיית על בזאת מודיעה ישראל מקרקעי רשות\n.04/10/2026 מתאריך החל הרשות מאתר להוריד ניתן המכרז חוברת את\n  בצהריים 12:00 בשעה 07/12/2026 לתאריך עד הינו ההצעות להגשת האחרון המועד\n.בדיוק\n.שינוי כל חל לא שפורסמו המכרז תנאי ביתר\nישראל מקרקעי רשות\nמרכז עסקי מרחב\n16/08/2026 מקוון מכרז\n פומבי במכרז הצעות לקבלת הזמנה\n חכירה זכויות לרכישת\n מתחמים 1 ב ד\"יח 1 לבניית\nטרומן בכפר קרקע צמודת/נמוכה בבנייה\n112/2026/מר מספר מכרז\n עם שנים  98  – ל חכירה חוזה על לחתימה הצעות בזה מזמינה\"(, הרשות: \"להלן )ישראל מקרקעי רשות\n.שנים  98  לעוד להארכה אופציה\n.המכרז בחוברת יפורסמו המכרז פרטי יתר. למגורים קרקע צמודת/נמוכה בנייה הינו המגרשים יעוד\n.תמורה כל ללא בחוברת ולעיין להוריד ניתן. 01/07/2026 ביום י\"רמ של האינטרנט באתר תפורסם המכרז חוברת\n.מקוונת מכרזים מערכת באמצעות תתבצע ההצעות הגשת\n המכרזים במערכת במלואן תימצאנה ההצעות להגשת האחרון במועד אשר הצעות רק תשתתפנה במכרז\n.המקוונת\n.בצהריים 12:00 השעה עד 07/09/2026 בתאריך הצעות להגשת האחרון המועד\n.ההצעות להגשת האחרון במועד אוטומטי באופן תינעל המקוונת המכרזים מערכת\n.המקוונת המכרזים במערכת הצעתו את להגיש מהמציע נמנע כלשהי טכנית תקלה בשל כי טענה תתקבל לא\n באתר ההצעה הגשת ביצוע הליך תחילת בעת\". זמין ממשל \"באתר מראש הרשמה דורשת במכרז ההשתתפות\n. הזדהות הליך לבצע יידרש שם\", זמין ממשל \"למערכת אוטומטי באופן המשתמש יועבר, ישראל מקרקעי רשות\n.ההצעה הגשת הליך השלמת לשם ישראל מקרקעי רשות לאתר אוטומטי באופן יועבר ההליך בסיום\n באמצעות )זמין בממשל ההזדהות אותה באמצעות המקוונת המכרזים במערכת תוגש אשר הצעה כל כי מודגש\n תובא אשר ההצעה היא המשתמש אותו ידי על שתוגש האחרונה ההצעה. קודמתה את תעדכן(, המשתמש אותו\n.יפסלו, המשתמש אותו ידי על שהוגשו ככל קודמות והצעות המכרזים ועדת בפני לדיון\n לנכון שתימצא ככל, הצעות להגשת האחרון המועד לרבות, הנזכרים מהמועדים אחד כל לשנות רשאית הרשות\n.הבלעדי דעתה שיקול פי על\n לגבי ולא תוכנו מבחינת לא, שהיא צורה בכל הרשות את לחייב כדי בו באמור ואין בלבד לידיעה הינו זה פרסום\n.נספחיה כל על המכרז בחוברת יופיעו אשר אלה הם המחייבים התנאים. בו הנזכרים המועדים\n.סגירתו למועד עד במכרז שינוי כל בגין י\"רמ באתר להתעדכן המציעים על\n.17:30-16:00 'ב, 13:00-8:00 'ד',ב: קהל קבלת זמני\n*.5575 / 03-9533333 טלפון, א\"ת, הממשלה קריית, 125 בגין מנחם, ישראל מקרקעי רשות\n.קהל קבלת תתקיים לא המועד וחול חג בערבי\nישראל מקרקעי רשות\nמרכז עסקי מרחב\n06/05/2026",
+          "text_extraction_succeeded": true
+        },
+        "132454": {
+          "sha256": "c22ca9ffe84dca8ade250c4bb5c77c3948143fa1b691dfb8e15e85f719ee6b3d",
+          "bytes": 27644,
+          "document_title": "פרסום דחיית מועדים",
+          "document_update_date": "2026-08-16T00:00:00+03:00",
+          "pages": 1,
+          "text_excerpt_unreviewed": "מקוון מכרז\nמועדים דחיית\n פומבי במכרז הצעות לקבלת הזמנה\n חכירה זכויות לרכישת\n מתחמים 1 ב ד\"יח 1 לבניית\nטרומן בכפר קרקע צמודת/נמוכה בבנייה\n112/2026/מר מספר מכרז\n:להלן כמפורט מועדים דחיית על בזאת מודיעה ישראל מקרקעי רשות\n.04/10/2026 מתאריך החל הרשות מאתר להוריד ניתן המכרז חוברת את\n  בצהריים 12:00 בשעה 07/12/2026 לתאריך עד הינו ההצעות להגשת האחרון המועד\n.בדיוק\n.שינוי כל חל לא שפורסמו המכרז תנאי ביתר\nישראל מקרקעי רשות\nמרכז עסקי מרחב",
+          "text_extraction_succeeded": true
+        },
+        "132455": {
+          "sha256": "31972577d3d4bb9fd537c0023b0bed68fc3d3c20da879dafe2ea13667206b832",
+          "bytes": 60909,
+          "document_title": "פרסום ראשון",
+          "document_update_date": "2026-05-06T00:00:00+03:00",
+          "pages": 1,
+          "text_excerpt_unreviewed": "מקוון מכרז\n פומבי במכרז הצעות לקבלת הזמנה\n חכירה זכויות לרכישת\n מתחמים 1 ב ד\"יח 1 לבניית\nטרומן בכפר קרקע צמודת/נמוכה בבנייה\n112/2026/מר מספר מכרז\n עם שנים  98  – ל חכירה חוזה על לחתימה הצעות בזה מזמינה\"(, הרשות: \"להלן )ישראל מקרקעי רשות\n.שנים  98  לעוד להארכה אופציה\n.המכרז בחוברת יפורסמו המכרז פרטי יתר. למגורים קרקע צמודת/נמוכה בנייה הינו המגרשים יעוד\n.תמורה כל ללא בחוברת ולעיין להוריד ניתן. 01/07/2026 ביום י\"רמ של האינטרנט באתר תפורסם המכרז חוברת\n.מקוונת מכרזים מערכת באמצעות תתבצע ההצעות הגשת\n המכרזים במערכת במלואן תימצאנה ההצעות להגשת האחרון במועד אשר הצעות רק תשתתפנה במכרז\n.המקוונת\n.בצהריים 12:00 השעה עד 07/09/2026 בתאריך הצעות להגשת האחרון המועד\n.ההצעות להגשת האחרון במועד אוטומטי באופן תינעל המקוונת המכרזים מערכת\n.המקוונת המכרזים במערכת הצעתו את להגיש מהמציע נמנע כלשהי טכנית תקלה בשל כי טענה תתקבל לא\n באתר ההצעה הגשת ביצוע הליך תחילת בעת\". זמין ממשל \"באתר מראש הרשמה דורשת במכרז ההשתתפות\n. הזדהות הליך לבצע יידרש שם\", זמין ממשל \"למערכת אוטומטי באופן המשתמש יועבר, ישראל מקרקעי רשות\n.ההצעה הגשת הליך השלמת לשם ישראל מקרקעי רשות לאתר אוטומטי באופן יועבר ההליך בסיום\n באמצעות )זמין בממשל ההזדהות אותה באמצעות המקוונת המכרזים במערכת תוגש אשר הצעה כל כי מודגש\n תובא אשר ההצעה היא המשתמש אותו ידי על שתוגש האחרונה ההצעה. קודמתה את תעדכן(, המשתמש אותו\n.יפסלו, המשתמש אותו ידי על שהוגשו ככל קודמות והצעות המכרזים ועדת בפני לדיון\n לנכון שתימצא ככל, הצעות להגשת האחרון המועד לרבות, הנזכרים מהמועדים אחד כל לשנות רשאית הרשות\n.הבלעדי דעתה שיקול פי על\n לגבי ולא תוכנו מבחינת לא, שהיא צורה בכל הרשות את לחייב כדי בו באמור ואין בלבד לידיעה הינו זה פרסום\n.נספחיה כל על המכרז בחוברת יופיעו אשר אלה הם המחייבים התנאים. בו הנזכרים המועדים\n.סגירתו למועד עד במכרז שינוי כל בגין י\"רמ באתר להתעדכן המציעים על\n.17:30-16:00 'ב, 13:00-8:00 'ד',ב: קהל קבלת זמני\n*.5575 / 03-9533333 טלפון, א\"ת, הממשלה קריית, 125 בגין מנחם, ישראל מקרקעי רשות\n.קהל קבלת תתקיים לא המועד וחול חג בערבי\nישראל מקרקעי רשות\nמרכז עסקי מרחב",
+          "text_extraction_succeeded": true
+        }
+      },
+      "pdf_errors": [],
+      "pdf_count_expected": 3,
+      "pdf_count_verified": 3
     }
   },
   "discovery": {
@@ -1083,13 +1176,14 @@
   "errors": [],
   "notes": [
     "No submission-open claim without direct official confirmation of an active application form.",
-    "A newly detected tender is a candidate until its official details have been verified."
+    "A newly detected tender is a candidate until its official details have been verified.",
+    "Official browser check incomplete: absence of detected form does not prove tenders are closed."
   ],
   "search_rows": 10214,
   "pdf_complete": true,
-  "verified_coverage": "All three named tender detail endpoints and complete RMI search were readable.",
+  "verified_coverage": "All named tender detail endpoints and complete RMI search were readable.",
   "changes_count": 0,
   "browser_coverage_verified": 3,
-  "browser_coverage_expected": 3,
-  "browser_coverage_complete": true
+  "browser_coverage_expected": 4,
+  "browser_coverage_complete": false
 }
