@@ -30,6 +30,10 @@ LOCATION_CODES = {
     # Municipality codes confirmed from recent official RMI tender detail responses.
     "כפר טרומן": 673, "בית עובד": 202, "אבן יהודה": 182,
     "משמר איילון": 670,
+    # CBS official locality-code list; discovery leads only until matched in
+    # RMI's own tender details (not authority on tender status or eligibility).
+    "בית נחמיה": 784, "גינתון": 863, "בית חנן": 159,
+    "כפר דניאל": 707,
 }
 
 # Places awaiting a directly verified municipality code. Match locality names in
@@ -258,8 +262,8 @@ def discover(items: list[dict], prev: dict | None) -> dict:
             "and broader Ramat Gan residential entries are reviewed separately. "
             "A record without a locality label may require parcel/map confirmation; "
             "zero verified entries does not prove no tender exists. "
-            "For בית נחמיה, גינתון, בית חנן and כפר דניאל coverage is name-based "
-            "pending official municipality code confirmation; do not treat a zero count as exhaustive."
+            "CBS locality codes and name aliases for newly watched villages are discovery "
+            "clues; confirm with RMI tender details and never treat a zero count as exhaustive."
         )
     }
 
