@@ -5,7 +5,7 @@ from urllib.parse import urlparse
 from playwright.async_api import async_playwright
 
 ROOT="https://apps.land.gov.il/MichrazimSite/"
-TENDERS={"470/2025":20250470,"182/2025":20250182,"149/2025":20250149}
+TENDERS={"470/2025":20250470,"182/2025":20250182,"149/2025":20250149,"112/2026":20260112}
 NEGATIVE=("טרם נפתח", "טרם פורסמה חוברת", "לא ניתן להגיש", "המכרז נסגר")
 WORD_RE=re.compile(r"הגשת|להגיש|הרשמה|כניסה למערכת|טופס|הצעה|submit|apply|register",re.I)
 
