@@ -90,5 +90,35 @@ class MonitorTests(unittest.TestCase):
         self.assertEqual(x["candidate_count"]["כפר אז״ר"],1)
         self.assertIn("does not prove",x["coverage_warning"])
 
+    def test_new_central_locations_official_code_and_name_clues(self):
+        rows=[
+            {"MichrazID":20260188,"MichrazName":"188/2026",
+             "KodYeshuv":182,"KodYeudMichraz":1,"Shchuna":"הנוטר"},
+            {"MichrazID":20250153,"MichrazName":"153/2025",
+             "KodYeshuv":202,"KodYeudMichraz":1,"Shchuna":"בית עובד"},
+            {"MichrazID":20250155,"MichrazName":"155/2025",
+             "KodYeshuv":670,"KodYeudMichraz":1,"Shchuna":"משמר אילון"},
+            {"MichrazID":20260112,"MichrazName":"112/2026",
+             "KodYeshuv":673,"KodYeudMichraz":1},
+            {"MichrazID":20260081,"MichrazName":"81/2026",
+             "KodYeshuv":12345,"KodYeudMichraz":1,"Shchuna":"בית נחמיה"},
+            {"MichrazID":20260082,"MichrazName":"82/2026",
+             "KodYeshuv":12346,"KodYeudMichraz":1,"Shchuna":"כפר דניאל"},
+            {"MichrazID":20260083,"MichrazName":"83/2026",
+             "KodYeshuv":12347,"KodYeudMichraz":1,"Shchuna":"גינתון"},
+            {"MichrazID":20260084,"MichrazName":"84/2026",
+             "KodYeshuv":12348,"KodYeudMichraz":1,"Shchuna":"בית חנן"},
+        ]
+        d=discover(rows,None)
+        for name in ("אבן יהודה","בית עובד","משמר איילון","כפר טרומן",
+                     "בית נחמיה","כפר דניאל","גינתון","בית חנן"):
+            self.assertEqual(d["candidate_count"][name],1,name)
+        self.assertIn("name-based", d["coverage_warning"])
+
+    def test_named_matches_never_confuse_irrelevant_purpose(self):
+        rows=[{"MichrazID":20260083,"MichrazName":"83/2026",
+               "KodYeshuv":12347,"KodYeudMichraz":9,"Shchuna":"גינתון"}]
+        self.assertEqual(discover(rows,None)["candidate_count"]["גינתון"],0)
+
 if __name__ == "__main__":
     unittest.main()
