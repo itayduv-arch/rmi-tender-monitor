@@ -16,7 +16,7 @@ from pypdf import PdfReader
 ROOT = "https://apps.land.gov.il"
 BASE = ROOT + "/MichrazimSite/"
 API = BASE + "api/"
-WATCH = {"470/2025": "הוד השרון", "182/2025": "גנות", "149/2025": "צופית"}
+WATCH = {"470/2025": "הוד השרון", "182/2025": "גנות", "149/2025": "צופית", "112/2026": "כפר טרומן"}
 # Location code lists help to discover candidates, not establish tender status.
 # Confirm every potential tender from official RMI details before notifying users.
 LOCATION_CODES = {
@@ -303,7 +303,7 @@ def main() -> int:
     out["pdf_complete"] = len(out["tenders"]) == len(WATCH) and all(
         t["pdf_count_verified"] == t["pdf_count_expected"] for t in out["tenders"].values())
     if out["status"] == "ok":
-        out["verified_coverage"] = "All three named tender detail endpoints and complete RMI search were readable."
+        out["verified_coverage"] = "All named tender detail endpoints and complete RMI search were readable."
     else:
         out["verified_coverage"] = "Partial/failed official access; do not assume missing tender status is unchanged."
     out["changes_count"] = len(out["changes"])
