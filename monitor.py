@@ -27,7 +27,24 @@ LOCATION_CODES = {
     "רשפון": 247, "כפר שמריהו": 267,
     "חמד": 801, "משמר השבעה": 729, "ניר צבי": 331,
     "טירת יהודה": 663,
+    # Municipality codes confirmed from recent official RMI tender detail responses.
+    "כפר טרומן": 673, "בית עובד": 202, "אבן יהודה": 182,
+    "משמר איילון": 670,
 }
+
+# Places awaiting a directly verified municipality code. Match locality names in
+# official search fields, and keep them as review candidates (not a complete scan).
+LOCATION_NAME_ALIASES = {
+    "בית נחמיה": ("בית נחמיה",),
+    "גינתון": ("גינתון",),
+    "בית חנן": ("בית חנן",),
+    "כפר דניאל": ("כפר דניאל",),
+    "משמר איילון": ("משמר איילון", "משמר אילון"),
+}
+LOCATION_TEXT_FIELDS = (
+    "Shchuna", "Yishuv", "Yeshuv", "ShmYeshuv",
+    "MichrazDescription", "Teur", "ShmMichraz", "ShemShchuna",
+)
 
 STATE = Path("state/latest.json")
 ARTIFACT = Path("reports/latest-run.json")
@@ -184,7 +201,7 @@ def is_kfar_azar_neighborhood(name: object) -> bool:
 
 def discover(items: list[dict], prev: dict | None) -> dict:
     """Search direct municipality aliases and broader Ramat Gan as a review-only pool."""
-    candidates = {city: [] for city in LOCATION_CODES}
+    candidates = {city: [] for city in (*LOCATION_CODES, *LOCATION_NAME_ALIASES)}
     candidates["כפר אז״ר"]=[]
     ramat_gan_review=[]
     for row in items:
@@ -202,6 +219,18 @@ def discover(items: list[dict], prev: dict | None) -> dict:
         for city, location_code in LOCATION_CODES.items():
             if code==str(location_code):
                 candidates[city].append(row)
+        # Name matches are discovery clues only, never proof of location or
+        # eligibility. Some RMI rows omit settlement name or use district codes.
+        normalized_fields = [
+            normalize_neighborhood(row.get(field))
+            for field in LOCATION_TEXT_FIELDS
+            if row.get(field)
+        ]
+        for city, aliases in LOCATION_NAME_ALIASES.items():
+            if any(normalize_neighborhood(alias) in value
+                   for alias in aliases for value in normalized_fields):
+                if row not in candidates[city]:
+                    candidates[city].append(row)
 
     def pack(rec: dict) -> dict:
         return {k: rec.get(k) for k in (
@@ -228,7 +257,9 @@ def discover(items: list[dict], prev: dict | None) -> dict:
             "Kfar Azar belongs to Ramat Gan; aliases גני אזר/גני אז״ר are included, "
             "and broader Ramat Gan residential entries are reviewed separately. "
             "A record without a locality label may require parcel/map confirmation; "
-            "zero verified entries does not prove no tender exists."
+            "zero verified entries does not prove no tender exists. "
+            "For בית נחמיה, גינתון, בית חנן and כפר דניאל coverage is name-based "
+            "pending official municipality code confirmation; do not treat a zero count as exhaustive."
         )
     }
 
