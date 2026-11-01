@@ -113,7 +113,18 @@ class MonitorTests(unittest.TestCase):
         for name in ("אבן יהודה","בית עובד","משמר איילון","כפר טרומן",
                      "בית נחמיה","כפר דניאל","גינתון","בית חנן"):
             self.assertEqual(d["candidate_count"][name],1,name)
-        self.assertIn("name-based", d["coverage_warning"])
+        self.assertIn("CBS locality codes", d["coverage_warning"])
+
+    def test_new_villages_match_cbs_codes_without_neighborhood_name(self):
+        samples=[
+            {"MichrazID":20260801,"MichrazName":"801/2026","KodYeshuv":784,"KodYeudMichraz":1},
+            {"MichrazID":20260802,"MichrazName":"802/2026","KodYeshuv":863,"KodYeudMichraz":1},
+            {"MichrazID":20260803,"MichrazName":"803/2026","KodYeshuv":159,"KodYeudMichraz":1},
+            {"MichrazID":20260804,"MichrazName":"804/2026","KodYeshuv":707,"KodYeudMichraz":1},
+        ]
+        c=discover(samples,None)["candidate_count"]
+        for name in ("בית נחמיה","גינתון","בית חנן","כפר דניאל"):
+            self.assertEqual(c[name],1,name)
 
     def test_named_matches_never_confuse_irrelevant_purpose(self):
         rows=[{"MichrazID":20260083,"MichrazName":"83/2026",
