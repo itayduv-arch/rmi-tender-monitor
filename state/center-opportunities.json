@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-01T20:31:32.652011+00:00",
+  "checked_at_utc": "2026-11-02T23:33:05.092359+00:00",
   "source_host": "apps.land.gov.il",
   "status": "ok",
   "tenders": {
@@ -26,8 +26,8 @@
         "MichrazID": 20260035,
         "MichrazName": "35/2026",
         "PirsumDate": "2026-02-11T00:00:00+02:00",
-        "PtichaDate": "2026-09-14T00:00:00+03:00",
-        "SgiraDate": "2026-11-16T12:00:00+02:00",
+        "PtichaDate": "2026-11-29T00:00:00+02:00",
+        "SgiraDate": "2026-12-30T12:00:00+02:00",
         "KodYeshuv": 249,
         "Shchuna": "",
         "KodYeudMichraz": 1,
@@ -37,14 +37,23 @@
         "Uchlusiyot": [],
         "KhalYaadRashi": 1,
         "StatusMichraz": 1,
-        "StatusMichrazMurchav": 2,
+        "StatusMichrazMurchav": 1,
         "ReadyForHagasha": null,
         "HagashaMekuvenet": true,
-        "official_message": "המכרז טרם נפתח להגשת הצעות,עדיין לא פורסמה חוברת למכרז",
+        "official_message": "המכרז טרם נפתח להגשת הצעות",
         "submission_state": "not_open_according_to_official_message",
         "documents": [
           {
-            "RowID": 131810,
+            "RowID": 136790,
+            "DocName": "פרסום דחיית מועדים.pdf",
+            "Teur": "פרסום דחיית מועדים",
+            "UpdateDate": "2026-11-02T00:00:00+02:00",
+            "PirsumType": 3,
+            "MahutMismachID": 0,
+            "FileType": "application/pdf"
+          },
+          {
+            "RowID": 136791,
             "DocName": "פרסום דחיית מועדים.pdf",
             "Teur": "פרסום דחיית מועדים",
             "UpdateDate": "2026-08-09T00:00:00+03:00",
@@ -53,7 +62,7 @@
             "FileType": "application/pdf"
           },
           {
-            "RowID": 131811,
+            "RowID": 136792,
             "DocName": "פרסום דחיית מועדים.pdf",
             "Teur": "פרסום דחיית מועדים",
             "UpdateDate": "2026-05-19T00:00:00+03:00",
@@ -62,7 +71,7 @@
             "FileType": "application/pdf"
           },
           {
-            "RowID": 131812,
+            "RowID": 136793,
             "DocName": "פרסום ראשון.pdf",
             "Teur": "פרסום ראשון",
             "UpdateDate": "2026-02-11T00:00:00+02:00",
@@ -71,15 +80,15 @@
             "FileType": "application/pdf"
           }
         ],
-        "document_count": 3,
+        "document_count": 4,
         "MichrazFullDocument": {
           "MichrazID": 20260035,
-          "Size": 327861,
+          "Size": 433605,
           "FileType": "application/pdf",
           "RowID": -1,
           "Teur": "מסמך הפרסום המלא",
           "DocName": "מסמך הפרסום המלא.pdf",
-          "UpdateDate": "2026-08-09T10:58:06.627+03:00",
+          "UpdateDate": "2026-11-02T08:16:02.127+02:00",
           "Url": null,
           "MahutMismachID": 0,
           "PirsumType": 2
@@ -111,12 +120,12 @@
         "MichrazID": 20250153,
         "MichrazName": "153/2025",
         "PirsumDate": "2025-04-30T00:00:00+03:00",
-        "PtichaDate": "2026-09-07T00:00:00+03:00",
-        "SgiraDate": "2026-11-16T12:00:00+02:00",
+        "PtichaDate": "2026-11-29T00:00:00+02:00",
+        "SgiraDate": "2026-12-27T12:00:00+02:00",
         "KodYeshuv": 202,
         "Shchuna": "בית עובד",
         "KodYeudMichraz": 1,
-        "YechidotDiur": 39,
+        "YechidotDiur": 56,
         "MechirSafMichraz": null,
         "SchumArvut": 0,
         "Uchlusiyot": [
@@ -125,14 +134,23 @@
         ],
         "KhalYaadRashi": 1,
         "StatusMichraz": 1,
-        "StatusMichrazMurchav": 2,
+        "StatusMichrazMurchav": 1,
         "ReadyForHagasha": null,
         "HagashaMekuvenet": true,
-        "official_message": "המכרז טרם נפתח להגשת הצעות,עדיין לא פורסמה חוברת למכרז",
+        "official_message": "המכרז טרם נפתח להגשת הצעות",
         "submission_state": "not_open_according_to_official_message",
         "documents": [
           {
-            "RowID": 130805,
+            "RowID": 136970,
+            "DocName": "פרסום דחיית מועדים.pdf",
+            "Teur": "פרסום דחיית מועדים",
+            "UpdateDate": "2026-11-02T00:00:00+02:00",
+            "PirsumType": 3,
+            "MahutMismachID": 0,
+            "FileType": "application/pdf"
+          },
+          {
+            "RowID": 136971,
             "DocName": "פרסום דחיית מועדים.pdf",
             "Teur": "פרסום דחיית מועדים",
             "UpdateDate": "2026-07-26T00:00:00+03:00",
@@ -141,7 +159,7 @@
             "FileType": "application/pdf"
           },
           {
-            "RowID": 130806,
+            "RowID": 136972,
             "DocName": "פרסום דחיית מועדים.pdf",
             "Teur": "פרסום דחיית מועדים",
             "UpdateDate": "2026-05-19T00:00:00+03:00",
@@ -150,7 +168,7 @@
             "FileType": "application/pdf"
           },
           {
-            "RowID": 130807,
+            "RowID": 136973,
             "DocName": "פרסום דחיית מועדים.pdf",
             "Teur": "פרסום דחיית מועדים",
             "UpdateDate": "2026-02-15T00:00:00+02:00",
@@ -159,7 +177,7 @@
             "FileType": "application/pdf"
           },
           {
-            "RowID": 130808,
+            "RowID": 136974,
             "DocName": "פרסום דחיית מועדים.pdf",
             "Teur": "פרסום דחיית מועדים",
             "UpdateDate": "2026-01-19T00:00:00+02:00",
@@ -168,7 +186,7 @@
             "FileType": "application/pdf"
           },
           {
-            "RowID": 130809,
+            "RowID": 136975,
             "DocName": "פרסום דחיית מועדים.pdf",
             "Teur": "פרסום דחיית מועדים",
             "UpdateDate": "2025-11-24T00:00:00+02:00",
@@ -177,7 +195,7 @@
             "FileType": "application/pdf"
           },
           {
-            "RowID": 130810,
+            "RowID": 136976,
             "DocName": "פרסום דחיית מועדים.pdf",
             "Teur": "פרסום דחיית מועדים",
             "UpdateDate": "2025-10-22T00:00:00+03:00",
@@ -186,7 +204,7 @@
             "FileType": "application/pdf"
           },
           {
-            "RowID": 130811,
+            "RowID": 136977,
             "DocName": "פרסום דחיית מועדים.pdf",
             "Teur": "פרסום דחיית מועדים",
             "UpdateDate": "2025-07-16T00:00:00+03:00",
@@ -195,7 +213,7 @@
             "FileType": "application/pdf"
           },
           {
-            "RowID": 130812,
+            "RowID": 136978,
             "DocName": "פרסום ראשון.pdf",
             "Teur": "פרסום ראשון",
             "UpdateDate": "2025-04-30T00:00:00+03:00",
@@ -204,15 +222,15 @@
             "FileType": "application/pdf"
           }
         ],
-        "document_count": 8,
+        "document_count": 9,
         "MichrazFullDocument": {
           "MichrazID": 20250153,
-          "Size": 852556,
+          "Size": 957838,
           "FileType": "application/pdf",
           "RowID": -1,
           "Teur": "מסמך הפרסום המלא",
           "DocName": "מסמך הפרסום המלא.pdf",
-          "UpdateDate": "2026-07-26T14:14:04.14+03:00",
+          "UpdateDate": "2026-11-02T14:22:29.637+02:00",
           "Url": null,
           "MahutMismachID": 0,
           "PirsumType": 2
