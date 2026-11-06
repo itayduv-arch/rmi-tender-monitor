@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-06T05:51:47.856331+00:00",
+  "checked_at_utc": "2026-11-06T05:54:26.541612+00:00",
   "source": "github-actions-ubuntu-24.04-read-only",
   "http": {
     "institutions": {
@@ -29,7 +29,7 @@
       "status": 403,
       "final_url": "https://www.gov.il/he/pages/licensed-inpatient-hospital-beds-dec-2025",
       "content_type": "text/html; charset=UTF-8",
-      "bytes_read": 5774,
+      "bytes_read": 5795,
       "is_pdf": false,
       "html_title": "Just a moment...",
       "has_pdf_link": false,
@@ -46,6 +46,29 @@
       "pages": 48,
       "extract_chars_first_3_pages": 3577,
       "text_mentions_surgery": true
+    },
+    "gov_2025_pdf_candidate_1": {
+      "url": "https://www.gov.il/BlobFolder/reports/licensed-inpatient-hospital-beds-dec-2025/he/files_publications_units_info_beds2025_dec2025.pdf",
+      "status": 200,
+      "final_url": "https://www.gov.il/BlobFolder/reports/licensed-inpatient-hospital-beds-dec-2025/he/files_publications_units_info_beds2025_dec2025.pdf",
+      "content_type": "application/pdf",
+      "bytes_read": 966649,
+      "is_pdf": true,
+      "sha256": "a8539819a5cb0b7159f5d23afad7684c4eb74b480649230f57f9e06842f9146a",
+      "pages": 48,
+      "extract_chars_first_3_pages": 4883,
+      "text_mentions_surgery": true
+    },
+    "gov_2025_pdf_candidate_2": {
+      "url": "https://www.gov.il/BlobFolder/reports/licensed-inpatient-hospital-beds/he/files_publications_units_info_beds2025_dec2025.pdf",
+      "status": 404,
+      "final_url": "https://www.gov.il/BlobFolder/reports/licensed-inpatient-hospital-beds/he/files_publications_units_info_beds2025_dec2025.pdf",
+      "content_type": "text/html; charset=utf-8",
+      "bytes_read": 1349,
+      "is_pdf": false,
+      "html_title": "שגיאה",
+      "has_pdf_link": false,
+      "has_medili": false
     },
     "medika_pdf": {
       "url": "https://www.gov.il/BlobFolder/dynamiccollectorresultitem/medika-18092024/he/files_publications_units_general_medicine_medika-18092024.pdf",
@@ -85,10 +108,31 @@
   "browser": {
     "institutions": {
       "url": "https://registries.health.gov.il/Institutions/Institutions/1",
+      "institutions_api_method": "POST",
+      "institutions_api_request_data": "{\"maxResult\":50,\"pageNumber\":0}",
+      "institutions_api_top_type": "dict",
+      "institutions_api_top_keys": [
+        "returnObject",
+        "statusCode",
+        "message"
+      ],
+      "institutions_api_top_fields": {
+        "returnObject": "dict",
+        "statusCode": "int",
+        "message": "str"
+      },
+      "institutions_api_sample_matches": [
+        "{\"instituteCode\": \"4114M\", \"instituteName\": \"HIV\", \"instituteFullName\": \"HIV\", \"instituteTypeCode\": \"41\", \"instituteTypeName\": \"מעבדות/מכונים\", \"ownershipCode\": \"1\", \"ownershipName\": \"ממשלתי\", \"cityCode\": \"6600\", \"cityName\": \"חולון\", \"districtCode\": \"5\", \"districtName\": \"תל-אביב\", \"fullAddress\": \"הלוחמים 62, חולון 58100\", \"email\": \"Ornas@wmc.gov.il\", \"phone1\": \"03-5028552\", \"phone2\": \"052-8965201\", \"openDate\": \"2024-07-18T16:00:32\", \"managerFirstname\": \"ארנה\", \"managerLastname\": \"שוורץ הררי\", \"medicalManagerTitleCode\": \"ד\\\"ר\", \"startDate\": \"2025-04-14T00:00:00\", \"endDate\": \"2027-10-28T00:00:00\", \"licenseDuration\": 30, \"inAgreement\": false, \"status\": \"בתוקף\"}",
+        "{\"instituteCode\": \"55714T\", \"instituteName\": \"ONE DENTAL\", \"instituteFullName\": \"ONE DENTAL\", \"instituteTypeCode\": \"55\", \"instituteTypeName\": \"מרפאות שיניים של תאגידים\", \"ownershipCode\": \"7\", \"ownershipName\": \"פרטי\", \"cityCode\": \"8300\", \"cityName\": \"ראשון לציון\", \"districtCode\": \"4\", \"districtName\": \"מרכז\", \"fullAddress\": \"פרימן יעקב 8 / 5, כניסה א , קומה 2, ראשון לציון 7535817\", \"addressComments\": \"קומה 2\", \"email\": \"natanilg@gmail.com\", \"phone1\": \"036888722\", \"phone2\": \"0546341844\", \"openDate\": \"2024-10-07T06:35:46\", \"managerFirstname\": \"נתן\", \"managerLastname\": \"אילגייב\", \"managerLicense\": \"9755\", \"managerExpertise\": \"כירורגיית פה ולסתות\", \"medicalManagerTitleCode\": \"ד\\\"ר\", \"startDate\": \"2024-10-01T00:00:00\", \"endDate\": \"2027-10-01T00:00:00\", \"licenseDuration\": 36, \"inAgreement\": false, \"status\": \"בתוקף\"}"
+      ],
+      "institutions_api_traversal": {
+        "dicts_examined": 298,
+        "lists_examined": 18
+      },
       "browser_document_status": 200,
       "page_url": "https://registries.health.gov.il/Institutions",
-      "body_text_length": 602,
-      "body_excerpt": "חזור למאגרי מידע\nמאגרי מידע של משרד הבריאות\nחיפוש\nסינון לפי:\nנקה סינון\nסוג מוסד\nשם מוסד\nמספר רישום מוסד\nמחלקה\nמחוז\nישוב\nישוב\nבעלות\nחיפוש מוסדות\nהשוואת מוסדות גריאטריים\n מוסדות\nהורד רשימה זו\nאין תוצאות\nמעודכן לתאריך: 06/11/2026\nרישוי מוסדות רפואיים מתבצע באגף לרישוי מוסדות ומכשירים רפואיים מיוחדים במשרד הבריאות. בהתאם לפקודת העם 1940 והתקנות הנובעות מהחוק, חלה חובת רישוי של מוסדות ומכשירים רפואיים.\nשם\nסוג מוסד\nישוב\nהצג:\n5\n0 מתוך 0\nאתרי המשרד\nאתר משרד הבריאות\nאודות האתר\nתנאי שימוש\nהצהרת נגישות\nצרו איתנו קשר\n\n5400* או 08-6241010\n\nבמסנג'ר\nבדוא\"ל\nבוואטסאפ\nעקבו אחרינו\n© כל הזכויות שמורות למשרד הבריאות",
+      "body_text_length": 4156,
+      "body_excerpt": "חזור למאגרי מידע\nמאגרי מידע של משרד הבריאות\nחיפוש\nסינון לפי:\nנקה סינון\nסוג מוסד\nשם מוסד\nמספר רישום מוסד\nמחלקה\nמחוז\nישוב\nישוב\nבעלות\nחיפוש מוסדות\nהשוואת מוסדות גריאטריים\n מוסדות\nהורד רשימה זו\nנמצאו 2,170 תוצאות\nמעודכן לתאריך: 06/11/2026\nרישוי מוסדות רפואיים מתבצע באגף לרישוי מוסדות ומכשירים רפואיים מיוחדים במשרד הבריאות. בהתאם לפקודת העם 1940 והתקנות הנובעות מהחוק, חלה חובת רישוי של מוסדות ומכשירים רפואיים.\nשם\nסוג מוסד\nישוב\nAID Genomics\nמספר רישום מוסד: 4170Q\nמעבדות/מכונים\nרחובות\nAID Labs - מעבדה לבדיקת נגיף קורונה\nמספר רישום מוסד: 4170W\nמעבדות/מכונים\nירושלים\nAmerican Medical Laboratories\nמספר רישום מוסד: 41770\nמעבדות/מכונים\nהרצליה\nCHOICE\nמספר רישום מוסד: 37623\nמוסדות לטיפול במשתמשים בסמים\nבני ברק\nDiamond clinic\nמספר רישום מוסד: 55717Z\nמרפאות שיניים של תאגידים\nראשון לציון\nDMC המרכז לטיפולי שיניים בע\"מ\nמספר רישום מוסד: 557RB\nמרפאות שיניים של תאגידים\nעכו\nDR.SPORT\nמספר רישום מוסד: 577F8\nתחנות לרפואת ספורט\nכפר קרע\nEDS CLINIC המרפאה ד\"ר רמי בלבנובסקי\nמספר רישום מוסד: 557SX\nמרפאות שיניים של תאגידים\nתל אביב - יפו\nGGA - גליל ג'נטיקס אנליסיס בע\"מ\nמספר רישום מוסד: 41773\nמעבדות/מכונים\nאשדוד\nHIV\nמ",
       "input_placeholders": [
         "בחר מאגר",
         "מוסדות",
@@ -106,7 +150,12 @@
         "חיפוש",
         "הורד רשימה זו",
         "למידע נוסף",
-        "סינון"
+        "סינון",
+        "1",
+        "2",
+        "3",
+        "4",
+        "..."
       ],
       "after_medili_enter_text_length": 4156,
       "after_medili_excerpt": "חזור למאגרי מידע\nמאגרי מידע של משרד הבריאות\nחיפוש\nסינון לפי:\nנקה סינון\nסוג מוסד\nשם מוסד\nמספר רישום מוסד\nמחלקה\nמחוז\nישוב\nישוב\nבעלות\nחיפוש מוסדות\nהשוואת מוסדות גריאטריים\n מוסדות\nהורד רשימה זו\nנמצאו 2,170 תוצאות\nמעודכן לתאריך: 06/11/2026\nרישוי מוסדות רפואיים מתבצע באגף לרישוי מוסדות ומכשירים רפואיים מיוחדים במשרד הבריאות. בהתאם לפקודת העם 1940 והתקנות הנובעות מהחוק, חלה חובת רישוי של מוסדות ומכשירים רפואיים.\nשם\nסוג מוסד\nישוב\nAID Genomics\nמספר רישום מוסד: 4170Q\nמעבדות/מכונים\nרחובות\nAID Labs - מעבדה לבדיקת נגיף קורונה\nמספר רישום מוסד: 4170W\nמעבדות/מכונים\nירושלים\nAmerican Medical Laboratories\nמספר רישום מוסד: 41770\nמעבדות/מכונים\nהרצליה\nCHOICE\nמספר רישום מוסד: 37623\nמוסדות לטיפול במשתמשים בסמים\nבני ברק\nDiamond clinic\nמספר רישום מוסד: 55717Z\nמרפאות שיניים של תאגידים\nראשון לציון\nDMC המרכז לטיפולי שיניים בע\"מ\nמספר רישום מוסד: 557RB\nמרפאות שיניים של תאגידים\nעכו\nDR.SPORT\nמספר רישום מוסד: 577F8\nתחנות לרפואת ספורט\nכפר קרע\nEDS CLINIC המרפאה ד\"ר רמי בלבנובסקי\nמספר רישום מוסד: 557SX\nמרפאות שיניים של תאגידים\nתל אביב - יפו\nGGA - גליל ג'נטיקס אנליסיס בע\"מ\nמספר רישום מוסד: 41773\nמעבדות/מכונים\nאשדוד\nHIV\nמספר רישום מוסד: 4114M\nמעבדות/מכונים\nחולון\nIVF\nמספר רישום מוסד: 4112Y\nמעבדות/מכונים\nרמת גן\nIVF\nמספר רישום מוסד: 4130M\nמעבדות/מכונים\nעפולה\nIVF\nמספר רישום מוסד: 4132A\nמעבדות/מכונים\nרחובות\nIVF\nמספר רישום מוסד: 41755\nמעבדות/מכונים\nראשון לציון\nIVF\nמספר רישום מוסד: 41793\nמעבדות/מכונים\nתל אביב - יפו\nIVF - היחידה לפריה חוץ גופית\nמספר רישום מוסד: 4130X\nמעבדות/מכונים\nכפר סבא\nIVF - מעבדה להפריה חוץ גופית\nמספר",
@@ -114,12 +163,12 @@
       "api_requests": [
         {
           "status": 200,
-          "url": "https://registries.health.gov.il/api/Registries/GetAllRegistries",
+          "url": "https://registries.health.gov.il/api/Registries/GetAllSubMenus",
           "type": "application/json; charset=utf-8"
         },
         {
           "status": 200,
-          "url": "https://registries.health.gov.il/api/Registries/GetAllSubMenus",
+          "url": "https://registries.health.gov.il/api/Registries/GetAllRegistries",
           "type": "application/json; charset=utf-8"
         },
         {
@@ -139,17 +188,17 @@
         },
         {
           "status": 200,
-          "url": "https://registries.health.gov.il/api/Institutions/GetCities",
-          "type": "application/json; charset=utf-8"
-        },
-        {
-          "status": 200,
           "url": "https://registries.health.gov.il/api/Institutions/GetDistricts",
           "type": "application/json; charset=utf-8"
         },
         {
           "status": 200,
           "url": "https://registries.health.gov.il/api/Institutions/GetOwnerships",
+          "type": "application/json; charset=utf-8"
+        },
+        {
+          "status": 200,
+          "url": "https://registries.health.gov.il/api/Institutions/GetCities",
           "type": "application/json; charset=utf-8"
         },
         {
@@ -169,7 +218,7 @@
       "browser_document_status": 403,
       "page_url": "https://www.gov.il/he/departments/dynamiccollectors/inspections-db",
       "body_text_length": 687,
-      "body_excerpt": "Sorry, you have been blocked\nYou are unable to access www.gov.il\nWhy have I been blocked?\n\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\n\nWhat can I do to resolve this?\n\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\n\nCloudflare Ray ID: a561d4b23aacb8d4 • Your IP: Click to reveal • Performance & security by Cloudflare",
+      "body_excerpt": "Sorry, you have been blocked\nYou are unable to access www.gov.il\nWhy have I been blocked?\n\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\n\nWhat can I do to resolve this?\n\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\n\nCloudflare Ray ID: a561d89ebf356973 • Your IP: Click to reveal • Performance & security by Cloudflare",
       "input_placeholders": [],
       "buttons": [
         "Click to reveal"
@@ -181,7 +230,7 @@
       "browser_document_status": 403,
       "page_url": "https://www.gov.il/he/pages/licensed-inpatient-hospital-beds-dec-2025",
       "body_text_length": 687,
-      "body_excerpt": "Sorry, you have been blocked\nYou are unable to access www.gov.il\nWhy have I been blocked?\n\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\n\nWhat can I do to resolve this?\n\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\n\nCloudflare Ray ID: a561d4e1bfa1b8d4 • Your IP: Click to reveal • Performance & security by Cloudflare",
+      "body_excerpt": "Sorry, you have been blocked\nYou are unable to access www.gov.il\nWhy have I been blocked?\n\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\n\nWhat can I do to resolve this?\n\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\n\nCloudflare Ray ID: a561d8ce59ee6973 • Your IP: Click to reveal • Performance & security by Cloudflare",
       "input_placeholders": [],
       "buttons": [
         "Click to reveal"
