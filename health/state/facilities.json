@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-06T05:58:19.408955+00:00",
+  "checked_at_utc": "2026-11-06T06:00:59.485902+00:00",
   "source": "official Ministry of Health registries API and official 2025 report",
   "api_url": "https://registries.health.gov.il/api/Institutions/GetInstitutions",
   "report_url": "https://www.gov.il/BlobFolder/reports/licensed-inpatient-hospital-beds-dec-2025/he/files_publications_units_info_beds2025_dec2025.pdf",
@@ -61,6 +61,114 @@
       "fullAddress": "יהודה הלוי 36, רחובות 76534",
       "startDate": "2026-09-01T00:00:00",
       "endDate": "2026-12-01T00:00:00",
+      "status": "בתוקף",
+      "ownershipName": "פרטי"
+    },
+    {
+      "instituteCode": "53753",
+      "instituteName": "מרכז רפואי ד\"ר מרקוס הראל",
+      "instituteTypeName": "מרפאות כירורגיות בקהילה",
+      "cityName": "תל אביב - יפו",
+      "districtName": "תל-אביב",
+      "fullAddress": "ברודצקי 43, תל אביב - יפו ",
+      "startDate": "2026-10-01T00:00:00",
+      "endDate": "2027-01-01T00:00:00",
+      "status": "בתוקף",
+      "ownershipName": "פרטי"
+    },
+    {
+      "instituteCode": "53726",
+      "instituteName": "מרכז רפואי רמת אביב",
+      "instituteTypeName": "מרפאות כירורגיות בקהילה",
+      "cityName": "תל אביב - יפו",
+      "districtName": "תל-אביב",
+      "fullAddress": "אינשטיין 40, קניון רמת אביב, תל אביב - יפו ",
+      "startDate": "2026-09-01T00:00:00",
+      "endDate": "2026-12-01T00:00:00",
+      "status": "בתוקף",
+      "ownershipName": "פרטי"
+    },
+    {
+      "instituteCode": "53742",
+      "instituteName": "מרכז רפואי שער העיר",
+      "instituteTypeName": "מרפאות כירורגיות בקהילה",
+      "cityName": "רמת גן",
+      "districtName": "תל-אביב",
+      "fullAddress": "ז'בוטינסקי 7, קומה 21, רמת גן 52520",
+      "startDate": "2022-07-01T00:00:00",
+      "endDate": "2022-11-01T00:00:00",
+      "status": "בתוקף",
+      "ownershipName": "פרטי"
+    },
+    {
+      "instituteCode": "53733",
+      "instituteName": "מרפאה כירורגית שוורץ - ארד בע\"מ",
+      "instituteTypeName": "מרפאות כירורגיות בקהילה",
+      "cityName": "תל אביב - יפו",
+      "districtName": "תל-אביב",
+      "fullAddress": "הברזל 15, תל אביב - יפו ",
+      "startDate": "2026-08-01T00:00:00",
+      "endDate": "2026-11-01T00:00:00",
+      "status": "בתוקף",
+      "ownershipName": "פרטי"
+    },
+    {
+      "instituteCode": "53744",
+      "instituteName": "מרפאה לכירורגיה קטנה של ד\"ר רם אברהמי",
+      "instituteTypeName": "מרפאות כירורגיות בקהילה",
+      "cityName": "תל אביב - יפו",
+      "districtName": "תל-אביב",
+      "fullAddress": "הברזל 31, רמת החייל, תל אביב - יפו ",
+      "startDate": "2026-08-01T00:00:00",
+      "endDate": "2026-11-01T00:00:00",
+      "status": "בתוקף",
+      "ownershipName": "פרטי"
+    },
+    {
+      "instituteCode": "53750",
+      "instituteName": "מרפאת ד\"ר דב קליין",
+      "instituteTypeName": "מרפאות כירורגיות בקהילה",
+      "cityName": "תל אביב - יפו",
+      "districtName": "תל-אביב",
+      "fullAddress": "יוניצ'מן 21, תל אביב - יפו 6936027",
+      "startDate": "2026-06-01T00:00:00",
+      "endDate": "2026-07-01T00:00:00",
+      "status": "בתוקף",
+      "ownershipName": "פרטי"
+    },
+    {
+      "instituteCode": "53723",
+      "instituteName": "מרפאת מדיקה תל אביב",
+      "instituteTypeName": "מרפאות כירורגיות בקהילה",
+      "cityName": "תל אביב - יפו",
+      "districtName": "תל-אביב",
+      "fullAddress": "הברזל 28, רמת החייל, תל אביב - יפו ",
+      "startDate": "2026-10-01T00:00:00",
+      "endDate": "2027-01-01T00:00:00",
+      "status": "בתוקף",
+      "ownershipName": "פרטי"
+    },
+    {
+      "instituteCode": "53713",
+      "instituteName": "מרפאת עין טל",
+      "instituteTypeName": "מרפאות כירורגיות בקהילה",
+      "cityName": "תל אביב - יפו",
+      "districtName": "תל-אביב",
+      "fullAddress": "הברזל 15, רמת החייל, תל אביב - יפו ",
+      "startDate": "2026-08-01T00:00:00",
+      "endDate": "2026-11-01T00:00:00",
+      "status": "בתוקף",
+      "ownershipName": "פרטי"
+    },
+    {
+      "instituteCode": "53739",
+      "instituteName": "עיניים אסותא השלום",
+      "instituteTypeName": "מרפאות כירורגיות בקהילה",
+      "cityName": "תל אביב - יפו",
+      "districtName": "תל-אביב",
+      "fullAddress": "אלון יגאל 96, בניין C, תל אביב - יפו ",
+      "startDate": "2026-03-01T00:00:00",
+      "endDate": "2027-08-01T00:00:00",
       "status": "בתוקף",
       "ownershipName": "פרטי"
     }
@@ -148,10 +256,63 @@
     "maxResults": "int",
     "institutionsList": "list"
   },
-  "api_received_records": 1000,
+  "api_total_rows": 2170,
+  "api_effective_page_size": 1000,
+  "api_pages_fetched": [
+    0,
+    1,
+    2
+  ],
+  "api_received_records": 2170,
+  "api_complete": true,
   "api_records_from_current_report_at_least_one": true,
+  "current_facilities_date_status_mismatch": [
+    {
+      "code": "53743",
+      "name": "חדר ניתוח פולג בע\"מ",
+      "endDate": "2026-11-01T00:00:00",
+      "status": "בתוקף"
+    },
+    {
+      "code": "53747",
+      "name": "טי.אל.וי מדיקל סנטר TLV",
+      "endDate": "2026-11-01T00:00:00",
+      "status": "בתוקף"
+    },
+    {
+      "code": "53742",
+      "name": "מרכז רפואי שער העיר",
+      "endDate": "2022-11-01T00:00:00",
+      "status": "בתוקף"
+    },
+    {
+      "code": "53733",
+      "name": "מרפאה כירורגית שוורץ - ארד בע\"מ",
+      "endDate": "2026-11-01T00:00:00",
+      "status": "בתוקף"
+    },
+    {
+      "code": "53744",
+      "name": "מרפאה לכירורגיה קטנה של ד\"ר רם אברהמי",
+      "endDate": "2026-11-01T00:00:00",
+      "status": "בתוקף"
+    },
+    {
+      "code": "53750",
+      "name": "מרפאת ד\"ר דב קליין",
+      "endDate": "2026-07-01T00:00:00",
+      "status": "בתוקף"
+    },
+    {
+      "code": "53713",
+      "name": "מרפאת עין טל",
+      "endDate": "2026-11-01T00:00:00",
+      "status": "בתוקף"
+    }
+  ],
   "pdf_status": 200,
   "pdf_valid": true,
   "pdf_pages": 48,
-  "pdf_sha256": "a8539819a5cb0b7159f5d23afad7684c4eb74b480649230f57f9e06842f9146a"
+  "pdf_sha256": "a8539819a5cb0b7159f5d23afad7684c4eb74b480649230f57f9e06842f9146a",
+  "pdf_table_24_layout": " 2025 רבמצד\n                                                                 הליהקב תויגרוריכ תואפרמב חותינ תודמע :24 חול\n                חותינ תודמע           חותינ תודמע        חותינ תודמע כ\"הס\n               הנטק היגרוריכ        תינוניב היגרוריכ\n                             27                  33                       60                                                       \" כהס\n                              1                    1                       2                                             םילשורי זוחמ\n                                                   1                       1                                     )םייניע( םילשורי רגניול\n                               1                                           1                                            שמש תיב הסדה\n                              3                    8                      11                                                 ןופצ זוחמ\n                               3                   4                       7                                     RMC רטנס לקידמ ןזור\n                                                   4                       4                        תיגרוריכ האפרמ -ןינחס יאופר זכרמ\n                              3                                            3                                                הפיח זוחמ\n                               3                                           3                                         )ןייעמ( הפיח רגניול\n                              1                    1                       2                                                זכרמ זוחמ\n                                                   1                       1                                                  ''מעב ילידמ\n                               1                                           1                                        ''מעב גלופ חותינ רדח\n                             19                  17                       36                                            ביבא-לת זוחמ\n                               4                                           4                                              לט ןיע תאפרמ\n                               4                   5                       9                                     םייאופר םיזכרמ הקידמ\n                                                   4                       4                                      ביבא תמר יאופר זכרמ\n                                                   1                       1                          ''מעב דרא - ץרווש תיגרוריכ האפרמ\n                               2                                           2                                       םולשה אתוסא םייניע\n                               2                   4                       6                                 )םידיתע( לייחה תמר רגניול\n                               1                                           1                                          ןג תמר ריעה רעש\n                               1                                           1               ימהרבא םר ר''ד לש הנטק היגרוריכל האפרמ\n                               2                   3                       5                                  TLV רטנס לקידמ יו       יט.לא.\n                               1                                           1                                       ןיילק בד ר''ד תאפרמ\n                               1                                           1                               לארה סוקרמ ר''ד יאופר זכרמ\n                               1                                           1                                       לזרבה םוי חותינ רדח\n                                                   6                       6                                                םורד זוחמ\n                                                   4                       4                              )םייניע עבש( עבש ראב רגניול\n                                                   2                       2                               דודשא תוינלכ אתוסא תאפרמ\n                                                            - 4 8  -"
 }
