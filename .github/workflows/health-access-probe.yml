@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - 'health/probe.py'
+      - 'health/verify_sources.py'
       - '.github/workflows/health-access-probe.yml'
 
 permissions:
