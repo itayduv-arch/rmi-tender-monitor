@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "checked_at_utc": "2026-11-05T21:59:59.126507+00:00",
+  "checked_at_utc": "2026-11-06T21:30:15.709687+00:00",
   "source_host": "apps.land.gov.il",
   "api_base": "https://apps.land.gov.il/MichrazimSite/api/",
   "status": "ok",
@@ -172,7 +172,7 @@
       "pdf_count_expected": 7,
       "pdf_count_verified": 7,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-11-05T22:02:50.419575+00:00",
+      "browser_checked_at_utc": "2026-11-06T21:33:45.644088+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
@@ -381,7 +381,7 @@
       "pdf_count_expected": 9,
       "pdf_count_verified": 9,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-11-05T22:02:50.419575+00:00",
+      "browser_checked_at_utc": "2026-11-06T21:33:45.644088+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
@@ -573,7 +573,7 @@
       "pdf_count_expected": 8,
       "pdf_count_verified": 8,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-11-05T22:02:50.419575+00:00",
+      "browser_checked_at_utc": "2026-11-06T21:33:45.644088+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
@@ -671,7 +671,7 @@
       "pdf_count_expected": 3,
       "pdf_count_verified": 3,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-11-05T22:02:50.419575+00:00",
+      "browser_checked_at_utc": "2026-11-06T21:33:45.644088+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
@@ -968,17 +968,6 @@
           "PtichaDate": "2024-03-25T14:00:00+02:00"
         },
         {
-          "MichrazID": 20230011,
-          "MichrazName": "11/2023",
-          "Shchuna": "גני אזר",
-          "KodYeshuv": 8600,
-          "KodYeudMichraz": 2,
-          "PirsumDate": "2023-03-02T00:00:00+02:00",
-          "SgiraDate": "2023-08-28T12:00:00+03:00",
-          "PublishedChoveret": true,
-          "PtichaDate": "2023-06-07T00:00:00+03:00"
-        },
-        {
           "MichrazID": 20230049,
           "MichrazName": "49/2023",
           "Shchuna": "גני אז\"ר",
@@ -1010,6 +999,17 @@
           "SgiraDate": "2023-09-13T12:00:00+03:00",
           "PublishedChoveret": true,
           "PtichaDate": "2023-06-01T00:00:00+03:00"
+        },
+        {
+          "MichrazID": 20230011,
+          "MichrazName": "11/2023",
+          "Shchuna": "גני אזר",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2023-03-02T00:00:00+02:00",
+          "SgiraDate": "2023-08-28T12:00:00+03:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2023-06-07T00:00:00+03:00"
         }
       ]
     },
@@ -1180,17 +1180,6 @@
           "PtichaDate": "2015-11-30T00:00:00+02:00"
         },
         {
-          "MichrazID": 20150026,
-          "MichrazName": "26/2015",
-          "Shchuna": " ",
-          "KodYeshuv": 8600,
-          "KodYeudMichraz": 1,
-          "PirsumDate": "2015-01-29T00:00:00+02:00",
-          "SgiraDate": "2015-06-29T12:00:00+03:00",
-          "PublishedChoveret": true,
-          "PtichaDate": "2015-03-30T00:00:00+03:00"
-        },
-        {
           "MichrazID": 20150027,
           "MichrazName": "27/2015",
           "Shchuna": " ",
@@ -1202,15 +1191,15 @@
           "PtichaDate": "2015-03-30T00:00:00+03:00"
         },
         {
-          "MichrazID": 20140245,
-          "MichrazName": "245/2014",
-          "Shchuna": " הצנחנים לנכים",
+          "MichrazID": 20150026,
+          "MichrazName": "26/2015",
+          "Shchuna": " ",
           "KodYeshuv": 8600,
           "KodYeudMichraz": 1,
-          "PirsumDate": "2014-08-06T00:00:00+03:00",
-          "SgiraDate": "2014-12-15T12:00:00+02:00",
+          "PirsumDate": "2015-01-29T00:00:00+02:00",
+          "SgiraDate": "2015-06-29T12:00:00+03:00",
           "PublishedChoveret": true,
-          "PtichaDate": "2014-10-06T00:00:00+03:00"
+          "PtichaDate": "2015-03-30T00:00:00+03:00"
         },
         {
           "MichrazID": 20140246,
@@ -1222,6 +1211,17 @@
           "SgiraDate": "2014-12-15T12:00:00+02:00",
           "PublishedChoveret": true,
           "PtichaDate": "2014-09-29T00:00:00+03:00"
+        },
+        {
+          "MichrazID": 20140245,
+          "MichrazName": "245/2014",
+          "Shchuna": " הצנחנים לנכים",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2014-08-06T00:00:00+03:00",
+          "SgiraDate": "2014-12-15T12:00:00+02:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2014-10-06T00:00:00+03:00"
         },
         {
           "MichrazID": 20140247,
