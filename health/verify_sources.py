@@ -30,7 +30,20 @@ try:
  d['api_return_keys']=list(ret.keys())[:30] if isinstance(ret,dict) else []
  d['api_return_types']={k:type(v).__name__ for k,v in ret.items()} if isinstance(ret,dict) else {}
  data=[];collect(obj,data)
+ total=int(ret.get('totalRows',len(data))) if isinstance(ret,dict) else len(data)
+ page_size=int(ret.get('maxResults',len(data))) if isinstance(ret,dict) else len(data)
+ d['api_total_rows']=total;d['api_effective_page_size']=page_size
+ d['api_pages_fetched']=[0]
+ if 0<len(data)<total and page_size>0:
+  for page in range(1,min(10, (total+page_size-1)//page_size)):
+   p=s.post(url,json={'maxResult':5000,'pageNumber':page},timeout=70)
+   p.raise_for_status()
+   chunk=[];collect(p.json(),chunk)
+   d['api_pages_fetched'].append(page)
+   data.extend(chunk)
+   if len(data)>=total or not chunk:break
  d['api_received_records']=len(data)
+ d['api_complete']=(len(data)>=total)
  filtered=[]
  for a in data:
   t=a.get('instituteTypeName','')
@@ -39,6 +52,7 @@ try:
    filtered.append({k:a.get(k) for k in ('instituteCode','instituteName','instituteTypeName','cityName','districtName','fullAddress','startDate','endDate','status','ownershipName')})
  d['current_facilities']=filtered
  d['api_records_from_current_report_at_least_one']=len(filtered)>0
+ d['current_facilities_date_status_mismatch']=[{'code':x['instituteCode'],'name':x['instituteName'],'endDate':x['endDate'],'status':x['status']} for x in filtered if x.get('endDate') and x.get('endDate','')[:10] < d['checked_at_utc'][:10] and x.get('status')=='בתוקף']
  if len(data)<100:d['notes'].append('Registry may be paginated; low record count needs pagination validation before coverage claim')
 except Exception as e:d['api_error']=type(e).__name__+': '+str(e)[:400]
 
@@ -50,6 +64,8 @@ try:
   pdf=PdfReader(io.BytesIO(r.content))
   d['pdf_pages']=len(pdf.pages)
   d['pdf_sha256']=hashlib.sha256(r.content).hexdigest()
+  if len(pdf.pages)>=48:
+   d['pdf_table_24_layout']=pdf.pages[47].extract_text(extraction_mode='layout',layout_mode_space_vertically=False)[:13000]
   for i,page in enumerate(pdf.pages):
    t=page.extract_text() or ''
    cues=[w for w in ('כירורגיה בינונית','מרפאות כירורגיות','מדילי','שוורץ','מדיקה','לונגר','רמת אביב','ט.א.י') if w in t]
