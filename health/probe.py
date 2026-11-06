@@ -11,6 +11,8 @@ URLS={
  'registries_home':'https://registries.health.gov.il/Institutions',
  'gov_2025_page':'https://www.gov.il/he/pages/licensed-inpatient-hospital-beds-dec-2025',
  'gov_2024_pdf':'https://www.gov.il/BlobFolder/reports/licensed-inpatient-hospital-beds/he/files_publications_units_info_beds2024_dec2024.pdf',
+ 'gov_2025_pdf_candidate_1':'https://www.gov.il/BlobFolder/reports/licensed-inpatient-hospital-beds-dec-2025/he/files_publications_units_info_beds2025_dec2025.pdf',
+ 'gov_2025_pdf_candidate_2':'https://www.gov.il/BlobFolder/reports/licensed-inpatient-hospital-beds/he/files_publications_units_info_beds2025_dec2025.pdf',
  'medika_pdf':'https://www.gov.il/BlobFolder/dynamiccollectorresultitem/medika-18092024/he/files_publications_units_general_medicine_medika-18092024.pdf',
  'inspections':'https://www.gov.il/he/departments/dynamiccollectors/inspections-db',
  'tender_portal':'https://mr.gov.il/ilgstorefront/he/search?s=TENDER',
@@ -58,6 +60,36 @@ try:
     u=r.url
     if len(events)<35 and any(h in urlparse(u).netloc for h in ('health.gov.il','gov.il')) and any(w in u.lower() for w in ('api/','search','get','graphql')):
      events.append({'status':r.status,'url':u.split('?')[0][:250],'type':r.headers.get('content-type','')[:100]})
+    if '/api/Institutions/GetInstitutions' in u and r.status==200:
+     try:
+      obj=r.json()
+      d['institutions_api_method']=r.request.method
+      d['institutions_api_request_data']=(r.request.post_data or '')[:1200]
+      d['institutions_api_top_type']=type(obj).__name__
+      d['institutions_api_top_keys']=list(obj.keys())[:25] if isinstance(obj,dict) else []
+      if isinstance(obj,dict):
+       d['institutions_api_top_fields']={k:(len(v) if isinstance(v,list) else type(v).__name__) for k,v in obj.items()}
+      matched=[];seen=set();counts={'dicts_examined':0,'lists_examined':0}
+      def walk(o,depth=0):
+       if depth>7 or len(matched)>=30:return
+       if isinstance(o,list):
+        counts['lists_examined']+=1
+        for item in o[:2500]:walk(item,depth+1)
+       elif isinstance(o,dict):
+        counts['dicts_examined']+=1
+        strs=' '.join(str(v) for v in o.values() if isinstance(v,(str,int,float)))
+        if any(w in strs for w in ('כירורג','מדילי','מדיקה','שוורץ','לונגר','רמת אביב','TLV')):
+         s=json.dumps(o,ensure_ascii=False)
+         key=s[:300]
+         if key not in seen:
+          seen.add(key);matched.append(s[:1300])
+        else:
+         for v in o.values():
+          if isinstance(v,(list,dict)):walk(v,depth+1)
+      walk(obj)
+      d['institutions_api_sample_matches']=matched
+      d['institutions_api_traversal']=counts
+     except Exception as e:d['institutions_api_parse_error']=str(e)[:200]
    page.on('response',handle_response)
    try:
     resp=page.goto(url,wait_until='domcontentloaded',timeout=45000)
