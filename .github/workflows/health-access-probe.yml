@@ -11,6 +11,7 @@ on:
       - 'health/verify_sources.py'
       - 'health/extra_checks.py'
       - 'health/official_feeds.py'
+      - 'health/registry_detail_probe.py'
       - '.github/workflows/health-access-probe.yml'
 
 permissions:
@@ -41,6 +42,8 @@ jobs:
         run: python health/verify_sources.py
       - name: Verify alternate official sources and procurement search results
         run: python health/extra_checks.py
+      - name: Inspect registry facility detail views for certificate-level evidence
+        run: python health/registry_detail_probe.py
       - name: Test official MOH publication RSS and open-data discovery
         run: python health/official_feeds.py
       - name: Save public source status without altering RMI data
@@ -49,7 +52,7 @@ jobs:
           if [ -f health/state/latest.json ]; then
             git config user.name "health-source-monitor-bot"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add health/state/latest.json health/state/facilities.json health/state/source_checks.json health/state/official_feeds.json
+            git add health/state/latest.json health/state/facilities.json health/state/source_checks.json health/state/official_feeds.json health/state/registry_details.json
             if ! git diff --cached --quiet; then
               git commit -m "chore: record Ministry of Health public access check [skip ci]"
               git pull --rebase -X ours origin main
