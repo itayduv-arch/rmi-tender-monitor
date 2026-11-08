@@ -44,7 +44,7 @@ for key, url in DOCS.items():
             d["pages"] = len(pdf.pages)
             snippets = []
             for i, page in enumerate(pdf.pages):
-                t = re.sub(r"\\s+", " ", page.extract_text() or "")
+                t = re.sub(r"\s+", " ", page.extract_text() or "")
                 for phrase in ("הרדמה כללית", "מרדים", "חדרי ניתוח", "כירורגיה בינונית"):
                     at = t.find(phrase)
                     if at >= 0 and len(snippets) < 6:
