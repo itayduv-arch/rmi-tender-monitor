@@ -1,0 +1,211 @@
+{
+  "checked_at_utc": "2026-11-08T08:22:05.098701+00:00",
+  "source": "official Ministry of Health institutions web interface",
+  "candidates": [
+    {
+      "instituteCode": "53708",
+      "name_query": "מדילי",
+      "detail_readable": false,
+      "licence_certificate_attached": false,
+      "list_status": 200,
+      "name_search_available": false,
+      "official_api_endpoints_observed": [
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Registries/GetAllRegistries"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Registries/GetAllSubMenus"
+        }
+      ]
+    },
+    {
+      "instituteCode": "53747",
+      "name_query": "טי.אל.וי",
+      "detail_readable": false,
+      "licence_certificate_attached": false,
+      "list_status": 200,
+      "name_search_available": false,
+      "official_api_endpoints_observed": [
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Registries/GetAllSubMenus"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Registries/GetAllSubMenus"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Registries/GetAllRegistries"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Registries/GetAllRegistries"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Registries/GetAllSubMenus"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Registries/GetAllSubMenus"
+        }
+      ]
+    },
+    {
+      "instituteCode": "53733",
+      "name_query": "שוורץ",
+      "detail_readable": false,
+      "licence_certificate_attached": false,
+      "list_status": 200,
+      "name_search_available": true,
+      "search_button_count": 0,
+      "search_results_excerpt": "חזור למאגרי מידע\nמאגרי מידע של משרד הבריאות\nחיפוש\nסינון לפי:\nנקה סינון\nסוג מוסד\nמספר רישום מוסד\nמחלקה\nמחוז\nישוב\nישוב\nבעלות\nחיפוש מוסדות\nהשוואת מוסדות גריאטריים\n מוסדות\nהורד רשימה זו\nנמצאו 2,170 תוצאות\nמעודכן לתאריך: 08/11/2026\nרישוי מוסדות רפואיים מתבצע באגף לרישוי מוסדות ומכשירים רפואיים מיוחדים במשרד הבריאות. בהתאם לפקודת העם 1940 והתקנות הנובעות מהחוק, חלה חובת רישוי של מוסדות ומכשירים רפואיים.\nשם\nסוג מוסד\nישוב\nAID Genomics\nמספר רישום מוסד: 4170Q\nמעבדות/מכונים\nרחובות\nAID Labs - מעבדה לבדיקת נגיף קורונה\nמספר רישום מוסד: 4170W\nמעבדות/מכונים\nירושלים\nAmerican Medical Laboratories\nמספר רישום מוסד: 41770\nמעבדות/מכונים\nהרצליה\nCHOICE\nמספר רישום מוסד: 37623\nמוסדות לטיפול במשתמשים בסמים\nבני ברק\nDiamond clinic\nמספר רישום מוסד: 55717Z\nמרפאות שיניים של תאגידים\nראשון לציון\nDMC המרכז לטיפולי שיניים בע\"מ\nמספר רישום מוסד: 557RB\nמרפאות שיניים של תאגידים\nעכו\nDR.SPORT\nמספר רישום מוסד: 577F8\nתחנות לרפואת ספורט\nכפר קרע\nEDS CLINIC המרפאה ד\"ר רמי בלבנובסקי\nמספר רישום מוסד: 557SX\nמרפאות שיניים של תאגידים\nתל אביב - יפו\nGGA - גליל ג'נטיקס אנליסיס בע\"מ\nמספר רישום מוסד: 41773\nמעבדות/מכונים\nאשדוד\nHIV\nמספר רישום מוסד: 4114M\nמעבדות/מכונים\nחולון\nIVF\nמספר רישום מוסד: 4112Y\nמעבדות/מכונים\nרמת גן\nIVF\nמספר רישום מוסד: 4130M\nמעבדות/מכונים\nעפולה\nIVF\nמספר רישום מוסד: 4132A\nמעבדות/מכונים\nרחובות\nIVF\nמספר רישום מוסד: 41755\nמעבדות/מכונים\nראשון לציון\nIVF\nמספר רישום מוסד: 41793\nמעבדות/מכונים\nתל אביב - יפו\nIVF - היחידה לפ",
+      "name_visible": true,
+      "reported_result_count": "2,170",
+      "more_info_buttons": 0,
+      "official_api_endpoints_observed": [
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Registries/GetAllRegistries"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Registries/GetAllRegistries"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Registries/GetAllRegistries"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Registries/GetAllSubMenus"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Registries/GetAllSubMenus"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Registries/GetAllSubMenus"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Registries/GetAllSubMenus"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Registries/GetAllSubMenus"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Registries/GetAllSubMenus"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstituteTypes"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstituteTypes"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstituteTypes"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstitutesNamesAndCodes"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstitutesNamesAndCodes"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstitutesNamesAndCodes"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetDistricts"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetDistricts"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetDistricts"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetDepartments"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetDepartments"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetDepartments"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetOwnerships"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetOwnerships"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetOwnerships"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetCities"
+        }
+      ]
+    }
+  ],
+  "current_certificate_verified": false,
+  "general_anaesthesia_verified": false,
+  "notes": [
+    "A readable record does not prove current intermediate-surgery class, anaesthesia authorisation or sale status."
+  ]
+}

@@ -178,12 +178,12 @@
         },
         {
           "status": 200,
-          "url": "https://registries.health.gov.il/api/Institutions/GetCities",
+          "url": "https://registries.health.gov.il/api/Institutions/GetInstitutesNamesAndCodes",
           "type": "application/json; charset=utf-8"
         },
         {
           "status": 200,
-          "url": "https://registries.health.gov.il/api/Institutions/GetInstitutesNamesAndCodes",
+          "url": "https://registries.health.gov.il/api/Institutions/GetCities",
           "type": "application/json; charset=utf-8"
         },
         {
