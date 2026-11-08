@@ -71,15 +71,33 @@ def digest(obj: object) -> str:
     return hashlib.sha256(json.dumps(obj, ensure_ascii=False, sort_keys=True, default=str).encode("utf-8")).hexdigest()
 
 def official_request(session: requests.Session, method: str, url: str, **kwargs) -> requests.Response:
+    """Read-only RMI endpoint with bounded retries for transient access failures.
+
+    Keep identity, host and redirect checks on every attempt. HTTP 401/403 or
+    non-RMI redirects are never retried or bypassed.
+    """
     if urlparse(url).hostname != "apps.land.gov.il":
         raise ValueError("Refusing non-RMI URL")
-    response = session.request(method, url, timeout=REQUEST_TIMEOUT, allow_redirects=False, **kwargs)
-    if response.is_redirect or response.is_permanent_redirect:
-        raise RuntimeError("Official RMI API unexpectedly redirected")
-    if urlparse(response.url).hostname != "apps.land.gov.il":
-        raise RuntimeError("Response URL was not on apps.land.gov.il")
-    response.raise_for_status()
-    return response
+    for attempt in range(3):
+        try:
+            response = session.request(method, url, timeout=REQUEST_TIMEOUT,
+                                       allow_redirects=False, **kwargs)
+        except (requests.Timeout, requests.ConnectionError):
+            if attempt == 2:
+                raise
+            time.sleep(attempt + 1)
+            continue
+        if response.is_redirect or response.is_permanent_redirect:
+            raise RuntimeError("Official RMI API unexpectedly redirected")
+        if urlparse(response.url).hostname != "apps.land.gov.il":
+            raise RuntimeError("Response URL was not on apps.land.gov.il")
+        if response.status_code in (429, 500, 502, 503, 504) and attempt < 2:
+            response.close()
+            time.sleep(attempt + 1)
+            continue
+        response.raise_for_status()
+        return response
+    raise RuntimeError("RMI request retries exhausted")
 
 def parse_api(r: requests.Response) -> object:
     v = r.json()
