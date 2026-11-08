@@ -37,7 +37,7 @@ try:
      body=page.locator('body').inner_text(timeout=16000)
      rec['search_results_excerpt']=body[:1400]
      rec['name_visible']=name in body
-     m=re.search(r'נמצאו\\s*([0-9,]+)\\s*תוצאות',body)
+     m=re.search(r'נמצאו\s*([0-9,]+)\s*תוצאות',body)
      if m:rec['reported_result_count']=m.group(1)
      btn=page.get_by_role('button',name='למידע נוסף',exact=True)
      rec['more_info_buttons']=btn.count()
