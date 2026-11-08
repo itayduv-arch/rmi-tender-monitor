@@ -21,18 +21,33 @@ try:
    page.on('response',watch)
    try:
     resp=page.goto('https://registries.health.gov.il/Institutions/Institutions/1',wait_until='domcontentloaded',timeout=45000)
-    page.wait_for_timeout(3000)
+    page.wait_for_selector('input[placeholder="הזן שם מוסד"]',state='visible',timeout=28000)
     rec['list_status']=resp.status if resp else None
     field=page.locator('input[placeholder="הזן שם מוסד"]')
     rec['name_search_available']=field.count()>0
     if field.count():
      field.first.fill(name)
+     page.wait_for_timeout(1000)
+     rec['search_input_parent_html']=field.first.evaluate('(e)=>e.parentElement?.outerHTML.slice(0,2600)')
+     opts=page.get_by_role('option')
+     rec['suggestions']=opts.all_inner_texts()[:12]
+     if opts.count():
+      matches=opts.filter(has_text=name)
+      if matches.count():
+       matches.first.click()
+       page.wait_for_timeout(700)
      buttons=page.get_by_role('button',name='חיפוש',exact=True)
      rec['search_button_count']=buttons.count()
      if buttons.count()>0:
       buttons.last.click()
      else:
       field.first.press('Enter')
+      # The form may apply only on this explicit search action; keep evidence of what was clicked.
+      search_label=page.get_by_text('חיפוש מוסדות',exact=True)
+      rec['search_label_count']=search_label.count()
+      if search_label.count()==1:
+       try:search_label.click(timeout=4500)
+       except Exception as e:rec['search_label_click_error']=str(e)[:170]
      page.wait_for_timeout(2600)
      body=page.locator('body').inner_text(timeout=16000)
      rec['search_results_excerpt']=body[:1400]
