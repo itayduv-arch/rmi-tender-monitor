@@ -1,0 +1,62 @@
+{
+  "checked_at_utc": "2026-11-08T08:19:46.198685+00:00",
+  "feeds": {
+    "moh_publications": {
+      "url": "https://www.gov.il/he/api/PublicationApi/rss/104cb0f4-d65a-4692-b590-94af928c19c0",
+      "official_origin": true,
+      "feed_parsed": false,
+      "matching_items": [],
+      "status": 403,
+      "content_type": "text/html; charset=UTF-8"
+    }
+  },
+  "open_data": {
+    "endpoint": "https://data.gov.il/api/3/action/package_search",
+    "status": 200,
+    "success": true,
+    "candidate_datasets": [
+      {
+        "id": "d3c80c46-9d99-41a9-8b62-50b590011a60",
+        "name": "goverment-domesticdebt",
+        "title": "נתוני החוב הממשלתי המקומי",
+        "modified": "2026-11-08T05:00:54.186264"
+      },
+      {
+        "id": "f4a5cdab-82b2-48ad-9d95-424a035cfed8",
+        "name": "tender-br7",
+        "title": "מכרזים בעיר באר שבע",
+        "modified": "2026-11-08T01:14:47.224317"
+      },
+      {
+        "id": "01fa89cc-8e1f-4c96-919e-91d28d1c0d42",
+        "name": "ogdan-education",
+        "title": "אוגדן השכלות  - לצורך בדיקת תנאי סף השכלה במכרזי כ\"א בשירות המדינה",
+        "modified": "2026-08-09T06:54:03.849833"
+      },
+      {
+        "id": "81f981ad-bba3-4d99-ada4-a7a1c2a38eb0",
+        "name": "aluyot-pituach",
+        "title": "עלויות פיתוח בבניה העירונית",
+        "modified": "2026-08-01T00:05:17.480827"
+      },
+      {
+        "id": "5c02b77d-9295-4d4d-91c8-7e06e18e1a5d",
+        "name": "exemptions",
+        "title": "דוח התקשרויות בפטור והליכים תחרותיים",
+        "modified": "2023-03-21T18:32:47.687636"
+      },
+      {
+        "id": "af67fe35-6a80-418f-8de2-eb5b1c588a30",
+        "name": "tenders",
+        "title": "דוח מכרזים",
+        "modified": "2023-03-21T18:32:47.687636"
+      }
+    ]
+  },
+  "coverage_complete": false,
+  "actionable_notices_verified": [],
+  "notes": [
+    "RSS and open-data metadata are discovery channels, not substitutes for signed current licence or tender submission documents."
+  ],
+  "discovery_candidates": []
+}
