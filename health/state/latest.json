@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-08T08:22:58.614929+00:00",
+  "checked_at_utc": "2026-11-08T10:46:22.565050+00:00",
   "source": "github-actions-ubuntu-24.04-read-only",
   "http": {
     "institutions": {
@@ -29,7 +29,7 @@
       "status": 403,
       "final_url": "https://www.gov.il/he/pages/licensed-inpatient-hospital-beds-dec-2025",
       "content_type": "text/html; charset=UTF-8",
-      "bytes_read": 5774,
+      "bytes_read": 5795,
       "is_pdf": false,
       "html_title": "Just a moment...",
       "has_pdf_link": false,
@@ -98,9 +98,9 @@
       "status": 200,
       "final_url": "https://mr.gov.il/ilgstorefront/he/search?s=TENDER",
       "content_type": "text/html;charset=UTF-8",
-      "bytes_read": 696084,
+      "bytes_read": 696373,
       "is_pdf": false,
-      "html_title": "תוצאות חיפוש | נמצאו 22263 תוצאות עבור ערך במכרזים",
+      "html_title": "תוצאות חיפוש | נמצאו 22264 תוצאות עבור ערך במכרזים",
       "has_pdf_link": false,
       "has_medili": false
     }
@@ -163,11 +163,6 @@
       "api_requests": [
         {
           "status": 200,
-          "url": "https://registries.health.gov.il/api/Registries/GetAllSubMenus",
-          "type": "application/json; charset=utf-8"
-        },
-        {
-          "status": 200,
           "url": "https://registries.health.gov.il/api/Registries/GetAllRegistries",
           "type": "application/json; charset=utf-8"
         },
@@ -178,47 +173,27 @@
         },
         {
           "status": 200,
+          "url": "https://registries.health.gov.il/api/Registries/GetAllSubMenus",
+          "type": "application/json; charset=utf-8"
+        },
+        {
+          "status": 200,
+          "url": "https://registries.health.gov.il/api/Institutions/GetOwnerships",
+          "type": "application/json; charset=utf-8"
+        },
+        {
+          "status": 200,
+          "url": "https://registries.health.gov.il/api/Institutions/GetDistricts",
+          "type": "application/json; charset=utf-8"
+        },
+        {
+          "status": 200,
+          "url": "https://registries.health.gov.il/api/Institutions/GetDepartments",
+          "type": "application/json; charset=utf-8"
+        },
+        {
+          "status": 200,
           "url": "https://registries.health.gov.il/api/Institutions/GetInstituteTypes",
-          "type": "application/json; charset=utf-8"
-        },
-        {
-          "status": 200,
-          "url": "https://registries.health.gov.il/api/Institutions/GetDepartments",
-          "type": "application/json; charset=utf-8"
-        },
-        {
-          "status": 200,
-          "url": "https://registries.health.gov.il/api/Institutions/GetOwnerships",
-          "type": "application/json; charset=utf-8"
-        },
-        {
-          "status": 200,
-          "url": "https://registries.health.gov.il/api/Institutions/GetDistricts",
-          "type": "application/json; charset=utf-8"
-        },
-        {
-          "status": 200,
-          "url": "https://registries.health.gov.il/api/Institutions/GetInstitutesNamesAndCodes",
-          "type": "application/json; charset=utf-8"
-        },
-        {
-          "status": 200,
-          "url": "https://registries.health.gov.il/api/Institutions/GetCities",
-          "type": "application/json; charset=utf-8"
-        },
-        {
-          "status": 200,
-          "url": "https://registries.health.gov.il/api/Institutions/GetOwnerships",
-          "type": "application/json; charset=utf-8"
-        },
-        {
-          "status": 200,
-          "url": "https://registries.health.gov.il/api/Institutions/GetDepartments",
-          "type": "application/json; charset=utf-8"
-        },
-        {
-          "status": 200,
-          "url": "https://registries.health.gov.il/api/Institutions/GetDistricts",
           "type": "application/json; charset=utf-8"
         },
         {
@@ -243,7 +218,7 @@
       "browser_document_status": 403,
       "page_url": "https://www.gov.il/he/departments/dynamiccollectors/inspections-db",
       "body_text_length": 687,
-      "body_excerpt": "Sorry, you have been blocked\nYou are unable to access www.gov.il\nWhy have I been blocked?\n\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\n\nWhat can I do to resolve this?\n\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\n\nCloudflare Ray ID: a5732ce9bcbb0dda • Your IP: Click to reveal • Performance & security by Cloudflare",
+      "body_excerpt": "Sorry, you have been blocked\nYou are unable to access www.gov.il\nWhy have I been blocked?\n\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\n\nWhat can I do to resolve this?\n\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\n\nCloudflare Ray ID: a573ff11bb290dd9 • Your IP: Click to reveal • Performance & security by Cloudflare",
       "input_placeholders": [],
       "buttons": [
         "Click to reveal"
@@ -255,7 +230,7 @@
       "browser_document_status": 403,
       "page_url": "https://www.gov.il/he/pages/licensed-inpatient-hospital-beds-dec-2025",
       "body_text_length": 687,
-      "body_excerpt": "Sorry, you have been blocked\nYou are unable to access www.gov.il\nWhy have I been blocked?\n\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\n\nWhat can I do to resolve this?\n\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\n\nCloudflare Ray ID: a5732d19396e0dda • Your IP: Click to reveal • Performance & security by Cloudflare",
+      "body_excerpt": "Sorry, you have been blocked\nYou are unable to access www.gov.il\nWhy have I been blocked?\n\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\n\nWhat can I do to resolve this?\n\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\n\nCloudflare Ray ID: a573ff414e310dd9 • Your IP: Click to reveal • Performance & security by Cloudflare",
       "input_placeholders": [],
       "buttons": [
         "Click to reveal"
