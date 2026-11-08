@@ -9,6 +9,7 @@ on:
     paths:
       - 'health/probe.py'
       - 'health/verify_sources.py'
+      - 'health/extra_checks.py'
       - '.github/workflows/health-access-probe.yml'
 
 permissions:
@@ -37,13 +38,15 @@ jobs:
         run: python health/probe.py
       - name: Cross-check live facility licences with 2025 ministry report
         run: python health/verify_sources.py
+      - name: Verify alternate official sources and procurement search results
+        run: python health/extra_checks.py
       - name: Save public source status without altering RMI data
         if: always()
         run: |
           if [ -f health/state/latest.json ]; then
             git config user.name "health-source-monitor-bot"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add health/state/latest.json health/state/facilities.json
+            git add health/state/latest.json health/state/facilities.json health/state/source_checks.json
             if ! git diff --cached --quiet; then
               git commit -m "chore: record Ministry of Health public access check [skip ci]"
               git pull --rebase -X ours origin main
