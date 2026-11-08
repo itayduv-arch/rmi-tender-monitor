@@ -100,7 +100,7 @@ try:
         out["mr_portal"]["listing_http_status"] = response.status if response else None
         out["mr_portal"]["listing_title"] = initial[:250]
         out["mr_portal"]["searches"] = []
-        for term in ["כירורגיה בינונית", "אישור הקמה מרפאה כירורגית"]:
+        for term in ["כירורגיה בינונית", "הקצאת עמדות ניתוח", "מרפאות כירורגיות", "ועדת הקצאה", "אישור הקמה מרפאה כירורגית"]:
             rec = {"term": term, "query_verified": False}
             try:
                 page.goto("https://mr.gov.il/ilgstorefront/he/search?s=TENDER", wait_until="domcontentloaded", timeout=40000)
