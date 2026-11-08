@@ -178,7 +178,17 @@
         },
         {
           "status": 200,
-          "url": "https://registries.health.gov.il/api/Registries/GetAllSubMenus",
+          "url": "https://registries.health.gov.il/api/Institutions/GetInstituteTypes",
+          "type": "application/json; charset=utf-8"
+        },
+        {
+          "status": 200,
+          "url": "https://registries.health.gov.il/api/Institutions/GetDepartments",
+          "type": "application/json; charset=utf-8"
+        },
+        {
+          "status": 200,
+          "url": "https://registries.health.gov.il/api/Institutions/GetOwnerships",
           "type": "application/json; charset=utf-8"
         },
         {
