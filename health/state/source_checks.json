@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-09T12:08:04.041223+00:00",
+  "checked_at_utc": "2026-11-10T11:46:11.589207+00:00",
   "classification": "access-and-evidence-diagnostics-not-current-licence-proof",
   "direct_official_documents": {
     "projects_procedure_2025": {
@@ -225,7 +225,7 @@
   },
   "mr_portal": {
     "listing_http_status": 200,
-    "listing_title": "תוצאות חיפוש | נמצאו 22271 תוצאות עבור ערך במכרזים",
+    "listing_title": "תוצאות חיפוש | נמצאו 22277 תוצאות עבור ערך במכרזים",
     "searches": [
       {
         "term": "כירורגיה בינונית",
@@ -740,7 +740,7 @@
     "Historical inspections do not confirm current general-anaesthesia activity or authorisation."
   ],
   "registry_api_complete": true,
-  "registry_snapshot_at_utc": "2026-11-09T12:07:54.199702+00:00",
+  "registry_snapshot_at_utc": "2026-11-10T11:46:04.015194+00:00",
   "report2025_available": true,
   "registry_snapshot_recent_48h": true
 }

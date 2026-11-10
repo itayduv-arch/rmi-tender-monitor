@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-09T12:09:51.843915+00:00",
+  "checked_at_utc": "2026-11-10T11:48:06.237446+00:00",
   "feeds": {
     "moh_publications": {
       "url": "https://www.gov.il/he/api/PublicationApi/rss/104cb0f4-d65a-4692-b590-94af928c19c0",
@@ -16,16 +16,16 @@
     "success": true,
     "candidate_datasets": [
       {
+        "id": "d3c80c46-9d99-41a9-8b62-50b590011a60",
+        "name": "goverment-domesticdebt",
+        "title": "נתוני החוב הממשלתי המקומי",
+        "modified": "2026-11-10T05:00:59.062847"
+      },
+      {
         "id": "01fa89cc-8e1f-4c96-919e-91d28d1c0d42",
         "name": "ogdan-education",
         "title": "אוגדן השכלות  - לצורך בדיקת תנאי סף השכלה במכרזי כ\"א בשירות המדינה",
         "modified": "2026-11-09T12:09:48.989268"
-      },
-      {
-        "id": "d3c80c46-9d99-41a9-8b62-50b590011a60",
-        "name": "goverment-domesticdebt",
-        "title": "נתוני החוב הממשלתי המקומי",
-        "modified": "2026-11-09T05:00:54.450702"
       },
       {
         "id": "f4a5cdab-82b2-48ad-9d95-424a035cfed8",
