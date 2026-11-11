@@ -1,0 +1,28 @@
+{
+  "checked_at_utc": "2026-11-11T10:42:01.114147+00:00",
+  "index_url": "https://mr.gov.il/ilgstorefront/he/news/details/230920201036",
+  "procurement_data_current": false,
+  "allocation_publications_full_coverage": false,
+  "retrieval_verified": false,
+  "rows_parsed": 0,
+  "candidate_rows": [],
+  "files": [
+    {
+      "name": "פלט מכרזים_B.xls",
+      "bytes": 36364746,
+      "error": "XLRDError: Unsupported format, or corrupt file: Expected BOF record; found b'\\xef\\xbb\\xbf<?xml'"
+    }
+  ],
+  "limitations": [
+    "Monthly procurement listings do not necessarily contain allocation committee publications on gov.il.",
+    "Text matches are leads only: an original signed tender PDF and eligibility/location/deadline must be verified independently."
+  ],
+  "index_status": 200,
+  "candidate_archive_links_found": 1,
+  "archive_url": "https://mr.gov.il/ilgstorefront/medias/Tenders-01112026.zip?context=bWFzdGVyfHJvb3R8MjM5NzQxMXxhcHBsaWNhdGlvbi96aXB8aGYxL2g5YS85NDMyNzcxMTMzNDcwLnppcHxlMTA1NmYzODFjYmJmNzhhYTZhNDRjYWM3OGE3NDc5YjhiZjA4NzhmNDI4NWY3NWE4YmFkYjhiYzkyMDEzMmJm",
+  "report_stamp": "01112026",
+  "archive_http_status": 200,
+  "archive_content_type": "application/zip;charset=UTF-8",
+  "archive_sha256": "94a61d607cccbbda7a50627087df4ef422cd99e6383f6aec15de9856cd3c2ba3",
+  "candidate_count": 0
+}
