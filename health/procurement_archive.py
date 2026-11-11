@@ -91,7 +91,11 @@ try:
                     # Excel 2003 XML SpreadsheetML is often named .xls; xlrd cannot open it.
                     item["format"]="SpreadsheetML XML 2003"
                     n=0
-                    source=io.BytesIO(data)
+                    # Some government SpreadsheetML exports contain a UTF-8 BOM while declaring another encoding.
+                    # Decode according to the actual BOM, remove only the inconsistent XML declaration.
+                    decoded=data.decode("utf-8-sig")
+                    decoded=re.sub(r'^\\s*<\\?xml[^>]*\\?>', '', decoded, count=1)
+                    source=io.StringIO(decoded)
                     for event,elem in ET.iterparse(source,events=("end",)):
                         if elem.tag.split("}")[-1]=="Row":
                             n+=1
