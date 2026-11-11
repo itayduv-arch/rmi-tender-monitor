@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-10T21:49:58.189448+00:00",
+  "checked_at_utc": "2026-11-11T22:43:28.537476+00:00",
   "source_host": "apps.land.gov.il",
   "status": "ok",
   "tenders": {
@@ -1190,6 +1190,15 @@
             "FileType": "application/pdf"
           },
           {
+            "RowID": 2,
+            "DocName": "הוצאות פיתוח.pdf",
+            "Teur": "הוצאות פיתוח",
+            "UpdateDate": "2026-11-11T12:09:07.78+02:00",
+            "PirsumType": 2,
+            "MahutMismachID": 0,
+            "FileType": "application/pdf"
+          },
+          {
             "RowID": 134712,
             "DocName": "פרסום דחיית מועדים.pdf",
             "Teur": "פרסום דחיית מועדים",
@@ -1208,15 +1217,15 @@
             "FileType": "application/pdf"
           }
         ],
-        "document_count": 3,
+        "document_count": 4,
         "MichrazFullDocument": {
           "MichrazID": 20260099,
-          "Size": 300805,
+          "Size": 301988,
           "FileType": "application/pdf",
           "RowID": -1,
           "Teur": "מסמך הפרסום המלא",
           "DocName": "מסמך הפרסום המלא.pdf",
-          "UpdateDate": "2026-10-04T17:24:26.997+03:00",
+          "UpdateDate": "2026-11-11T12:09:14.933+02:00",
           "Url": null,
           "MahutMismachID": 0,
           "PirsumType": 2
