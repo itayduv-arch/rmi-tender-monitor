@@ -10,6 +10,7 @@ on:
       - 'health/probe.py'
       - 'health/verify_sources.py'
       - 'health/extra_checks.py'
+      - 'health/procurement_archive.py'
       - 'health/official_feeds.py'
       - 'health/registry_detail_probe.py'
       - '.github/workflows/health-access-probe.yml'
@@ -34,7 +35,7 @@ jobs:
           python-version: '3.12'
       - name: Install read-only client and browser
         run: |
-          python -m pip install requests==2.32.5 pypdf==6.1.3 playwright==1.58.0
+          python -m pip install requests==2.32.5 pypdf==6.1.3 playwright==1.58.0 openpyxl==3.1.5 xlrd==2.0.2
           python -m playwright install chromium --with-deps
       - name: Check official MOH sources with HTTP and Chromium
         run: python health/probe.py
@@ -42,6 +43,8 @@ jobs:
         run: python health/verify_sources.py
       - name: Verify alternate official sources and procurement search results
         run: python health/extra_checks.py
+      - name: Retrieve independent official procurement archive
+        run: python health/procurement_archive.py
       - name: Inspect registry facility detail views for certificate-level evidence
         run: python health/registry_detail_probe.py
       - name: Test official MOH publication RSS and open-data discovery
@@ -52,7 +55,7 @@ jobs:
           if [ -f health/state/latest.json ]; then
             git config user.name "health-source-monitor-bot"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add health/state/latest.json health/state/facilities.json health/state/source_checks.json health/state/official_feeds.json health/state/registry_details.json
+            git add health/state/latest.json health/state/facilities.json health/state/source_checks.json health/state/official_feeds.json health/state/registry_details.json health/state/procurement_archive.json
             if ! git diff --cached --quiet; then
               git commit -m "chore: record Ministry of Health public access check [skip ci]"
               git pull --rebase -X ours origin main
