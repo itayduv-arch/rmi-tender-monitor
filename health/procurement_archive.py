@@ -94,7 +94,7 @@ try:
                     # Some government SpreadsheetML exports contain a UTF-8 BOM while declaring another encoding.
                     # Decode according to the actual BOM, remove only the inconsistent XML declaration.
                     decoded=data.decode("utf-8-sig")
-                    decoded=re.sub(r'^\\s*<\\?xml[^>]*\\?>', '', decoded, count=1)
+                    decoded=re.sub(r'^\s*<\?xml[^>]*\?>', '', decoded, count=1)
                     source=io.StringIO(decoded)
                     for event,elem in ET.iterparse(source,events=("end",)):
                         if elem.tag.split("}")[-1]=="Row":
