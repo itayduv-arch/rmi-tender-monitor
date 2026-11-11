@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-11T10:42:01.114147+00:00",
+  "checked_at_utc": "2026-11-11T10:48:02.282821+00:00",
   "index_url": "https://mr.gov.il/ilgstorefront/he/news/details/230920201036",
   "procurement_data_current": false,
   "allocation_publications_full_coverage": false,
@@ -10,7 +10,8 @@
     {
       "name": "פלט מכרזים_B.xls",
       "bytes": 36364746,
-      "error": "XLRDError: Unsupported format, or corrupt file: Expected BOF record; found b'\\xef\\xbb\\xbf<?xml'"
+      "format": "SpreadsheetML XML 2003",
+      "error": "ParseError: encoding specified in XML declaration is incorrect: line 1, column 31"
     }
   ],
   "limitations": [
