@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-11T10:46:46.057404+00:00",
+  "checked_at_utc": "2026-11-11T10:50:22.094238+00:00",
   "source": "official Ministry of Health registries API and official 2025 report",
   "api_url": "https://registries.health.gov.il/api/Institutions/GetInstitutions",
   "report_url": "https://www.gov.il/BlobFolder/reports/licensed-inpatient-hospital-beds-dec-2025/he/files_publications_units_info_beds2025_dec2025.pdf",
