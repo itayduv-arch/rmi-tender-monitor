@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Read-only official monthly procurement ZIP diagnostic (NOT comprehensive MOH allocation coverage)."""
 import csv, hashlib, html, io, json, re, zipfile
+from xml.etree import ElementTree as ET
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import urljoin, urlparse
@@ -85,12 +86,27 @@ try:
                         record(row,f.filename+"/"+sheet.title,n)
                 book.close();item["parsed"]=True
             elif ext==".xls":
-                import xlrd
-                book=xlrd.open_workbook(file_contents=z.read(f))
-                for sheet in book.sheets():
-                    for n in range(sheet.nrows):
-                        record(sheet.row_values(n),f.filename+"/"+sheet.name,n+1)
-                item["parsed"]=True
+                data=z.read(f)
+                if data.lstrip(b"\\xef\\xbb\\xbf \\t\\r\\n").startswith(b"<?xml"):
+                    # Excel 2003 XML SpreadsheetML is often named .xls; xlrd cannot open it.
+                    item["format"]="SpreadsheetML XML 2003"
+                    n=0
+                    source=io.BytesIO(data)
+                    for event,elem in ET.iterparse(source,events=("end",)):
+                        if elem.tag.split("}")[-1]=="Row":
+                            n+=1
+                            cells=[sub.text or "" for sub in elem.iter() if sub.tag.split("}")[-1]=="Data"]
+                            record(cells,f.filename+"/XML-Spreadsheet",n)
+                            elem.clear()
+                    item["rows"]=n
+                    item["parsed"]=n>0
+                else:
+                    import xlrd
+                    book=xlrd.open_workbook(file_contents=data)
+                    for sheet in book.sheets():
+                        for n in range(sheet.nrows):
+                            record(sheet.row_values(n),f.filename+"/"+sheet.name,n+1)
+                    item["parsed"]=True
             else:
                 item["skipped"]="Unsupported document type"
         except Exception as e:
