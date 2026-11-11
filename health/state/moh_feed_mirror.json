@@ -1,0 +1,77 @@
+{
+  "checked_at_utc": "2026-11-11T10:45:26.233140+00:00",
+  "source_kind": "third-party public mirror of official Ministry of Health RSS; discovery only",
+  "mirror": "https://feeder.co/discover/ff5b8f88c5/gov-il-he-departments-publications",
+  "original_official_feed": "https://www.gov.il/he/api/PublicationApi/rss/104cb0f4-d65a-4692-b590-94af928c19c0",
+  "live_official_feed_access": false,
+  "coverage_complete": false,
+  "items": [
+    {
+      "title": "דו\"ח סיכום פעולות לשנת 2025",
+      "official_url": "https://www.gov.il/he/departments/publications/reports/2025-food-annual-report-v8",
+      "verified_original_document": false
+    },
+    {
+      "title": "סטודנט/ית (פרוייקט שחיקה)",
+      "official_url": "https://www.gov.il/he/departments/publications/drushim/jobs---81081315",
+      "verified_original_document": false
+    },
+    {
+      "title": "סטודנט/ית (המרכז להנחיות רפואיות מתקדמות)",
+      "official_url": "https://www.gov.il/he/departments/publications/drushim/job------81069171",
+      "verified_original_document": false
+    },
+    {
+      "title": "ללשכת הבריאות הנפתית חדרה דרוש/ה סטודנט/ית (מינהל)",
+      "official_url": "https://www.gov.il/he/departments/publications/drushim/jobs--81136946",
+      "verified_original_document": false
+    },
+    {
+      "title": "פרסומי דוחות לרבעון השלישי 2026 - המלב\"ם",
+      "official_url": "https://www.gov.il/he/departments/publications/reports/2026-q3-newsletter-icdc",
+      "verified_original_document": false
+    },
+    {
+      "title": "רישום סוכרת לשנת 2024 – כלל האוכלוסייה (בני +2)",
+      "official_url": "https://www.gov.il/he/departments/publications/reports/diabetes-registry-report-2024",
+      "verified_original_document": false
+    },
+    {
+      "title": "דו\"ח ניטור המזהמים בתבלינים ועשבי תיבול מיובשים לשנים 2024-2025",
+      "official_url": "https://www.gov.il/he/departments/publications/reports/monitoring-report-contaminants-dried-spices-herbs-2024-2025",
+      "verified_original_document": false
+    },
+    {
+      "title": "וובינר ליווי, הכונה והתמצאות במוסדות רפואיים",
+      "official_url": "https://www.gov.il/he/departments/publications/reports/guidance-direction-orientation-medical-institutions",
+      "verified_original_document": false
+    },
+    {
+      "title": "דוח ניטור מחוללי תחלואה נשימתית לשבוע 43 שהסתיים בתאריך 31.10.2026",
+      "official_url": "https://www.gov.il/he/departments/publications/reports/flu-31102026",
+      "verified_original_document": false
+    },
+    {
+      "title": "ללשכת הבריאות מחוז דרום דרוש/ה עובד/ת מעבדה מתקדמ/ת למילוי מקום עד שנה משרה מס'-80016071",
+      "official_url": "https://www.gov.il/he/departments/publications/drushim/jobs---80016071",
+      "verified_original_document": false
+    },
+    {
+      "title": "ללשכת הבריאות מחוז דרום דרוש/ה אזרח/ית ותיק/ה מקצועי/ת -(מחשוב כללי) מספר משרה-81125969",
+      "official_url": "https://www.gov.il/he/departments/publications/drushim/jobs---81125969",
+      "verified_original_document": false
+    },
+    {
+      "title": "ללשכת הבריאות מחוז דרום דרוש/ה אזרח/ית ותיק/ה - אשפוז סיעודי משרה מס'- 81137091",
+      "official_url": "https://www.gov.il/he/departments/publications/drushim/jobs---81137091",
+      "verified_original_document": false
+    }
+  ],
+  "matching_items": [],
+  "notes": [
+    "Do not treat Feeder titles as a Ministry of Health licence or signed allocation announcement. Open the linked official notice and documents when accessible."
+  ],
+  "mirror_http_status": 200,
+  "mirror_titles_extracted": 12,
+  "mirror_readable": true
+}
