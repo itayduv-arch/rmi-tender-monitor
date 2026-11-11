@@ -29,14 +29,14 @@ try:
     anchor=re.search(r"Latest posts",source,re.I)
     tail=re.search(r"Get .{0,120} where you read",source,re.I)
     region=source[anchor.start():(tail.start() if tail and tail.start()>anchor.start() else anchor.start()+110000)] if anchor else source[:180000]
-    candidates=re.findall(r'<a\\b[^>]*href=["\\\']([^"\\\']+)["\\\'][^>]*>(.*?)</a>',region,re.I|re.S)
+    candidates=re.findall(r'<a[^>]+href="([^"]+)"[^>]*>(.*?)</a>',region,re.I|re.S)
     seen=set()
     for rawurl,rawtitle in candidates:
         url=html.unescape(rawurl)
         if urlparse(url).hostname not in ("gov.il","www.gov.il") or "/api/" in url:
             continue
         title=html.unescape(re.sub("<[^>]+>"," ",rawtitle))
-        title=re.sub(r"\\s+"," ",title).strip()
+        title=re.sub(r"\s+"," ",title).strip()
         if not title or len(title)<8 or title.lower() in ("read full","לקרוא את הכול") or url in seen:
             continue
         seen.add(url)
