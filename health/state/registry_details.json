@@ -78,6 +78,11 @@
         {
           "method": "POST",
           "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetDepartments"
+        },
+        {
+          "method": "POST",
+          "status": 200,
           "endpoint": "https://registries.health.gov.il/api/Institutions/GetCities"
         },
         {
