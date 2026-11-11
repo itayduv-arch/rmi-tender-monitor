@@ -87,7 +87,7 @@ try:
                 book.close();item["parsed"]=True
             elif ext==".xls":
                 data=z.read(f)
-                if data.lstrip(b"\\xef\\xbb\\xbf \\t\\r\\n").startswith(b"<?xml"):
+                if data.lstrip(b"\xef\xbb\xbf \t\r\n").startswith(b"<?xml"):
                     # Excel 2003 XML SpreadsheetML is often named .xls; xlrd cannot open it.
                     item["format"]="SpreadsheetML XML 2003"
                     n=0
