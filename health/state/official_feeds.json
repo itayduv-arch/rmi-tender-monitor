@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-11T11:29:36.813214+00:00",
+  "checked_at_utc": "2026-11-12T11:52:24.027754+00:00",
   "feeds": {
     "moh_publications": {
       "url": "https://www.gov.il/he/api/PublicationApi/rss/104cb0f4-d65a-4692-b590-94af928c19c0",
@@ -19,7 +19,7 @@
         "id": "d3c80c46-9d99-41a9-8b62-50b590011a60",
         "name": "goverment-domesticdebt",
         "title": "נתוני החוב הממשלתי המקומי",
-        "modified": "2026-11-11T05:00:58.803968"
+        "modified": "2026-11-12T05:00:53.851774"
       },
       {
         "id": "01fa89cc-8e1f-4c96-919e-91d28d1c0d42",

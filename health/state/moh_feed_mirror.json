@@ -1,11 +1,16 @@
 {
-  "checked_at_utc": "2026-11-11T11:29:37.387664+00:00",
+  "checked_at_utc": "2026-11-12T11:52:24.728233+00:00",
   "source_kind": "third-party public mirror of official Ministry of Health RSS; discovery only",
   "mirror": "https://feeder.co/discover/ff5b8f88c5/gov-il-he-departments-publications",
   "original_official_feed": "https://www.gov.il/he/api/PublicationApi/rss/104cb0f4-d65a-4692-b590-94af928c19c0",
   "live_official_feed_access": false,
   "coverage_complete": false,
   "items": [
+    {
+      "title": "נתונים עדכניים מרשיונות מטופלים - ספטמבר 2026",
+      "official_url": "https://www.gov.il/he/departments/publications/reports/licenses-status-sep-2026",
+      "verified_original_document": false
+    },
     {
       "title": "סקר קרבמזפין (Carbamazepine, CBZ) ותרכובות פר- ופוליפלואורואלקיליות (PFAS) בקולחים ובירקות",
       "official_url": "https://www.gov.il/he/departments/publications/reports/carbamazepine-pips-in-veg-survey",
@@ -59,11 +64,6 @@
     {
       "title": "דוח ניטור מחוללי תחלואה נשימתית לשבוע 43 שהסתיים בתאריך 31.10.2026",
       "official_url": "https://www.gov.il/he/departments/publications/reports/flu-31102026",
-      "verified_original_document": false
-    },
-    {
-      "title": "ללשכת הבריאות מחוז דרום דרוש/ה עובד/ת מעבדה מתקדמ/ת למילוי מקום עד שנה משרה מס'-80016071",
-      "official_url": "https://www.gov.il/he/departments/publications/drushim/jobs---80016071",
       "verified_original_document": false
     }
   ],
