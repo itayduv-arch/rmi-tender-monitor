@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-13T11:32:42.759634+00:00",
+  "checked_at_utc": "2026-11-14T10:55:53.313689+00:00",
   "classification": "access-and-evidence-diagnostics-not-current-licence-proof",
   "direct_official_documents": {
     "projects_procedure_2025": {
@@ -740,7 +740,7 @@
     "Historical inspections do not confirm current general-anaesthesia activity or authorisation."
   ],
   "registry_api_complete": true,
-  "registry_snapshot_at_utc": "2026-11-13T11:32:33.369573+00:00",
+  "registry_snapshot_at_utc": "2026-11-14T10:55:45.634359+00:00",
   "report2025_available": true,
   "registry_snapshot_recent_48h": true
 }
