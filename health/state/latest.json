@@ -234,27 +234,17 @@
     "institutions": {
       "url": "https://registries.health.gov.il/Institutions/Institutions/1",
       "browser_document_status": 202,
-      "page_url": "https://registries.health.gov.il/Institutions",
-      "body_text_length": 555,
-      "body_excerpt": "חזור למאגרי מידע\nמאגרי מידע של משרד הבריאות\nחיפוש\nסינון לפי:\nנקה סינון\ninstitution_type\ninstitution_name\ninstitution_code\ndepartment\nlabels.district\nlabels.city\ncity\nownership\nlabels.tab_search_institutions\nlabels.tab_comparison\n מוסדות\nהורד רשימה זו\nאין תוצאות\nמעודכן לתאריך: 16/11/2026\ncollapsableText\nlabels.institution_name_header\nlabels.institution_type\nlabels.city\nהצג:\n5\n0 מתוך 0\nאתרי המשרד\nאתר משרד הבריאות\nאודות האתר\nתנאי שימוש\nהצהרת נגישות\nצרו איתנו קשר\n\n5400* או 08-6241010\n\nבמסנג'ר\nבדוא\"ל\nבוואטסאפ\nעקבו אחרינו\n© כל הזכויות שמורות למשרד הבריאות",
+      "page_url": "https://registries.health.gov.il/Institutions/Institutions/1",
+      "body_text_length": 218,
+      "body_excerpt": "חזור למאגרי מידע\nמאגרי מידע של משרד הבריאות\nחיפוש\nאתרי המשרד\nאתר משרד הבריאות\nאודות האתר\nתנאי שימוש\nהצהרת נגישות\nצרו איתנו קשר\n\n5400* או 08-6241010\n\nבמסנג'ר\nבדוא\"ל\nבוואטסאפ\nעקבו אחרינו\n© כל הזכויות שמורות למשרד הבריאות",
       "input_placeholders": [
         "בחר מאגר",
-        "מוסדות",
-        "select_institution_type",
-        "enter_institution_name",
-        "enter_institution_code",
-        "select_department",
-        "select_city",
-        "select_ownership",
-        "מיין לפי"
+        "מוסדות"
       ],
       "buttons": [
         "חזור למאגרי מידע",
         "מאגרי מידע של משרד הבריאות",
-        "חיפוש",
-        "הורד רשימה זו",
-        "למידע נוסף",
-        "סינון"
+        "חיפוש"
       ],
       "institutions_api_method": "POST",
       "institutions_api_request_data": "{\"maxResult\":50,\"pageNumber\":0}",
@@ -293,7 +283,7 @@
         },
         {
           "status": 200,
-          "url": "https://registries.health.gov.il/api/Registries/GetAllSubMenus",
+          "url": "https://registries.health.gov.il/api/Registries/GetAllRegistries",
           "type": "application/json; charset=utf-8"
         },
         {
@@ -303,7 +293,7 @@
         },
         {
           "status": 200,
-          "url": "https://registries.health.gov.il/api/Institutions/GetOwnerships",
+          "url": "https://registries.health.gov.il/api/Institutions/GetInstitutesNamesAndCodes",
           "type": "application/json; charset=utf-8"
         },
         {
