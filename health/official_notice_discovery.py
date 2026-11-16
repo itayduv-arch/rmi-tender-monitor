@@ -147,7 +147,7 @@ for url in filter_urls[:8]:
     finally:
         out["verified_official_pdfs"].append(d)
 
-known = load(SNAPSHOT)
+known = load(SNAPSHOT_PATH)
 seen_urls = set(known.get("seen_urls", []))
 seen_hashes = set(known.get("seen_sha256", []))
 new_candidates = sorted(candidates - seen_urls)
