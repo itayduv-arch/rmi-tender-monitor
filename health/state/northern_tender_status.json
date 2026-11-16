@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-16T13:17:40.605022+00:00",
+  "checked_at_utc": "2026-11-16T13:26:15.847380+00:00",
   "official_publication_url": "https://www.gov.il/he/pages/competitive-procedure-surgical-positions-northern-district",
   "publication_http_status": 403,
   "publication_browser_status": 403,
@@ -11,7 +11,7 @@
   "pdf_accessible_and_parsed": true,
   "pdf_current_sha256": "77839f978d7a256507edc3b4392ade6d6e38303ff26bae63461fc84ea0a9829e",
   "pdf_version_changed_since_last_success": false,
-  "first_successful_snapshot_created": true,
+  "first_successful_snapshot_created": false,
   "last_verified_pdf_sha256": "77839f978d7a256507edc3b4392ade6d6e38303ff26bae63461fc84ea0a9829e",
   "last_verified_pdf_at_utc": "2026-11-16T13:17:40.605022+00:00",
   "last_verified_pdf_pages": 25,
