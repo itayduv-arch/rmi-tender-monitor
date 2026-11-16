@@ -8,6 +8,7 @@ on:
     branches: [main]
     paths:
       - 'health/probe.py'
+      - 'health/northern_tender_watch.py'
       - 'health/verify_sources.py'
       - 'health/extra_checks.py'
       - 'health/procurement_archive.py'
@@ -40,6 +41,8 @@ jobs:
           python -m playwright install chromium --with-deps
       - name: Check official MOH sources with HTTP and Chromium
         run: python health/probe.py
+      - name: Preserve last verified northern tender PDF and flag coverage gaps
+        run: python health/northern_tender_watch.py
       - name: Cross-check live facility licences with 2025 ministry report
         run: python health/verify_sources.py
       - name: Verify alternate official sources and procurement search results
@@ -59,6 +62,9 @@ jobs:
             git config user.name "health-source-monitor-bot"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
             git add health/state/latest.json health/state/facilities.json health/state/source_checks.json health/state/official_feeds.json health/state/registry_details.json health/state/procurement_archive.json health/state/moh_feed_mirror.json
+            for file in health/state/northern_tender_status.json health/state/northern_tender_last_verified.json; do
+              if [ -f "$file" ]; then git add "$file"; fi
+            done
             if ! git diff --cached --quiet; then
               git commit -m "chore: record Ministry of Health public access check [skip ci]"
               git pull --rebase -X ours origin main
