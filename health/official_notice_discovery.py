@@ -74,11 +74,11 @@ def links_from_text(source):
     # All output is treated as third-party indexing until original gov.il PDF is retrieved.
     result = set()
     source = html.unescape(source.replace("\\/", "/"))
-    for raw in re.findall(r"https?://(?:www\\.)?gov\\.il/[^\\s<>'\\\"\\)\\]]+", source, re.I):
+    for raw in re.findall(r"https?://(?:www\.)?gov\.il/[^\s<>'\"\)\]]+", source, re.I):
         u = clean_url(raw)
         if u:
             result.add(u)
-    for raw in re.findall(r"(?:https?%3A%2F%2F(?:www%2E)?gov%2Eil%2F)[^\\s<>'\\\"&]+", source, re.I):
+    for raw in re.findall(r"(?:https?%3A%2F%2F(?:www%2E)?gov%2Eil%2F)[^\s<>'\"&]+", source, re.I):
         u = clean_url(raw)
         if u:
             result.add(u)
@@ -108,7 +108,7 @@ for kind, url in SOURCES:
             item["indexed_official_urls"] = len(parsed)
             item["contains_known_notice_slug"] = "competitive-procedure-surgical-positions-northern-district" in body
             item["mentions_operative_terms"] = any(w in body for w in KEYWORDS)
-            item["short_excerpt"] = re.sub(r"\\s+", " ", body[:1800])[:650]
+            item["short_excerpt"] = re.sub(r"\s+", " ", body[:1800])[:650]
         else:
             item["error"] = "Non-200 or implausibly large response"
     except Exception as e:
