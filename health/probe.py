@@ -10,6 +10,7 @@ URLS={
  'institutions':'https://registries.health.gov.il/Institutions/Institutions/1',
  'registries_home':'https://registries.health.gov.il/Institutions',
  'gov_2025_page':'https://www.gov.il/he/pages/licensed-inpatient-hospital-beds-dec-2025',
+ 'northern_competitive_procedure_page':'https://www.gov.il/he/pages/competitive-procedure-surgical-positions-northern-district',
  'gov_2024_pdf':'https://www.gov.il/BlobFolder/reports/licensed-inpatient-hospital-beds/he/files_publications_units_info_beds2024_dec2024.pdf',
  'gov_2025_pdf_candidate_1':'https://www.gov.il/BlobFolder/reports/licensed-inpatient-hospital-beds-dec-2025/he/files_publications_units_info_beds2025_dec2025.pdf',
  'gov_2025_pdf_candidate_2':'https://www.gov.il/BlobFolder/reports/licensed-inpatient-hospital-beds/he/files_publications_units_info_beds2025_dec2025.pdf',
@@ -57,7 +58,7 @@ try:
  with sync_playwright() as p:
   browser=p.chromium.launch(headless=True,args=['--no-sandbox'])
   context=browser.new_context(locale='he-IL',viewport={'width':1380,'height':900})
-  for label in ('institutions','inspections','gov_2025_page'):
+  for label in ('institutions','inspections','gov_2025_page','northern_competitive_procedure_page'):
    url=URLS[label]; page=context.new_page(); events=[];d={'url':url}
    def handle_response(r):
     u=r.url
@@ -109,6 +110,8 @@ try:
       after=page.locator('body').inner_text(timeout=10000)
       d['after_medili_enter_text_length']=len(after);d['after_medili_excerpt']=after[:1500]
       d['medili_visible']='מדילי' in after
+    if label=='northern_competitive_procedure_page':
+     d['page_relevant_links']=page.locator('a[href]').evaluate_all('(els)=>els.map(e=>({text:e.innerText.trim().slice(0,150),href:e.href})).filter(e=>/\.pdf|כירורג|הבהרה|תחרות|tender|surgic/i.test(e.text+e.href)).slice(0,60)')
     d['api_requests']=events
    except Exception as e:d['error']=type(e).__name__+': '+str(e)[:250]
    result['browser'][label]=d
