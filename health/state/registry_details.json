@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-16T13:20:06.495072+00:00",
+  "checked_at_utc": "2026-11-16T13:32:04.054632+00:00",
   "source": "official Ministry of Health institutions web interface",
   "candidates": [
     {
@@ -7,7 +7,7 @@
       "name_query": "מדילי",
       "detail_readable": false,
       "licence_certificate_attached": false,
-      "list_status": 202,
+      "list_status": 200,
       "name_search_available": true,
       "search_input_parent_html": "<div class=\"mat-form-field-infix ng-tns-c180-0\"><input matinput=\"\" class=\"mat-input-element mat-form-field-autofill-control mat-autocomplete-trigger ng-tns-c180-0 ng-untouched ng-valid cdk-text-field-autofill-monitored ng-dirty\" aria-autocomplete=\"list\" aria-label=\"שם מוסד\" placeholder=\"הזן שם מוסד\" id=\"mat-input-0\" aria-invalid=\"false\" aria-required=\"false\" data-placeholder=\"הזן שם מוסד\" autocomplete=\"off\" role=\"combobox\" aria-expanded=\"false\" aria-haspopup=\"listbox\"><!----><mat-autocomplete class=\"\"><!----></mat-autocomplete><span class=\"mat-form-field-label-wrapper ng-tns-c180-0\"><label class=\"mat-form-field-label ng-tns-c180-0 ng-star-inserted\" id=\"mat-form-field-label-1\" for=\"mat-input-0\" aria-owns=\"mat-input-0\"><!----><mat-label class=\"ng-tns-c180-0 ng-star-inserted\"> שם מוסד <!----></mat-label><!----><!----></label><!----></span></div>",
       "suggestions": [],
@@ -17,6 +17,11 @@
       "name_visible": false,
       "more_info_buttons": 0,
       "official_api_endpoints_observed": [
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Registries/GetAllSubMenus"
+        },
         {
           "method": "GET",
           "status": 200,
@@ -30,27 +35,7 @@
         {
           "method": "GET",
           "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Registries/GetAllSubMenus"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetDistricts"
-        },
-        {
-          "method": "GET",
-          "status": 200,
           "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstituteTypes"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetDepartments"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetOwnerships"
         },
         {
           "method": "POST",
@@ -60,7 +45,22 @@
         {
           "method": "POST",
           "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetOwnerships"
+        },
+        {
+          "method": "POST",
+          "status": 200,
           "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstitutesNamesAndCodes"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetDistricts"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetDepartments"
         },
         {
           "method": "POST",
@@ -90,16 +90,6 @@
         {
           "method": "GET",
           "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Registries/GetAllSubMenus"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Registries/GetAllSubMenus"
-        },
-        {
-          "method": "GET",
-          "status": 200,
           "endpoint": "https://registries.health.gov.il/api/Registries/GetAllRegistries"
         },
         {
@@ -110,7 +100,22 @@
         {
           "method": "GET",
           "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstituteTypes"
+          "endpoint": "https://registries.health.gov.il/api/Registries/GetAllSubMenus"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Registries/GetAllSubMenus"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetCities"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetCities"
         },
         {
           "method": "GET",
@@ -118,44 +123,9 @@
           "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstituteTypes"
         },
         {
-          "method": "POST",
+          "method": "GET",
           "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetOwnerships"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetOwnerships"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetDepartments"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetDepartments"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstitutesNamesAndCodes"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstitutesNamesAndCodes"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetCities"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetCities"
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstituteTypes"
         },
         {
           "method": "POST",
@@ -190,27 +160,57 @@
         {
           "method": "POST",
           "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetCities"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetCities"
-        },
-        {
-          "method": "POST",
-          "status": 200,
           "endpoint": "https://registries.health.gov.il/api/Institutions/GetDepartments"
         },
         {
           "method": "POST",
           "status": 200,
           "endpoint": "https://registries.health.gov.il/api/Institutions/GetDepartments"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstitutesNamesAndCodes"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstitutesNamesAndCodes"
         },
         {
           "method": "POST",
           "status": 200,
           "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstitutions"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstitutions"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstitutesNamesAndCodes"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstitutesNamesAndCodes"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetCities"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetCities"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetDepartments"
         }
       ]
     },
@@ -238,51 +238,6 @@
         {
           "method": "GET",
           "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstituteTypes"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstituteTypes"
-        },
-        {
-          "method": "GET",
-          "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstituteTypes"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstitutesNamesAndCodes"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstitutesNamesAndCodes"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstitutesNamesAndCodes"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetCities"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetCities"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetCities"
-        },
-        {
-          "method": "GET",
-          "status": 200,
           "endpoint": "https://registries.health.gov.il/api/Registries/GetAllSubMenus"
         },
         {
@@ -328,21 +283,6 @@
         {
           "method": "POST",
           "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetDepartments"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetDepartments"
-        },
-        {
-          "method": "POST",
-          "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetDepartments"
-        },
-        {
-          "method": "POST",
-          "status": 200,
           "endpoint": "https://registries.health.gov.il/api/Institutions/GetOwnerships"
         },
         {
@@ -358,7 +298,67 @@
         {
           "method": "POST",
           "status": 200,
-          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstitutions"
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetDepartments"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetDepartments"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetDepartments"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Registries/GetAllSubMenus"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Registries/GetAllSubMenus"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Registries/GetAllSubMenus"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstitutesNamesAndCodes"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstitutesNamesAndCodes"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstitutesNamesAndCodes"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstituteTypes"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstituteTypes"
+        },
+        {
+          "method": "GET",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetInstituteTypes"
+        },
+        {
+          "method": "POST",
+          "status": 200,
+          "endpoint": "https://registries.health.gov.il/api/Institutions/GetCities"
         }
       ]
     }
