@@ -26,6 +26,12 @@ REPORT_PATH = ROOT / "official_notice_discovery.json"
 SNAPSHOT_PATH = ROOT / "official_notice_discovery_seen.json"
 OFFICIAL = "https://www.gov.il/he/pages/competitive-procedure-surgical-positions-northern-district"
 PDF = "https://www.gov.il/BlobFolder/publicsharing/competitive-procedure-surgical-positions-northern-district/he/files_invitation-to-tender_competitive-procedure-surgical-positions-northern-district.pdf"
+PUBLICATION_DOCUMENT_PREFIX = PDF.rsplit("/", 1)[0] + "/"
+ATTACHMENT_URLS = (
+    PUBLICATION_DOCUMENT_PREFIX + "files_invitation-to-tender_competitive-procedure-surgical-positions-northern-district-%20faq.pdf",
+    PUBLICATION_DOCUMENT_PREFIX + "files_invitation-to-tender_cfb-072006-a.xlsx",
+    PUBLICATION_DOCUMENT_PREFIX + "files_invitation-to-tender_cfb-072006-b.xlsx",
+)
 KEYWORDS = ("כירורג", "בינוני", "הקצאה", "עמדות ניתוח", "surgical-positions", "competitive-procedure", "הבהרות")
 QUERIES = [
     'site:gov.il "competitive-procedure-surgical-positions-northern-district"',
@@ -67,7 +73,7 @@ def clean_url(u):
     host = urlparse(u).hostname
     if host != "www.gov.il":
         return None
-    return u[:700]
+    return u[:700].replace(" ", "%20")
 
 
 def links_from_text(source):
@@ -93,12 +99,16 @@ out = {"checked_at_utc": datetime.now(timezone.utc).isoformat(),
        "publication_page_directly_accessible": False,
        "coverage_complete": False,
        "provenance_warning": "Public reader/search results are discovery-only. Official PDF must download successfully from www.gov.il to count as verified."}
-candidates = {OFFICIAL, PDF}
+candidates = {OFFICIAL, PDF, *ATTACHMENT_URLS}
 for kind, url in SOURCES:
     item = {"source": kind, "url": url, "official_source": False}
     try:
         headers = {"X-With-Links-Summary": "all"} if kind == "public-reader" else None
         r = s.get(url, headers=headers, timeout=23, allow_redirects=True)
+        if kind == "public-reader":
+            item["reader_links_summary_http_status"] = r.status_code
+            if r.status_code == 401:
+                r = s.get(url, timeout=23, allow_redirects=True)
         item["http_status"] = r.status_code
         item["bytes"] = len(r.content)
         item["content_type"] = r.headers.get("content-type", "")[:100]
@@ -126,8 +136,7 @@ filter_urls = [u for u in candidates if
                u == PDF or
                ("gov.il/BlobFolder/" in u and ".pdf" in u.lower() and
                 any(k in u.lower() for k in ("surgic", "competitive", "hirurg", "chirurg", "northern")))]
-publication_document_prefix = PDF.rsplit("/", 1)[0] + "/"
-filter_urls.sort(key=lambda url: (url != PDF, not url.startswith(publication_document_prefix), url))
+filter_urls.sort(key=lambda url: (url != PDF, not url.startswith(PUBLICATION_DOCUMENT_PREFIX), url))
 for url in filter_urls[:8]:
     d = {"url": url, "official_source": True, "pdf_verified": False}
     try:
@@ -154,7 +163,7 @@ for url in filter_urls[:8]:
         out["verified_official_pdfs"].append(d)
 
 known = load(SNAPSHOT_PATH)
-seen_urls = set(known.get("seen_urls", []))
+seen_urls = {clean_url(url) or url for url in known.get("seen_urls", [])}
 seen_hashes = set(known.get("seen_sha256", []))
 new_candidates = sorted(candidates - seen_urls)
 new_hashes = [x for x in out["verified_official_pdfs"]
