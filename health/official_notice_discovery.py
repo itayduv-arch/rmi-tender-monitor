@@ -97,7 +97,8 @@ candidates = {OFFICIAL, PDF}
 for kind, url in SOURCES:
     item = {"source": kind, "url": url, "official_source": False}
     try:
-        r = s.get(url, timeout=23, allow_redirects=True)
+        headers = {"X-With-Links-Summary": "all"} if kind == "public-reader" else None
+        r = s.get(url, headers=headers, timeout=23, allow_redirects=True)
         item["http_status"] = r.status_code
         item["bytes"] = len(r.content)
         item["content_type"] = r.headers.get("content-type", "")[:100]
@@ -125,7 +126,8 @@ filter_urls = [u for u in candidates if
                u == PDF or
                ("gov.il/BlobFolder/" in u and ".pdf" in u.lower() and
                 any(k in u.lower() for k in ("surgic", "competitive", "hirurg", "chirurg", "northern")))]
-filter_urls.sort(key=lambda x: (x != PDF, x))
+publication_document_prefix = PDF.rsplit("/", 1)[0] + "/"
+filter_urls.sort(key=lambda url: (url != PDF, not url.startswith(publication_document_prefix), url))
 for url in filter_urls[:8]:
     d = {"url": url, "official_source": True, "pdf_verified": False}
     try:
