@@ -103,6 +103,10 @@ for kind, url in SOURCES:
         item["content_type"] = r.headers.get("content-type", "")[:100]
         if r.status_code == 200 and len(r.content) < 6_000_000:
             body = r.text
+            if kind == "public-reader":
+                item["reader_full_text"] = body[:26000]
+                item["reader_content_sha256"] = hashlib.sha256(body.encode("utf-8")).hexdigest()
+                item["reader_is_third_party_only"] = True
             parsed = links_from_text(body)
             candidates.update(parsed)
             item["indexed_official_urls"] = len(parsed)
@@ -159,12 +163,19 @@ out["new_verified_pdf_hashes"] = [{"url":x["url"],"sha256":x["sha256"]} for x in
 out["first_run_baseline_created"] = not bool(known)
 out["attention_required"] = bool((new_candidates or new_hashes) and bool(known))
 out["source_index_coverage_proven"] = False
+reader = next((x for x in out["source_statuses"] if x["source"] == "public-reader"), {})
+reader_hash = reader.get("reader_content_sha256")
+out["third_party_reader_accessible"] = reader.get("http_status") == 200 and bool(reader.get("reader_full_text"))
+out["reader_content_changed_since_previous_check_unverified"] = bool(known.get("reader_sha256") and reader_hash and reader_hash != known["reader_sha256"])
+if out["reader_content_changed_since_previous_check_unverified"]:
+    out["attention_required"] = True
 
 save(REPORT_PATH, out)
 save(SNAPSHOT_PATH, {
     "last_checked_at_utc": out["checked_at_utc"],
     "seen_urls": sorted(seen_urls | candidates),
     "seen_sha256": sorted(seen_hashes | {x["sha256"] for x in out["verified_official_pdfs"] if x.get("pdf_verified")}),
+    "reader_sha256": reader_hash or known.get("reader_sha256"),
 })
 print(json.dumps({"checked_at_utc":out["checked_at_utc"],
                   "sources":[(x["source"],x.get("http_status"),x.get("indexed_official_urls"),x.get("error"))
