@@ -1,26 +1,26 @@
 {
-  "checked_at_utc": "2026-11-16T13:29:52.309209+00:00",
+  "checked_at_utc": "2026-11-16T13:34:47.982354+00:00",
   "source": "github-actions-ubuntu-24.04-read-only",
   "http": {
     "institutions": {
       "url": "https://registries.health.gov.il/Institutions/Institutions/1",
-      "status": 202,
+      "status": 200,
       "final_url": "https://registries.health.gov.il/Institutions/Institutions/1",
-      "content_type": "text/html; charset=UTF-8",
-      "bytes_read": 0,
+      "content_type": "text/html",
+      "bytes_read": 2828,
       "is_pdf": false,
-      "html_title": "",
+      "html_title": "מאגרי מידע",
       "has_pdf_link": false,
       "has_medili": false
     },
     "registries_home": {
       "url": "https://registries.health.gov.il/Institutions",
-      "status": 202,
+      "status": 200,
       "final_url": "https://registries.health.gov.il/Institutions",
-      "content_type": "text/html; charset=UTF-8",
-      "bytes_read": 0,
+      "content_type": "text/html",
+      "bytes_read": 2828,
       "is_pdf": false,
-      "html_title": "",
+      "html_title": "מאגרי מידע",
       "has_pdf_link": false,
       "has_medili": false
     },
@@ -29,9 +29,9 @@
       "status": 403,
       "final_url": "https://www.gov.il/he/pages/licensed-inpatient-hospital-beds-dec-2025",
       "content_type": "text/html; charset=UTF-8",
-      "bytes_read": 5774,
+      "bytes_read": 5185,
       "is_pdf": false,
-      "html_title": "Just a moment...",
+      "html_title": "Attention Required! | Cloudflare",
       "has_pdf_link": false,
       "has_medili": false
     },
@@ -40,9 +40,9 @@
       "status": 403,
       "final_url": "https://www.gov.il/he/pages/competitive-procedure-surgical-positions-northern-district",
       "content_type": "text/html; charset=UTF-8",
-      "bytes_read": 5846,
+      "bytes_read": 5185,
       "is_pdf": false,
-      "html_title": "Just a moment...",
+      "html_title": "Attention Required! | Cloudflare",
       "has_pdf_link": false,
       "has_medili": false
     },
@@ -98,9 +98,9 @@
       "status": 403,
       "final_url": "https://www.gov.il/he/departments/dynamiccollectors/inspections-db",
       "content_type": "text/html; charset=UTF-8",
-      "bytes_read": 5765,
+      "bytes_read": 5185,
       "is_pdf": false,
-      "html_title": "Just a moment...",
+      "html_title": "Attention Required! | Cloudflare",
       "has_pdf_link": false,
       "has_medili": false
     },
@@ -109,7 +109,7 @@
       "status": 200,
       "final_url": "https://mr.gov.il/ilgstorefront/he/search?s=TENDER",
       "content_type": "text/html;charset=UTF-8",
-      "bytes_read": 695280,
+      "bytes_read": 695276,
       "is_pdf": false,
       "html_title": "תוצאות חיפוש | נמצאו 22306 תוצאות עבור ערך במכרזים",
       "has_pdf_link": false,
@@ -233,18 +233,28 @@
   "browser": {
     "institutions": {
       "url": "https://registries.health.gov.il/Institutions/Institutions/1",
-      "browser_document_status": 202,
-      "page_url": "https://registries.health.gov.il/Institutions/Institutions/1",
-      "body_text_length": 218,
-      "body_excerpt": "חזור למאגרי מידע\nמאגרי מידע של משרד הבריאות\nחיפוש\nאתרי המשרד\nאתר משרד הבריאות\nאודות האתר\nתנאי שימוש\nהצהרת נגישות\nצרו איתנו קשר\n\n5400* או 08-6241010\n\nבמסנג'ר\nבדוא\"ל\nבוואטסאפ\nעקבו אחרינו\n© כל הזכויות שמורות למשרד הבריאות",
+      "browser_document_status": 200,
+      "page_url": "https://registries.health.gov.il/Institutions",
+      "body_text_length": 602,
+      "body_excerpt": "חזור למאגרי מידע\nמאגרי מידע של משרד הבריאות\nחיפוש\nסינון לפי:\nנקה סינון\nסוג מוסד\nשם מוסד\nמספר רישום מוסד\nמחלקה\nמחוז\nישוב\nישוב\nבעלות\nחיפוש מוסדות\nהשוואת מוסדות גריאטריים\n מוסדות\nהורד רשימה זו\nאין תוצאות\nמעודכן לתאריך: 16/11/2026\nרישוי מוסדות רפואיים מתבצע באגף לרישוי מוסדות ומכשירים רפואיים מיוחדים במשרד הבריאות. בהתאם לפקודת העם 1940 והתקנות הנובעות מהחוק, חלה חובת רישוי של מוסדות ומכשירים רפואיים.\nשם\nסוג מוסד\nישוב\nהצג:\n5\n0 מתוך 0\nאתרי המשרד\nאתר משרד הבריאות\nאודות האתר\nתנאי שימוש\nהצהרת נגישות\nצרו איתנו קשר\n\n5400* או 08-6241010\n\nבמסנג'ר\nבדוא\"ל\nבוואטסאפ\nעקבו אחרינו\n© כל הזכויות שמורות למשרד הבריאות",
       "input_placeholders": [
         "בחר מאגר",
-        "מוסדות"
+        "מוסדות",
+        "בחר סוג מוסד",
+        "הזן שם מוסד",
+        "הזן מספר רישום מוסד",
+        "בחר מחלקה",
+        "בחר ישוב",
+        "בחר בעלות",
+        "מיין לפי"
       ],
       "buttons": [
         "חזור למאגרי מידע",
         "מאגרי מידע של משרד הבריאות",
-        "חיפוש"
+        "חיפוש",
+        "הורד רשימה זו",
+        "למידע נוסף",
+        "סינון"
       ],
       "institutions_api_method": "POST",
       "institutions_api_request_data": "{\"maxResult\":50,\"pageNumber\":0}",
@@ -273,37 +283,27 @@
       "api_requests": [
         {
           "status": 200,
+          "url": "https://registries.health.gov.il/api/Registries/GetAllRegistries",
+          "type": "application/json; charset=utf-8"
+        },
+        {
+          "status": 200,
           "url": "https://registries.health.gov.il/api/Registries/GetAllSubMenus",
           "type": "application/json; charset=utf-8"
         },
         {
           "status": 200,
-          "url": "https://registries.health.gov.il/api/Registries/GetAllRegistries",
+          "url": "https://registries.health.gov.il/api/Registries/GetAllSubMenus",
           "type": "application/json; charset=utf-8"
         },
         {
           "status": 200,
-          "url": "https://registries.health.gov.il/api/Registries/GetAllRegistries",
+          "url": "https://registries.health.gov.il/api/Institutions/GetDepartments",
           "type": "application/json; charset=utf-8"
         },
         {
           "status": 200,
           "url": "https://registries.health.gov.il/api/Institutions/GetDistricts",
-          "type": "application/json; charset=utf-8"
-        },
-        {
-          "status": 200,
-          "url": "https://registries.health.gov.il/api/Institutions/GetInstitutesNamesAndCodes",
-          "type": "application/json; charset=utf-8"
-        },
-        {
-          "status": 200,
-          "url": "https://registries.health.gov.il/api/Institutions/GetCities",
-          "type": "application/json; charset=utf-8"
-        },
-        {
-          "status": 200,
-          "url": "https://registries.health.gov.il/api/Institutions/GetInstituteTypes",
           "type": "application/json; charset=utf-8"
         },
         {
@@ -313,7 +313,7 @@
         },
         {
           "status": 200,
-          "url": "https://registries.health.gov.il/api/Institutions/GetDistricts",
+          "url": "https://registries.health.gov.il/api/Institutions/GetInstituteTypes",
           "type": "application/json; charset=utf-8"
         },
         {
@@ -338,7 +338,7 @@
       "browser_document_status": 403,
       "page_url": "https://www.gov.il/he/departments/dynamiccollectors/inspections-db",
       "body_text_length": 687,
-      "body_excerpt": "Sorry, you have been blocked\nYou are unable to access www.gov.il\nWhy have I been blocked?\n\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\n\nWhat can I do to resolve this?\n\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\n\nCloudflare Ray ID: a5b6d9985b8120a2 • Your IP: Click to reveal • Performance & security by Cloudflare",
+      "body_excerpt": "Sorry, you have been blocked\nYou are unable to access www.gov.il\nWhy have I been blocked?\n\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\n\nWhat can I do to resolve this?\n\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\n\nCloudflare Ray ID: a5b6e0fcead52095 • Your IP: Click to reveal • Performance & security by Cloudflare",
       "input_placeholders": [],
       "buttons": [
         "Click to reveal"
@@ -350,7 +350,7 @@
       "browser_document_status": 403,
       "page_url": "https://www.gov.il/he/pages/licensed-inpatient-hospital-beds-dec-2025",
       "body_text_length": 687,
-      "body_excerpt": "Sorry, you have been blocked\nYou are unable to access www.gov.il\nWhy have I been blocked?\n\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\n\nWhat can I do to resolve this?\n\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\n\nCloudflare Ray ID: a5b6d9c889c720a2 • Your IP: Click to reveal • Performance & security by Cloudflare",
+      "body_excerpt": "Sorry, you have been blocked\nYou are unable to access www.gov.il\nWhy have I been blocked?\n\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\n\nWhat can I do to resolve this?\n\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\n\nCloudflare Ray ID: a5b6e12c79142095 • Your IP: Click to reveal • Performance & security by Cloudflare",
       "input_placeholders": [],
       "buttons": [
         "Click to reveal"
@@ -362,7 +362,7 @@
       "browser_document_status": 403,
       "page_url": "https://www.gov.il/he/pages/competitive-procedure-surgical-positions-northern-district",
       "body_text_length": 687,
-      "body_excerpt": "Sorry, you have been blocked\nYou are unable to access www.gov.il\nWhy have I been blocked?\n\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\n\nWhat can I do to resolve this?\n\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\n\nCloudflare Ray ID: a5b6d9f83be220a2 • Your IP: Click to reveal • Performance & security by Cloudflare",
+      "body_excerpt": "Sorry, you have been blocked\nYou are unable to access www.gov.il\nWhy have I been blocked?\n\nThis website is using a security service to protect itself from online attacks. The action you just performed triggered the security solution. There are several actions that could trigger this block including submitting a certain word or phrase, a SQL command or malformed data.\n\nWhat can I do to resolve this?\n\nYou can email the site owner to let them know you were blocked. Please include what you were doing when this page came up and the Cloudflare Ray ID found at the bottom of this page.\n\nCloudflare Ray ID: a5b6e15be9f12095 • Your IP: Click to reveal • Performance & security by Cloudflare",
       "input_placeholders": [],
       "buttons": [
         "Click to reveal"

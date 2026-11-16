@@ -1,9 +1,178 @@
 {
-  "checked_at_utc": "2026-11-16T13:30:50.203840+00:00",
+  "checked_at_utc": "2026-11-16T13:35:51.479738+00:00",
   "source": "official Ministry of Health registries API and official 2025 report",
   "api_url": "https://registries.health.gov.il/api/Institutions/GetInstitutions",
   "report_url": "https://www.gov.il/BlobFolder/reports/licensed-inpatient-hospital-beds-dec-2025/he/files_publications_units_info_beds2025_dec2025.pdf",
-  "current_facilities": [],
+  "current_facilities": [
+    {
+      "instituteCode": "53740",
+      "instituteName": "ד\"ר לוינגר מרכזים רפואיים רמת החייל (לשעבר עתידים)",
+      "instituteTypeName": "מרפאות כירורגיות בקהילה",
+      "cityName": "תל אביב - יפו",
+      "districtName": "תל-אביב",
+      "fullAddress": "הברזל 24, תל אביב - יפו ",
+      "startDate": "2026-09-01T00:00:00",
+      "endDate": "2026-12-01T00:00:00",
+      "status": "בתוקף",
+      "ownershipName": "פרטי"
+    },
+    {
+      "instituteCode": "53754",
+      "instituteName": "חדר ניתוח יום הברזל",
+      "instituteTypeName": "מרפאות כירורגיות בקהילה",
+      "cityName": "תל אביב - יפו",
+      "districtName": "תל-אביב",
+      "fullAddress": "הברזל 9 א', תל אביב - יפו ",
+      "startDate": "2026-01-01T00:00:00",
+      "endDate": "2026-12-01T00:00:00",
+      "status": "בתוקף",
+      "ownershipName": "פרטי"
+    },
+    {
+      "instituteCode": "53743",
+      "instituteName": "חדר ניתוח פולג בע\"מ",
+      "instituteTypeName": "מרפאות כירורגיות בקהילה",
+      "cityName": "נתניה",
+      "districtName": "מרכז",
+      "fullAddress": "גבורי ישראל 7, נתניה ",
+      "startDate": "2026-09-01T00:00:00",
+      "endDate": "2026-11-01T00:00:00",
+      "status": "בתוקף",
+      "ownershipName": "פרטי"
+    },
+    {
+      "instituteCode": "53747",
+      "instituteName": "טי.אל.וי מדיקל סנטר TLV",
+      "instituteTypeName": "מרפאות כירורגיות בקהילה",
+      "cityName": "תל אביב - יפו",
+      "districtName": "תל-אביב",
+      "fullAddress": "הברזל 15, רמת החייל, תל אביב - יפו ",
+      "startDate": "2026-09-01T00:00:00",
+      "endDate": "2026-11-01T00:00:00",
+      "status": "בתוקף",
+      "ownershipName": "פרטי"
+    },
+    {
+      "instituteCode": "53708",
+      "instituteName": "מדילי בע\"מ",
+      "instituteTypeName": "מרפאות כירורגיות בקהילה",
+      "cityName": "רחובות",
+      "districtName": "מרכז",
+      "fullAddress": "יהודה הלוי 36, רחובות 76534",
+      "startDate": "2026-09-01T00:00:00",
+      "endDate": "2026-12-01T00:00:00",
+      "status": "בתוקף",
+      "ownershipName": "פרטי"
+    },
+    {
+      "instituteCode": "53753",
+      "instituteName": "מרכז רפואי ד\"ר מרקוס הראל",
+      "instituteTypeName": "מרפאות כירורגיות בקהילה",
+      "cityName": "תל אביב - יפו",
+      "districtName": "תל-אביב",
+      "fullAddress": "ברודצקי 43, תל אביב - יפו ",
+      "startDate": "2026-10-01T00:00:00",
+      "endDate": "2027-01-01T00:00:00",
+      "status": "בתוקף",
+      "ownershipName": "פרטי"
+    },
+    {
+      "instituteCode": "53726",
+      "instituteName": "מרכז רפואי רמת אביב",
+      "instituteTypeName": "מרפאות כירורגיות בקהילה",
+      "cityName": "תל אביב - יפו",
+      "districtName": "תל-אביב",
+      "fullAddress": "אינשטיין 40, קניון רמת אביב, תל אביב - יפו ",
+      "startDate": "2026-09-01T00:00:00",
+      "endDate": "2026-12-01T00:00:00",
+      "status": "בתוקף",
+      "ownershipName": "פרטי"
+    },
+    {
+      "instituteCode": "53742",
+      "instituteName": "מרכז רפואי שער העיר",
+      "instituteTypeName": "מרפאות כירורגיות בקהילה",
+      "cityName": "רמת גן",
+      "districtName": "תל-אביב",
+      "fullAddress": "ז'בוטינסקי 7, קומה 21, רמת גן 52520",
+      "startDate": "2022-07-01T00:00:00",
+      "endDate": "2022-11-01T00:00:00",
+      "status": "בתוקף",
+      "ownershipName": "פרטי"
+    },
+    {
+      "instituteCode": "53733",
+      "instituteName": "מרפאה כירורגית שוורץ - ארד בע\"מ",
+      "instituteTypeName": "מרפאות כירורגיות בקהילה",
+      "cityName": "תל אביב - יפו",
+      "districtName": "תל-אביב",
+      "fullAddress": "הברזל 15, תל אביב - יפו ",
+      "startDate": "2026-08-01T00:00:00",
+      "endDate": "2026-11-01T00:00:00",
+      "status": "בתוקף",
+      "ownershipName": "פרטי"
+    },
+    {
+      "instituteCode": "53744",
+      "instituteName": "מרפאה לכירורגיה קטנה של ד\"ר רם אברהמי",
+      "instituteTypeName": "מרפאות כירורגיות בקהילה",
+      "cityName": "תל אביב - יפו",
+      "districtName": "תל-אביב",
+      "fullAddress": "הברזל 31, רמת החייל, תל אביב - יפו ",
+      "startDate": "2026-08-01T00:00:00",
+      "endDate": "2026-11-01T00:00:00",
+      "status": "בתוקף",
+      "ownershipName": "פרטי"
+    },
+    {
+      "instituteCode": "53750",
+      "instituteName": "מרפאת ד\"ר דב קליין",
+      "instituteTypeName": "מרפאות כירורגיות בקהילה",
+      "cityName": "תל אביב - יפו",
+      "districtName": "תל-אביב",
+      "fullAddress": "יוניצ'מן 21, תל אביב - יפו 6936027",
+      "startDate": "2026-06-01T00:00:00",
+      "endDate": "2026-07-01T00:00:00",
+      "status": "בתוקף",
+      "ownershipName": "פרטי"
+    },
+    {
+      "instituteCode": "53723",
+      "instituteName": "מרפאת מדיקה תל אביב",
+      "instituteTypeName": "מרפאות כירורגיות בקהילה",
+      "cityName": "תל אביב - יפו",
+      "districtName": "תל-אביב",
+      "fullAddress": "הברזל 28, רמת החייל, תל אביב - יפו ",
+      "startDate": "2026-10-01T00:00:00",
+      "endDate": "2027-01-01T00:00:00",
+      "status": "בתוקף",
+      "ownershipName": "פרטי"
+    },
+    {
+      "instituteCode": "53713",
+      "instituteName": "מרפאת עין טל",
+      "instituteTypeName": "מרפאות כירורגיות בקהילה",
+      "cityName": "תל אביב - יפו",
+      "districtName": "תל-אביב",
+      "fullAddress": "הברזל 15, רמת החייל, תל אביב - יפו ",
+      "startDate": "2026-08-01T00:00:00",
+      "endDate": "2026-11-01T00:00:00",
+      "status": "בתוקף",
+      "ownershipName": "פרטי"
+    },
+    {
+      "instituteCode": "53739",
+      "instituteName": "עיניים אסותא השלום",
+      "instituteTypeName": "מרפאות כירורגיות בקהילה",
+      "cityName": "תל אביב - יפו",
+      "districtName": "תל-אביב",
+      "fullAddress": "אלון יגאל 96, בניין C, תל אביב - יפו ",
+      "startDate": "2026-03-01T00:00:00",
+      "endDate": "2027-08-01T00:00:00",
+      "status": "בתוקף",
+      "ownershipName": "פרטי"
+    }
+  ],
   "pdf_matching_pages": [
     {
       "page": 4,
@@ -69,8 +238,78 @@
     }
   ],
   "notes": [],
-  "api_status": 202,
-  "api_error": "JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+  "api_status": 200,
+  "api_top_keys": [
+    "returnObject",
+    "statusCode",
+    "message"
+  ],
+  "api_return_keys": [
+    "totalRows",
+    "pageNumber",
+    "maxResults",
+    "institutionsList"
+  ],
+  "api_return_types": {
+    "totalRows": "int",
+    "pageNumber": "int",
+    "maxResults": "int",
+    "institutionsList": "list"
+  },
+  "api_total_rows": 2170,
+  "api_effective_page_size": 1000,
+  "api_pages_fetched": [
+    0,
+    1,
+    2
+  ],
+  "api_received_records": 2170,
+  "api_complete": true,
+  "api_records_from_current_report_at_least_one": true,
+  "current_facilities_date_status_mismatch": [
+    {
+      "code": "53743",
+      "name": "חדר ניתוח פולג בע\"מ",
+      "endDate": "2026-11-01T00:00:00",
+      "status": "בתוקף"
+    },
+    {
+      "code": "53747",
+      "name": "טי.אל.וי מדיקל סנטר TLV",
+      "endDate": "2026-11-01T00:00:00",
+      "status": "בתוקף"
+    },
+    {
+      "code": "53742",
+      "name": "מרכז רפואי שער העיר",
+      "endDate": "2022-11-01T00:00:00",
+      "status": "בתוקף"
+    },
+    {
+      "code": "53733",
+      "name": "מרפאה כירורגית שוורץ - ארד בע\"מ",
+      "endDate": "2026-11-01T00:00:00",
+      "status": "בתוקף"
+    },
+    {
+      "code": "53744",
+      "name": "מרפאה לכירורגיה קטנה של ד\"ר רם אברהמי",
+      "endDate": "2026-11-01T00:00:00",
+      "status": "בתוקף"
+    },
+    {
+      "code": "53750",
+      "name": "מרפאת ד\"ר דב קליין",
+      "endDate": "2026-07-01T00:00:00",
+      "status": "בתוקף"
+    },
+    {
+      "code": "53713",
+      "name": "מרפאת עין טל",
+      "endDate": "2026-11-01T00:00:00",
+      "status": "בתוקף"
+    }
+  ],
   "pdf_status": 200,
   "pdf_valid": true,
   "pdf_pages": 48,
