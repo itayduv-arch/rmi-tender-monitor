@@ -1,11 +1,47 @@
 {
-  "last_checked_at_utc": "2026-11-16T14:07:51.336617+00:00",
+  "last_checked_at_utc": "2026-11-16T14:13:31.167101+00:00",
   "seen_urls": [
+    "https://www.gov.il/BlobFolder/publicsharing/competitive-procedure-surgical-positions-northern-district/he/files_invitation-to-tender_cfb-072006-a.xlsx",
+    "https://www.gov.il/BlobFolder/publicsharing/competitive-procedure-surgical-positions-northern-district/he/files_invitation-to-tender_cfb-072006-b.xlsx",
+    "https://www.gov.il/BlobFolder/publicsharing/competitive-procedure-surgical-positions-northern-district/he/files_invitation-to-tender_competitive-procedure-surgical-positions-northern-district-%20faq.pdf",
     "https://www.gov.il/BlobFolder/publicsharing/competitive-procedure-surgical-positions-northern-district/he/files_invitation-to-tender_competitive-procedure-surgical-positions-northern-district.pdf",
-    "https://www.gov.il/he/pages/competitive-procedure-surgical-positions-northern-district"
+    "https://www.gov.il/ar/departments/ministry_of_health",
+    "https://www.gov.il/en/departments/ministry_of_health",
+    "https://www.gov.il/es",
+    "https://www.gov.il/fr",
+    "https://www.gov.il/he",
+    "https://www.gov.il/he/Departments/DynamicCollectors/subjects-db?skip=0",
+    "https://www.gov.il/he/collectors/publications/?officeId=104cb0f4-d65a-4692-b590-94af928c19c0",
+    "https://www.gov.il/he/collectors/publications/?officeId=104cb0f4-d65a-4692-b590-94af928c19c0&Type=7159e036-77d5-44f9-a1bf-4500e6125bf1",
+    "https://www.gov.il/he/departments/PublicBodies/?OfficeId=104cb0f4-d65a-4692-b590-94af928c19c0&CategoryType=034e066d-d0cd-4908-a718-68b1c4f04eac",
+    "https://www.gov.il/he/departments/PublicBodies/?OfficeId=104cb0f4-d65a-4692-b590-94af928c19c0&CategoryType=df9ec51f-c8ad-43a9-937b-c6146848b5e4",
+    "https://www.gov.il/he/departments/Units/?OfficeId=104cb0f4-d65a-4692-b590-94af928c19c0",
+    "https://www.gov.il/he/departments/central-government-call-center/govil-landing-page",
+    "https://www.gov.il/he/departments/contact",
+    "https://www.gov.il/he/departments/general/contact-sec",
+    "https://www.gov.il/he/departments/govil-landing-page",
+    "https://www.gov.il/he/departments/lastcontent?limit=10&OfficeId=104cb0f4-d65a-4692-b590-94af928c19c0&skip=0",
+    "https://www.gov.il/he/departments/legalinfo?OfficeId=104cb0f4-d65a-4692-b590-94af928c19c0",
+    "https://www.gov.il/he/departments/ministry_of_health",
+    "https://www.gov.il/he/departments/policies/?limit=10&OfficeId=104cb0f4-d65a-4692-b590-94af928c19c0",
+    "https://www.gov.il/he/departments/topics/careers?OfficeId=104cb0f4-d65a-4692-b590-94af928c19c0",
+    "https://www.gov.il/he/departments/units/budget_unit",
+    "https://www.gov.il/he/general/aboutus",
+    "https://www.gov.il/he/general/accessibility_statement",
+    "https://www.gov.il/he/general/terms_of_use",
+    "https://www.gov.il/he/government-service-branches",
+    "https://www.gov.il/he/government-service-branches/?officeId=104cb0f4-d65a-4692-b590-94af928c19c0&limit=10",
+    "https://www.gov.il/he/pages/competitive-procedure-surgical-positions-northern-district",
+    "https://www.gov.il/he/pages/gov_terms_of_use",
+    "https://www.gov.il/he/performance",
+    "https://www.gov.il/he/services",
+    "https://www.gov.il/he/sitemap",
+    "https://www.gov.il/he/subjects/certificates_and_passports?OfficeId=104cb0f4-d65a-4692-b590-94af928c19c0",
+    "https://www.gov.il/ru/departments/ministry_of_health"
   ],
   "seen_sha256": [
+    "39a820f71baa0f84f7731aaccfe9dc56ca16b5a330b79f0a12e332f3f86b0d4e",
     "77839f978d7a256507edc3b4392ade6d6e38303ff26bae63461fc84ea0a9829e"
   ],
-  "reader_sha256": "ef33f04a4afd3f79163dc4f6cd7ced2ce0096954880421a80f390ac1c9b67820"
+  "reader_sha256": "9b7d11d56a9b9f7c872cddd08e6c33e19407115242e5cb6e0c915f19c303fd17"
 }
