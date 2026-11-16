@@ -1,0 +1,23 @@
+{
+  "checked_at_utc": "2026-11-16T13:17:40.605022+00:00",
+  "official_publication_url": "https://www.gov.il/he/pages/competitive-procedure-surgical-positions-northern-district",
+  "publication_http_status": 403,
+  "publication_browser_status": 403,
+  "publication_page_accessible": false,
+  "publication_page_links_verified": false,
+  "publication_page_candidate_links": [],
+  "official_pdf_url": "https://www.gov.il/BlobFolder/publicsharing/competitive-procedure-surgical-positions-northern-district/he/files_invitation-to-tender_competitive-procedure-surgical-positions-northern-district.pdf",
+  "pdf_http_status": 200,
+  "pdf_accessible_and_parsed": true,
+  "pdf_current_sha256": "77839f978d7a256507edc3b4392ade6d6e38303ff26bae63461fc84ea0a9829e",
+  "pdf_version_changed_since_last_success": false,
+  "first_successful_snapshot_created": true,
+  "last_verified_pdf_sha256": "77839f978d7a256507edc3b4392ade6d6e38303ff26bae63461fc84ea0a9829e",
+  "last_verified_pdf_at_utc": "2026-11-16T13:17:40.605022+00:00",
+  "last_verified_pdf_pages": 25,
+  "last_verified_snapshot_path": "health/state/northern_tender_last_verified.json",
+  "coverage_complete": false,
+  "source_page_cannot_be_checked_for_amendments": true,
+  "action_needed": "Official publication page is blocked; check indexed notices and amendments separately",
+  "warning": "Publication HTML blocked. New amendments on that page cannot be ruled out."
+}
