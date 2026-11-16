@@ -16,6 +16,7 @@ URLS={
  'medika_pdf':'https://www.gov.il/BlobFolder/dynamiccollectorresultitem/medika-18092024/he/files_publications_units_general_medicine_medika-18092024.pdf',
  'inspections':'https://www.gov.il/he/departments/dynamiccollectors/inspections-db',
  'tender_portal':'https://mr.gov.il/ilgstorefront/he/search?s=TENDER',
+ 'northern_competitive_procedure_pdf':'https://www.gov.il/BlobFolder/publicsharing/competitive-procedure-surgical-positions-northern-district/he/files_invitation-to-tender_competitive-procedure-surgical-positions-northern-district.pdf',
 }
 s=requests.Session()
 s.headers.update({'User-Agent':'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 Chrome/131.0.0.0 Safari/537.36','Accept-Language':'he-IL,he;q=0.9,en-US;q=0.8'})
@@ -40,6 +41,8 @@ for label,url in URLS.items():
      txt=' '.join((pdf.pages[i].extract_text() or '') for i in range(min(3,len(pdf.pages))))
      d['extract_chars_first_3_pages']=len(txt)
      d['text_mentions_surgery']=any(w in txt for w in ('כירורגיה','ניתוח','Surgery'))
+     if label == 'northern_competitive_procedure_pdf':
+      d['extracted_text_by_page']=[{'page_number':i+1,'text':(pg.extract_text(extraction_mode='layout') or '')[:18000]} for i,pg in enumerate(pdf.pages[:50])]
     except Exception as e:d['pdf_parse_error']=str(e)[:200]
    else:
     html=body.decode('utf-8',errors='replace')
