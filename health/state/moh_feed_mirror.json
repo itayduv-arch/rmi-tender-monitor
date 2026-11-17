@@ -1,11 +1,31 @@
 {
-  "checked_at_utc": "2026-11-16T14:15:29.085109+00:00",
+  "checked_at_utc": "2026-11-17T12:32:52.497303+00:00",
   "source_kind": "third-party public mirror of official Ministry of Health RSS; discovery only",
   "mirror": "https://feeder.co/discover/ff5b8f88c5/gov-il-he-departments-publications",
   "original_official_feed": "https://www.gov.il/he/api/PublicationApi/rss/104cb0f4-d65a-4692-b590-94af928c19c0",
   "live_official_feed_access": false,
   "coverage_complete": false,
   "items": [
+    {
+      "title": "לייעוץ בתחום מדדי הבטיחות עבור המערך לבטיחות הטיפול",
+      "official_url": "https://www.gov.il/he/departments/publications/Call_for_bids/m94-2026",
+      "verified_original_document": false
+    },
+    {
+      "title": "לומדה בנושא מרשם רוקח - טיפול במצבי מחלה שכיחים בילדים",
+      "official_url": "https://www.gov.il/he/departments/publications/reports/pharmacist-prescribed-children",
+      "verified_original_document": false
+    },
+    {
+      "title": "קול קורא למחקרים בנושא - Cell and Gene Therapy for Personalised Medicine",
+      "official_url": "https://www.gov.il/he/departments/publications/Call_for_bids/cfb-cell-gene-therapy-personalised-medicine",
+      "verified_original_document": false
+    },
+    {
+      "title": "תחלואת מעיים זיהומית, לשבוע שמסתיים ב-31/10/2026",
+      "official_url": "https://www.gov.il/he/departments/publications/reports/maiim-31102026",
+      "verified_original_document": false
+    },
     {
       "title": "לומדה בנושא \"שומרים על בטיחות המזון - מניעת הרעלות מזון בבתי אוכל\"",
       "official_url": "https://www.gov.il/he/departments/publications/reports/lomda-food-poisoning",
@@ -44,26 +64,6 @@
     {
       "title": "סטודנט/ית (חטיבת הרפואה)",
       "official_url": "https://www.gov.il/he/departments/publications/drushim/jobs---------81122908",
-      "verified_original_document": false
-    },
-    {
-      "title": "נתונים עדכניים מרשיונות מטופלים - ספטמבר 2026",
-      "official_url": "https://www.gov.il/he/departments/publications/reports/licenses-status-sep-2026",
-      "verified_original_document": false
-    },
-    {
-      "title": "סקר קרבמזפין (Carbamazepine, CBZ) ותרכובות פר- ופוליפלואורואלקיליות (PFAS) בקולחים ובירקות",
-      "official_url": "https://www.gov.il/he/departments/publications/reports/carbamazepine-pips-in-veg-survey",
-      "verified_original_document": false
-    },
-    {
-      "title": "דוח ניטור מחוללי תחלואה נשימתית לשבוע 44 שהסתיים בתאריך 07.11.2026",
-      "official_url": "https://www.gov.il/he/departments/publications/reports/flu-07112026",
-      "verified_original_document": false
-    },
-    {
-      "title": "דו\"ח סיכום פעולות לשנת 2025",
-      "official_url": "https://www.gov.il/he/departments/publications/reports/2025-food-annual-report-v8",
       "verified_original_document": false
     }
   ],

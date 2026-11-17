@@ -1,5 +1,5 @@
 {
-  "last_checked_at_utc": "2026-11-16T14:13:31.167101+00:00",
+  "last_checked_at_utc": "2026-11-17T12:28:42.866279+00:00",
   "seen_urls": [
     "https://www.gov.il/BlobFolder/publicsharing/competitive-procedure-surgical-positions-northern-district/he/files_invitation-to-tender_cfb-072006-a.xlsx",
     "https://www.gov.il/BlobFolder/publicsharing/competitive-procedure-surgical-positions-northern-district/he/files_invitation-to-tender_cfb-072006-b.xlsx",
@@ -8,6 +8,7 @@
     "https://www.gov.il/ar/departments/ministry_of_health",
     "https://www.gov.il/en/departments/ministry_of_health",
     "https://www.gov.il/es",
+    "https://www.gov.il/favicon.ico",
     "https://www.gov.il/fr",
     "https://www.gov.il/he",
     "https://www.gov.il/he/Departments/DynamicCollectors/subjects-db?skip=0",
@@ -43,5 +44,5 @@
     "39a820f71baa0f84f7731aaccfe9dc56ca16b5a330b79f0a12e332f3f86b0d4e",
     "77839f978d7a256507edc3b4392ade6d6e38303ff26bae63461fc84ea0a9829e"
   ],
-  "reader_sha256": "9b7d11d56a9b9f7c872cddd08e6c33e19407115242e5cb6e0c915f19c303fd17"
+  "reader_sha256": "5529b1fe8056d261da709e737b4e389af1b637a5addab780835bcd202fc4326c"
 }
