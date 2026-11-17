@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "checked_at_utc": "2026-11-17T00:15:09.913231+00:00",
+  "checked_at_utc": "2026-11-17T23:31:19.960270+00:00",
   "source_host": "apps.land.gov.il",
   "api_base": "https://apps.land.gov.il/MichrazimSite/api/",
   "status": "ok",
@@ -172,7 +172,7 @@
       "pdf_count_expected": 7,
       "pdf_count_verified": 7,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-11-17T00:18:24.049173+00:00",
+      "browser_checked_at_utc": "2026-11-17T23:34:30.246086+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
@@ -381,7 +381,7 @@
       "pdf_count_expected": 9,
       "pdf_count_verified": 9,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-11-17T00:18:24.049173+00:00",
+      "browser_checked_at_utc": "2026-11-17T23:34:30.246086+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
@@ -591,7 +591,7 @@
       "pdf_count_expected": 9,
       "pdf_count_verified": 9,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-11-17T00:18:24.049173+00:00",
+      "browser_checked_at_utc": "2026-11-17T23:34:30.246086+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
@@ -689,7 +689,7 @@
       "pdf_count_expected": 3,
       "pdf_count_verified": 3,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-11-17T00:18:24.049173+00:00",
+      "browser_checked_at_utc": "2026-11-17T23:34:30.246086+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
@@ -986,6 +986,17 @@
           "PtichaDate": "2024-03-25T14:00:00+02:00"
         },
         {
+          "MichrazID": 20230011,
+          "MichrazName": "11/2023",
+          "Shchuna": "גני אזר",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2023-03-02T00:00:00+02:00",
+          "SgiraDate": "2023-08-28T12:00:00+03:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2023-06-07T00:00:00+03:00"
+        },
+        {
           "MichrazID": 20230049,
           "MichrazName": "49/2023",
           "Shchuna": "גני אז\"ר",
@@ -1017,17 +1028,6 @@
           "SgiraDate": "2023-09-13T12:00:00+03:00",
           "PublishedChoveret": true,
           "PtichaDate": "2023-06-01T00:00:00+03:00"
-        },
-        {
-          "MichrazID": 20230011,
-          "MichrazName": "11/2023",
-          "Shchuna": "גני אזר",
-          "KodYeshuv": 8600,
-          "KodYeudMichraz": 2,
-          "PirsumDate": "2023-03-02T00:00:00+02:00",
-          "SgiraDate": "2023-08-28T12:00:00+03:00",
-          "PublishedChoveret": true,
-          "PtichaDate": "2023-06-07T00:00:00+03:00"
         }
       ]
     },
@@ -1198,17 +1198,6 @@
           "PtichaDate": "2015-11-30T00:00:00+02:00"
         },
         {
-          "MichrazID": 20150027,
-          "MichrazName": "27/2015",
-          "Shchuna": " ",
-          "KodYeshuv": 8600,
-          "KodYeudMichraz": 2,
-          "PirsumDate": "2015-01-29T00:00:00+02:00",
-          "SgiraDate": "2015-06-15T12:00:00+03:00",
-          "PublishedChoveret": true,
-          "PtichaDate": "2015-03-30T00:00:00+03:00"
-        },
-        {
           "MichrazID": 20150026,
           "MichrazName": "26/2015",
           "Shchuna": " ",
@@ -1220,15 +1209,15 @@
           "PtichaDate": "2015-03-30T00:00:00+03:00"
         },
         {
-          "MichrazID": 20140246,
-          "MichrazName": "246/2014",
-          "Shchuna": " שיכון הצנחנים",
+          "MichrazID": 20150027,
+          "MichrazName": "27/2015",
+          "Shchuna": " ",
           "KodYeshuv": 8600,
-          "KodYeudMichraz": 1,
-          "PirsumDate": "2014-08-06T00:00:00+03:00",
-          "SgiraDate": "2014-12-15T12:00:00+02:00",
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2015-01-29T00:00:00+02:00",
+          "SgiraDate": "2015-06-15T12:00:00+03:00",
           "PublishedChoveret": true,
-          "PtichaDate": "2014-09-29T00:00:00+03:00"
+          "PtichaDate": "2015-03-30T00:00:00+03:00"
         },
         {
           "MichrazID": 20140245,
@@ -1240,6 +1229,17 @@
           "SgiraDate": "2014-12-15T12:00:00+02:00",
           "PublishedChoveret": true,
           "PtichaDate": "2014-10-06T00:00:00+03:00"
+        },
+        {
+          "MichrazID": 20140246,
+          "MichrazName": "246/2014",
+          "Shchuna": " שיכון הצנחנים",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2014-08-06T00:00:00+03:00",
+          "SgiraDate": "2014-12-15T12:00:00+02:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2014-09-29T00:00:00+03:00"
         },
         {
           "MichrazID": 20140247,
@@ -1323,238 +1323,16 @@
     },
     "coverage_warning": "Kfar Azar belongs to Ramat Gan; aliases גני אזר/גני אז״ר are included, and broader Ramat Gan residential entries are reviewed separately. A record without a locality label may require parcel/map confirmation; zero verified entries does not prove no tender exists. CBS locality codes and name aliases for newly watched villages are discovery clues; confirm with RMI tender details and never treat a zero count as exhaustive."
   },
-  "changes": [
-    {
-      "tender": "470/2025",
-      "field": "StatusMichrazMurchav",
-      "previous": 1,
-      "current": 2
-    },
-    {
-      "tender": "470/2025",
-      "field": "official_message",
-      "previous": "המכרז טרם נפתח להגשת הצעות",
-      "current": "המכרז טרם נפתח להגשת הצעות,עדיין לא פורסמה חוברת למכרז"
-    },
-    {
-      "tender": "149/2025",
-      "field": "MichrazFullDocument",
-      "previous": {
-        "MichrazID": 20250149,
-        "Size": 748352,
-        "FileType": "application/pdf",
-        "RowID": -1,
-        "Teur": "מסמך הפרסום המלא",
-        "DocName": "מסמך הפרסום המלא.pdf",
-        "UpdateDate": "2026-07-21T11:14:51.547+03:00",
-        "Url": null,
-        "MahutMismachID": 0,
-        "PirsumType": 2
-      },
-      "current": {
-        "MichrazID": 20250149,
-        "Size": 853837,
-        "FileType": "application/pdf",
-        "RowID": -1,
-        "Teur": "מסמך הפרסום המלא",
-        "DocName": "מסמך הפרסום המלא.pdf",
-        "UpdateDate": "2026-11-16T13:15:47.15+02:00",
-        "Url": null,
-        "MahutMismachID": 0,
-        "PirsumType": 2
-      }
-    },
-    {
-      "tender": "149/2025",
-      "field": "PtichaDate",
-      "previous": "2026-09-23T00:00:00+03:00",
-      "current": "2026-12-01T00:00:00+02:00"
-    },
-    {
-      "tender": "149/2025",
-      "field": "SgiraDate",
-      "previous": "2026-11-23T12:00:00+02:00",
-      "current": "2026-12-30T12:00:00+02:00"
-    },
-    {
-      "tender": "149/2025",
-      "field": "StatusMichrazMurchav",
-      "previous": 2,
-      "current": 1
-    },
-    {
-      "tender": "149/2025",
-      "field": "UpdateDate",
-      "previous": "2026-07-21T11:14:40.553+03:00",
-      "current": "2026-11-16T13:15:43.15+02:00"
-    },
-    {
-      "tender": "149/2025",
-      "field": "documents",
-      "added": [
-        {
-          "RowID": 138274,
-          "DocName": "פרסום דחיית מועדים.pdf",
-          "Teur": "פרסום דחיית מועדים",
-          "UpdateDate": "2026-11-16T00:00:00+02:00",
-          "PirsumType": 3,
-          "MahutMismachID": 0,
-          "FileType": "application/pdf"
-        },
-        {
-          "RowID": 138275,
-          "DocName": "פרסום דחיית מועדים.pdf",
-          "Teur": "פרסום דחיית מועדים",
-          "UpdateDate": "2026-07-21T00:00:00+03:00",
-          "PirsumType": 3,
-          "MahutMismachID": 0,
-          "FileType": "application/pdf"
-        },
-        {
-          "RowID": 138276,
-          "DocName": "פרסום דחיית מועדים.pdf",
-          "Teur": "פרסום דחיית מועדים",
-          "UpdateDate": "2026-04-13T00:00:00+03:00",
-          "PirsumType": 3,
-          "MahutMismachID": 0,
-          "FileType": "application/pdf"
-        },
-        {
-          "RowID": 138277,
-          "DocName": "פרסום דחיית מועדים.pdf",
-          "Teur": "פרסום דחיית מועדים",
-          "UpdateDate": "2026-02-09T00:00:00+02:00",
-          "PirsumType": 3,
-          "MahutMismachID": 0,
-          "FileType": "application/pdf"
-        },
-        {
-          "RowID": 138278,
-          "DocName": "פרסום דחיית מועדים.pdf",
-          "Teur": "פרסום דחיית מועדים",
-          "UpdateDate": "2025-11-24T00:00:00+02:00",
-          "PirsumType": 3,
-          "MahutMismachID": 0,
-          "FileType": "application/pdf"
-        },
-        {
-          "RowID": 138279,
-          "DocName": "פרסום דחיית מועדים.pdf",
-          "Teur": "פרסום דחיית מועדים",
-          "UpdateDate": "2025-10-22T00:00:00+03:00",
-          "PirsumType": 3,
-          "MahutMismachID": 0,
-          "FileType": "application/pdf"
-        },
-        {
-          "RowID": 138280,
-          "DocName": "פרסום דחיית מועדים.pdf",
-          "Teur": "פרסום דחיית מועדים",
-          "UpdateDate": "2025-07-16T00:00:00+03:00",
-          "PirsumType": 3,
-          "MahutMismachID": 0,
-          "FileType": "application/pdf"
-        },
-        {
-          "RowID": 138281,
-          "DocName": "פרסום ראשון.pdf",
-          "Teur": "פרסום ראשון",
-          "UpdateDate": "2025-04-30T00:00:00+03:00",
-          "PirsumType": 3,
-          "MahutMismachID": 0,
-          "FileType": "application/pdf"
-        }
-      ],
-      "removed": [
-        {
-          "RowID": 130593,
-          "DocName": "פרסום דחיית מועדים.pdf",
-          "Teur": "פרסום דחיית מועדים",
-          "UpdateDate": "2026-07-21T00:00:00+03:00",
-          "PirsumType": 3,
-          "MahutMismachID": 0,
-          "FileType": "application/pdf"
-        },
-        {
-          "RowID": 130594,
-          "DocName": "פרסום דחיית מועדים.pdf",
-          "Teur": "פרסום דחיית מועדים",
-          "UpdateDate": "2026-04-13T00:00:00+03:00",
-          "PirsumType": 3,
-          "MahutMismachID": 0,
-          "FileType": "application/pdf"
-        },
-        {
-          "RowID": 130595,
-          "DocName": "פרסום דחיית מועדים.pdf",
-          "Teur": "פרסום דחיית מועדים",
-          "UpdateDate": "2026-02-09T00:00:00+02:00",
-          "PirsumType": 3,
-          "MahutMismachID": 0,
-          "FileType": "application/pdf"
-        },
-        {
-          "RowID": 130596,
-          "DocName": "פרסום דחיית מועדים.pdf",
-          "Teur": "פרסום דחיית מועדים",
-          "UpdateDate": "2025-11-24T00:00:00+02:00",
-          "PirsumType": 3,
-          "MahutMismachID": 0,
-          "FileType": "application/pdf"
-        },
-        {
-          "RowID": 130597,
-          "DocName": "פרסום דחיית מועדים.pdf",
-          "Teur": "פרסום דחיית מועדים",
-          "UpdateDate": "2025-10-22T00:00:00+03:00",
-          "PirsumType": 3,
-          "MahutMismachID": 0,
-          "FileType": "application/pdf"
-        },
-        {
-          "RowID": 130598,
-          "DocName": "פרסום דחיית מועדים.pdf",
-          "Teur": "פרסום דחיית מועדים",
-          "UpdateDate": "2025-07-16T00:00:00+03:00",
-          "PirsumType": 3,
-          "MahutMismachID": 0,
-          "FileType": "application/pdf"
-        },
-        {
-          "RowID": 130599,
-          "DocName": "פרסום ראשון.pdf",
-          "Teur": "פרסום ראשון",
-          "UpdateDate": "2025-04-30T00:00:00+03:00",
-          "PirsumType": 3,
-          "MahutMismachID": 0,
-          "FileType": "application/pdf"
-        }
-      ],
-      "modified": []
-    },
-    {
-      "tender": "149/2025",
-      "field": "official_message",
-      "previous": "המכרז טרם נפתח להגשת הצעות,עדיין לא פורסמה חוברת למכרז",
-      "current": "המכרז טרם נפתח להגשת הצעות"
-    },
-    {
-      "tender": "149/2025",
-      "field": "pdf_document_content_sha256",
-      "document_key": "full_publication",
-      "previous_hash": "96311ebed264b2a0f426556f697143aa12c4a02fafe30c97065db08367197891",
-      "current_hash": "d0db97232bcf98f2d284abf87fda6c835536b71d995f262cc917e38de298f797"
-    }
-  ],
+  "changes": [],
   "errors": [],
   "notes": [
     "No submission-open claim without direct official confirmation of an active application form.",
     "A newly detected tender is a candidate until its official details have been verified."
   ],
-  "search_rows": 10236,
+  "search_rows": 10237,
   "pdf_complete": true,
   "verified_coverage": "All named tender detail endpoints and complete RMI search were readable.",
-  "changes_count": 10,
+  "changes_count": 0,
   "browser_coverage_verified": 4,
   "browser_coverage_expected": 4,
   "browser_coverage_complete": true
