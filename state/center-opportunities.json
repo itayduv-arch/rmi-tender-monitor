@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-15T21:04:23.144529+00:00",
+  "checked_at_utc": "2026-11-17T00:16:08.781521+00:00",
   "source_host": "apps.land.gov.il",
   "status": "ok",
   "tenders": {
@@ -1177,7 +1177,7 @@
         "StatusMichrazMurchav": 2,
         "ReadyForHagasha": true,
         "HagashaMekuvenet": true,
-        "official_message": "המכרז יפתח להגשת הצעות 21 יום לפני מועד הסגירה",
+        "official_message": "תקין",
         "submission_state": "likely_open_requires_form_confirmation",
         "documents": [
           {
@@ -1199,7 +1199,16 @@
             "FileType": "application/pdf"
           },
           {
-            "RowID": 134712,
+            "RowID": 138284,
+            "DocName": "פרסום עדכון.pdf",
+            "Teur": "פרסום עדכון",
+            "UpdateDate": "2026-11-16T00:00:00+02:00",
+            "PirsumType": 3,
+            "MahutMismachID": 0,
+            "FileType": "application/pdf"
+          },
+          {
+            "RowID": 138285,
             "DocName": "פרסום דחיית מועדים.pdf",
             "Teur": "פרסום דחיית מועדים",
             "UpdateDate": "2026-07-26T00:00:00+03:00",
@@ -1208,7 +1217,7 @@
             "FileType": "application/pdf"
           },
           {
-            "RowID": 134713,
+            "RowID": 138286,
             "DocName": "פרסום ראשון.pdf",
             "Teur": "פרסום ראשון",
             "UpdateDate": "2026-04-30T00:00:00+03:00",
@@ -1217,15 +1226,15 @@
             "FileType": "application/pdf"
           }
         ],
-        "document_count": 4,
+        "document_count": 5,
         "MichrazFullDocument": {
           "MichrazID": 20260099,
-          "Size": 301988,
+          "Size": 456227,
           "FileType": "application/pdf",
           "RowID": -1,
           "Teur": "מסמך הפרסום המלא",
           "DocName": "מסמך הפרסום המלא.pdf",
-          "UpdateDate": "2026-11-11T12:09:14.933+02:00",
+          "UpdateDate": "2026-11-16T13:24:49.067+02:00",
           "Url": null,
           "MahutMismachID": 0,
           "PirsumType": 2
