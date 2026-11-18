@@ -28,6 +28,7 @@ DISCOVERY = ROOT / "official_notice_discovery.json"
 ACCESS = ROOT / "northern_tender_status.json"
 PREFIX = ("https://www.gov.il/BlobFolder/publicsharing/"
           "competitive-procedure-surgical-positions-northern-district/he/")
+OFFICIAL_PAGE = "https://www.gov.il/he/pages/competitive-procedure-surgical-positions-northern-district"
 KNOWN = [
     PREFIX + "files_invitation-to-tender_competitive-procedure-surgical-positions-northern-district.pdf",
     PREFIX + "files_invitation-to-tender_competitive-procedure-surgical-positions-northern-district-%20faq.pdf",
@@ -142,10 +143,25 @@ def main():
     old_files = {d["url"]: d for d in old.get("documents", []) if d.get("verified") and d.get("url")}
     reader_ok = any(s.get("source") == "public-reader" and s.get("http_status") == 200
                     for s in discovery.get("source_statuses", []))
-    page_ok = access.get("publication_page_accessible") is True
     urls = discover_links(discovery)
     session = requests.Session()
     session.headers.update({"User-Agent": "Mozilla/5.0", "Accept-Language": "he-IL,he;q=0.9"})
+    direct_status = None
+    page_ok = False
+    page_discovered_urls = []
+    try:
+        page_response = session.get(OFFICIAL_PAGE, timeout=25)
+        direct_status = page_response.status_code
+        if (direct_status == 200 and urlparse(page_response.url).hostname == "www.gov.il"
+                and "כירורג" in page_response.text):
+            page_ok = True
+            page_discovered_urls = [u for u in discover_links({
+                "candidate_official_urls": re.findall(
+                    r"https://www\\.gov\\.il/BlobFolder/[^\\s\\]\"'<>]+", page_response.text)
+            }) if allow_url(u)]
+            urls = sorted(set(urls) | set(page_discovered_urls))[:MAX_DOCUMENTS]
+    except requests.RequestException:
+        pass
     documents = [download_original(session, u) for u in urls]
     verified = {d["url"]: d for d in documents if d.get("verified")}
     changed = [u for u, d in verified.items()
@@ -157,7 +173,8 @@ def main():
         "checked_at_utc": now,
         "source": "official gov.il original attachments; third-party page discovery only",
         "official_publication_page_accessible": page_ok,
-        "official_publication_html_status": access.get("publication_http_status"),
+        "official_publication_html_status": direct_status,
+        "official_page_document_links_found": page_discovered_urls,
         "secondary_reader_accessible": reader_ok,
         "candidate_count": len(urls),
         "documents": documents,
@@ -169,8 +186,8 @@ def main():
         "unverified_attachment_urls": unavailable,
         "attention_required": bool((added or changed) and bool(old_files)),
         "first_snapshot_created": not bool(old_files),
-        "all_publication_links_verified": page_ok and not unavailable,
-        "coverage_complete": bool(page_ok and not unavailable),
+        "all_publication_links_verified": bool(page_ok and not unavailable and page_discovered_urls),
+        "coverage_complete": bool(page_ok and not unavailable and page_discovered_urls),
         "warning": ("Direct government publication HTML remains unavailable. A third-party "
                     "reader may omit or delay new links; independently retrieved gov.il "
                     "attachments are verified, but complete coverage is NOT established.")
