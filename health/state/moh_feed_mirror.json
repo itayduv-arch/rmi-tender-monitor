@@ -1,11 +1,16 @@
 {
-  "checked_at_utc": "2026-11-18T12:17:35.424544+00:00",
+  "checked_at_utc": "2026-11-18T21:22:47.084730+00:00",
   "source_kind": "third-party public mirror of official Ministry of Health RSS; discovery only",
   "mirror": "https://feeder.co/discover/ff5b8f88c5/gov-il-he-departments-publications",
   "original_official_feed": "https://www.gov.il/he/api/PublicationApi/rss/104cb0f4-d65a-4692-b590-94af928c19c0",
   "live_official_feed_access": false,
   "coverage_complete": false,
   "items": [
+    {
+      "title": "סטודנט/ית (מעבדות בריאות הציבור)",
+      "official_url": "https://www.gov.il/he/departments/publications/drushim/jobs-81100074",
+      "verified_original_document": false
+    },
     {
       "title": "סטודנט/ית (הדרכה)",
       "official_url": "https://www.gov.il/he/departments/publications/drushim/jobs----81089557",
@@ -59,11 +64,6 @@
     {
       "title": "לומדה בנושא \"שומרים על בטיחות המזון - מניעת הרעלות מזון בבתי אוכל\"",
       "official_url": "https://www.gov.il/he/departments/publications/reports/lomda-food-poisoning",
-      "verified_original_document": false
-    },
-    {
-      "title": "צריכת אופיואידים בישראל 2025",
-      "official_url": "https://www.gov.il/he/departments/publications/reports/opiate-addiction-2025",
       "verified_original_document": false
     }
   ],
