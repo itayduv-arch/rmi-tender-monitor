@@ -1,9 +1,10 @@
 {
-  "checked_at_utc": "2026-11-18T21:10:05.522909+00:00",
+  "checked_at_utc": "2026-11-18T21:13:02.718126+00:00",
   "source": "official gov.il original attachments; third-party page discovery only",
   "official_publication_page_accessible": false,
   "official_publication_html_status": 403,
-  "secondary_reader_accessible": true,
+  "official_page_document_links_found": [],
+  "secondary_reader_accessible": false,
   "candidate_count": 4,
   "documents": [
     {
@@ -253,16 +254,11 @@
   "verified_attachment_count": 4,
   "expected_known_attachment_count": 4,
   "all_known_attachments_verified": true,
-  "newly_verified_urls": [
-    "https://www.gov.il/BlobFolder/publicsharing/competitive-procedure-surgical-positions-northern-district/he/files_invitation-to-tender_cfb-072006-a.xlsx",
-    "https://www.gov.il/BlobFolder/publicsharing/competitive-procedure-surgical-positions-northern-district/he/files_invitation-to-tender_cfb-072006-b.xlsx",
-    "https://www.gov.il/BlobFolder/publicsharing/competitive-procedure-surgical-positions-northern-district/he/files_invitation-to-tender_competitive-procedure-surgical-positions-northern-district-%20faq.pdf",
-    "https://www.gov.il/BlobFolder/publicsharing/competitive-procedure-surgical-positions-northern-district/he/files_invitation-to-tender_competitive-procedure-surgical-positions-northern-district.pdf"
-  ],
+  "newly_verified_urls": [],
   "modified_verified_urls": [],
   "unverified_attachment_urls": [],
   "attention_required": false,
-  "first_snapshot_created": true,
+  "first_snapshot_created": false,
   "all_publication_links_verified": false,
   "coverage_complete": false,
   "warning": "Direct government publication HTML remains unavailable. A third-party reader may omit or delay new links; independently retrieved gov.il attachments are verified, but complete coverage is NOT established.",
