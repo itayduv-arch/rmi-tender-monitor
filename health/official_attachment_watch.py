@@ -155,7 +155,7 @@ def main():
         if (direct_status == 200 and urlparse(page_response.url).hostname == "www.gov.il"
                 and "כירורג" in page_response.text):
             page_ok = True
-            discovered = re.findall(r'https://www[.]gov[.]il/BlobFolder/[^\\s"<>]+', page_response.text)
+            discovered = re.findall(r'https://www[.]gov[.]il/BlobFolder/[^\s"<>]+', page_response.text)
             page_discovered_urls = [u for raw in discovered if allow_url(u := raw.strip("'").strip(")"))]
             urls = sorted(set(urls) | set(page_discovered_urls))[:MAX_DOCUMENTS]
     except requests.RequestException:
