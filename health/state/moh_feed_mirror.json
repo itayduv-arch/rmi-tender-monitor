@@ -1,11 +1,41 @@
 {
-  "checked_at_utc": "2026-11-17T12:32:52.497303+00:00",
+  "checked_at_utc": "2026-11-18T12:17:35.424544+00:00",
   "source_kind": "third-party public mirror of official Ministry of Health RSS; discovery only",
   "mirror": "https://feeder.co/discover/ff5b8f88c5/gov-il-he-departments-publications",
   "original_official_feed": "https://www.gov.il/he/api/PublicationApi/rss/104cb0f4-d65a-4692-b590-94af928c19c0",
   "live_official_feed_access": false,
   "coverage_complete": false,
   "items": [
+    {
+      "title": "סטודנט/ית (הדרכה)",
+      "official_url": "https://www.gov.il/he/departments/publications/drushim/jobs----81089557",
+      "verified_original_document": false
+    },
+    {
+      "title": "דוח ניטור מחוללי תחלואה נשימתית לשבוע 45 שהסתיים בתאריך 14.11.2026",
+      "official_url": "https://www.gov.il/he/departments/publications/reports/flu-14112026",
+      "verified_original_document": false
+    },
+    {
+      "title": "דרוש/ה סטודנט/ית (כלכלה במחשוב)",
+      "official_url": "https://www.gov.il/he/departments/publications/drushim/jobs--81099265",
+      "verified_original_document": false
+    },
+    {
+      "title": "דרושים סטודנט/ית (מינהל תכנון אסטרטגי וכלכלי) -קיבוצי ל 2 משרות",
+      "official_url": "https://www.gov.il/he/departments/publications/drushim/jobs------81069766-----81145381",
+      "verified_original_document": false
+    },
+    {
+      "title": "סטודנט/ית (התנדבות ושירות לאומי)",
+      "official_url": "https://www.gov.il/he/departments/publications/drushim/job------81161064",
+      "verified_original_document": false
+    },
+    {
+      "title": "קול קורא למחקרים משותפים העוסקים בכח אדם במערכות בריאות משתנות: Transforming the Health and Care Workforce for Sustainable and Resilient Systems",
+      "official_url": "https://www.gov.il/he/departments/publications/Call_for_bids/transforming-health-care-workforce-sustainable-resilient-systems",
+      "verified_original_document": false
+    },
     {
       "title": "לייעוץ בתחום מדדי הבטיחות עבור המערך לבטיחות הטיפול",
       "official_url": "https://www.gov.il/he/departments/publications/Call_for_bids/m94-2026",
@@ -34,36 +64,6 @@
     {
       "title": "צריכת אופיואידים בישראל 2025",
       "official_url": "https://www.gov.il/he/departments/publications/reports/opiate-addiction-2025",
-      "verified_original_document": false
-    },
-    {
-      "title": "מסקנות והמלצות תת הוועדה לבחינה וקידום הטיפול הפליאטיבי בילדים בישראל והוועדה לבחינת רצף השירות לילדים עם טרכאוסטום",
-      "official_url": "https://www.gov.il/he/departments/publications/reports/subcommittee-examination-promotion-palliative-care-children-israel-report",
-      "verified_original_document": false
-    },
-    {
-      "title": "יחידות טיפוליות להתפתחות הילד מוכרות",
-      "official_url": "https://www.gov.il/he/departments/publications/reports/developmental_units",
-      "verified_original_document": false
-    },
-    {
-      "title": "המעבדה הארצית לבריאות הציבור, תל אביב - דו\"ח שנתי לשנים 2023-2024",
-      "official_url": "https://www.gov.il/he/departments/publications/reports/lab-ta2023-2024",
-      "verified_original_document": false
-    },
-    {
-      "title": "הוועדה הציבורית להרחבת סל שירותי הבריאות לשנת 2027",
-      "official_url": "https://www.gov.il/he/departments/publications/reports/hbs2027",
-      "verified_original_document": false
-    },
-    {
-      "title": "דוח ניטור תחלואה אנטרית, ספטמבר 2026",
-      "official_url": "https://www.gov.il/he/departments/publications/reports/ant-sept-2026",
-      "verified_original_document": false
-    },
-    {
-      "title": "סטודנט/ית (חטיבת הרפואה)",
-      "official_url": "https://www.gov.il/he/departments/publications/drushim/jobs---------81122908",
       "verified_original_document": false
     }
   ],
