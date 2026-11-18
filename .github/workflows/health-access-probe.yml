@@ -43,6 +43,16 @@ jobs:
         run: python health/official_notice_discovery.py
       - name: Verify every northern tender PDF and Excel attachment at the original gov.il host
         run: python health/official_attachment_watch.py
+      - name: Publish verified official attachment status immediately, independent of Chromium
+        run: |
+          git config user.name "health-source-monitor-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add health/state/official_notice_discovery.json health/state/official_notice_discovery_seen.json health/state/official_attachment_status.json health/state/official_attachment_last_verified.json
+          if ! git diff --cached --quiet; then
+            git commit -m "chore(health): publish verified official tender attachments [skip ci]"
+            git pull --rebase -X ours origin main
+            git push origin HEAD:main
+          fi
       - name: Install browser for facility and publication page checks
         run: |
           python -m pip install playwright==1.58.0 xlrd==2.0.2
