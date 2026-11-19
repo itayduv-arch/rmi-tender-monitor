@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "checked_at_utc": "2026-11-18T22:57:13.262264+00:00",
+  "checked_at_utc": "2026-11-19T23:04:08.322995+00:00",
   "source_host": "apps.land.gov.il",
   "api_base": "https://apps.land.gov.il/MichrazimSite/api/",
   "status": "ok",
@@ -172,7 +172,7 @@
       "pdf_count_expected": 7,
       "pdf_count_verified": 7,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-11-18T23:07:06.262091+00:00",
+      "browser_checked_at_utc": "2026-11-19T23:11:18.719167+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
@@ -381,7 +381,7 @@
       "pdf_count_expected": 9,
       "pdf_count_verified": 9,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-11-18T23:07:06.262091+00:00",
+      "browser_checked_at_utc": "2026-11-19T23:11:18.719167+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
@@ -591,7 +591,7 @@
       "pdf_count_expected": 9,
       "pdf_count_verified": 9,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-11-18T23:07:06.262091+00:00",
+      "browser_checked_at_utc": "2026-11-19T23:11:18.719167+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
@@ -689,7 +689,7 @@
       "pdf_count_expected": 3,
       "pdf_count_verified": 3,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-11-18T23:07:06.262091+00:00",
+      "browser_checked_at_utc": "2026-11-19T23:11:18.719167+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
