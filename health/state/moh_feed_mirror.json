@@ -1,11 +1,26 @@
 {
-  "checked_at_utc": "2026-11-21T11:49:21.609375+00:00",
+  "checked_at_utc": "2026-11-22T12:02:07.126334+00:00",
   "source_kind": "third-party public mirror of official Ministry of Health RSS; discovery only",
   "mirror": "https://feeder.co/discover/ff5b8f88c5/gov-il-he-departments-publications",
   "original_official_feed": "https://www.gov.il/he/api/PublicationApi/rss/104cb0f4-d65a-4692-b590-94af928c19c0",
   "live_official_feed_access": false,
   "coverage_complete": false,
   "items": [
+    {
+      "title": "דרוש/ה סטודנט/ית למכרז קיבוצי 2 משרות (אגף רגולציה כלכלית)",
+      "official_url": "https://www.gov.il/he/departments/publications/drushim/jobs---81092155---81091935",
+      "verified_original_document": false
+    },
+    {
+      "title": "קול קורא למחקרים משותפים עם חוקרים ממדינות אירופה",
+      "official_url": "https://www.gov.il/he/departments/publications/Call_for_bids/cfb-nanodiagncd2027",
+      "verified_original_document": false
+    },
+    {
+      "title": "דו\"ח מתווה הרפורמה במתכונת הסטאז' ברפואה - מאי 2025",
+      "official_url": "https://www.gov.il/he/departments/publications/reports/report-outlining-reform-internship--medicine-may2025",
+      "verified_original_document": false
+    },
     {
       "title": "קול קורא למימון מחקרים בנושא: “Understand Model and Stop AMR Transmission\"",
       "official_url": "https://www.gov.il/he/departments/publications/Call_for_bids/understand-model-stop-amr-transmission",
@@ -49,21 +64,6 @@
     {
       "title": "לייעוץ בתחום מדדי הבטיחות עבור המערך לבטיחות הטיפול",
       "official_url": "https://www.gov.il/he/departments/publications/Call_for_bids/m94-2026",
-      "verified_original_document": false
-    },
-    {
-      "title": "לומדה בנושא מרשם רוקח - טיפול במצבי מחלה שכיחים בילדים",
-      "official_url": "https://www.gov.il/he/departments/publications/reports/pharmacist-prescribed-children",
-      "verified_original_document": false
-    },
-    {
-      "title": "קול קורא למחקרים בנושא - Cell and Gene Therapy for Personalised Medicine",
-      "official_url": "https://www.gov.il/he/departments/publications/Call_for_bids/cfb-cell-gene-therapy-personalised-medicine",
-      "verified_original_document": false
-    },
-    {
-      "title": "תחלואת מעיים זיהומית, לשבוע שמסתיים ב-31/10/2026",
-      "official_url": "https://www.gov.il/he/departments/publications/reports/maiim-31102026",
       "verified_original_document": false
     }
   ],
