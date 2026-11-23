@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-22T11:58:41.670170+00:00",
+  "checked_at_utc": "2026-11-23T13:39:22.060495+00:00",
   "official_page": "https://www.gov.il/he/pages/competitive-procedure-surgical-positions-northern-district",
   "known_official_pdf": "https://www.gov.il/BlobFolder/publicsharing/competitive-procedure-surgical-positions-northern-district/he/files_invitation-to-tender_competitive-procedure-surgical-positions-northern-district.pdf",
   "source_statuses": [
@@ -24,7 +24,7 @@
       "url": "https://www.bing.com/search?format=rss&q=site%3Agov.il%20%22competitive-procedure-surgical-positions-northern-district%22",
       "official_source": false,
       "http_status": 200,
-      "bytes": 5463,
+      "bytes": 5717,
       "content_type": "text/xml; charset=utf-8",
       "indexed_official_urls": 0,
       "contains_known_notice_slug": true,
@@ -36,7 +36,7 @@
       "url": "https://www.bing.com/search?format=rss&q=site%3Agov.il%20%22%D7%95%D7%A2%D7%93%D7%AA%20%D7%94%D7%94%D7%A7%D7%A6%D7%90%D7%94%22%20%22%D7%9B%D7%99%D7%A8%D7%95%D7%A8%D7%92%D7%99%D7%94%20%D7%91%D7%99%D7%A0%D7%95%D7%A0%D7%99%D7%AA%22%20%222026%22",
       "official_source": false,
       "http_status": 200,
-      "bytes": 1495,
+      "bytes": 5713,
       "content_type": "text/xml; charset=utf-8",
       "indexed_official_urls": 0,
       "contains_known_notice_slug": false,
@@ -48,33 +48,36 @@
       "url": "https://www.google.com/search?q=site%3Agov.il%20%22competitive-procedure-surgical-positions-northern-district%22&hl=he&num=30",
       "official_source": false,
       "http_status": 200,
-      "bytes": 92687,
+      "bytes": 92683,
       "content_type": "text/html; charset=UTF-8",
       "indexed_official_urls": 0,
       "contains_known_notice_slug": true,
       "mentions_operative_terms": true,
-      "short_excerpt": "<!DOCTYPE html><html dir=\"rtl\" lang=\"iw-US\"><head><title>Google Search</title><style>body{background-color:#fff}</style><script nonce=\"pSqm8mOp0DOd-iL_h9faTA\">window.google = window.google || {};window.google.c = window.google.c || {cap:0};</script></head><body><noscript><style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=9dgCa4LnFd_Y5NoP8bO0sQs\" http-equiv=\"refresh\"><div style=\"display:block\">יש ללחוץ על <a href=\"/httpservice/retry/enablejs?sei=9dgCa4LnFd_Y5NoP8bO0sQs\">כאן</a> אם לא מועברים לדף הנכון תוך מספר שניות.</div></noscript><script nonce=\"pSqm8mOp0DOd-iL_h9faTA\">(function(){var sctm=false"
+      "short_excerpt": "<!DOCTYPE html><html dir=\"rtl\" lang=\"iw-US\"><head><title>Google Search</title><style>body{background-color:#fff}</style><script nonce=\"i3N4LwfWioojSXuuAqTPVg\">window.google = window.google || {};window.google.c = window.google.c || {cap:0};</script></head><body><noscript><style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=DkIEa9SjB_vG0PEP9KOZ0QQ\" http-equiv=\"refresh\"><div style=\"display:block\">יש ללחוץ על <a href=\"/httpservice/retry/enablejs?sei=DkIEa9SjB_vG0PEP9KOZ0QQ\">כאן</a> אם לא מועברים לדף הנכון תוך מספר שניות.</div></noscript><script nonce=\"i3N4LwfWioojSXuuAqTPVg\">(function(){var sctm=false"
     },
     {
       "source": "google-search-broad",
       "url": "https://www.google.com/search?q=site%3Agov.il/BlobFolder%20%22%D7%A2%D7%9E%D7%93%D7%95%D7%AA%20%D7%9B%D7%99%D7%A8%D7%95%D7%A8%D7%92%D7%99%D7%95%D7%AA%20%D7%91%D7%99%D7%A0%D7%95%D7%A0%D7%99%D7%95%D7%AA%22%20%22%D7%A6%D7%A4%D7%95%D7%9F%22&hl=he&num=30",
       "official_source": false,
       "http_status": 200,
-      "bytes": 93005,
+      "bytes": 92920,
       "content_type": "text/html; charset=UTF-8",
       "indexed_official_urls": 0,
       "contains_known_notice_slug": false,
       "mentions_operative_terms": false,
-      "short_excerpt": "<!DOCTYPE html><html dir=\"rtl\" lang=\"iw-US\"><head><title>Google Search</title><style>body{background-color:#fff}</style><script nonce=\"Q3zb8ldc_DUqBu7JXQwhCg\">window.google = window.google || {};window.google.c = window.google.c || {cap:0};</script></head><body><noscript><style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=9dgCa5vjGLqp5NoPppS3uA0\" http-equiv=\"refresh\"><div style=\"display:block\">יש ללחוץ על <a href=\"/httpservice/retry/enablejs?sei=9dgCa5vjGLqp5NoPppS3uA0\">כאן</a> אם לא מועברים לדף הנכון תוך מספר שניות.</div></noscript><script nonce=\"Q3zb8ldc_DUqBu7JXQwhCg\">(function(){var sctm=false"
+      "short_excerpt": "<!DOCTYPE html><html dir=\"rtl\" lang=\"iw-US\"><head><title>Google Search</title><style>body{background-color:#fff}</style><script nonce=\"P3KzzOPyUPFeQsWuypl7Zw\">window.google = window.google || {};window.google.c = window.google.c || {cap:0};</script></head><body><noscript><style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=DkIEa5eRC7KT0PEP8eyyqQc\" http-equiv=\"refresh\"><div style=\"display:block\">יש ללחוץ על <a href=\"/httpservice/retry/enablejs?sei=DkIEa5eRC7KT0PEP8eyyqQc\">כאן</a> אם לא מועברים לדף הנכון תוך מספר שניות.</div></noscript><script nonce=\"P3KzzOPyUPFeQsWuypl7Zw\">(function(){var sctm=false"
     },
     {
       "source": "google-news-rss",
       "url": "https://news.google.com/rss/search?q=site%3Agov.il%20%22%D7%95%D7%A2%D7%93%D7%AA%20%D7%94%D7%94%D7%A7%D7%A6%D7%90%D7%94%22%20%22%D7%9B%D7%99%D7%A8%D7%95%D7%A8%D7%92%D7%99%D7%94%20%D7%91%D7%99%D7%A0%D7%95%D7%A0%D7%99%D7%AA%22%20%222026%22&hl=he&gl=IL&ceid=IL:he",
       "official_source": false,
-      "http_status": 503,
-      "bytes": 1103,
-      "content_type": "text/html; charset=UTF-8",
-      "error": "Non-200 or implausibly large response"
+      "http_status": 200,
+      "bytes": 3198,
+      "content_type": "application/xml; charset=utf-8",
+      "indexed_official_urls": 0,
+      "contains_known_notice_slug": false,
+      "mentions_operative_terms": true,
+      "short_excerpt": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"yes\"?><rss version=\"2.0\" xmlns:media=\"http://search.yahoo.com/mrss/\"><channel><generator>NFE/5.0</generator><title>\"site:gov.il \"ועדת ההקצאה\" \"כירורגיה בינונית\" \"2026\"\" - חדשות Google</title><link>https://news.google.com/search?q=site:gov.il+%22%D7%95%D7%A2%D7%93%D7%AA+%D7%94%D7%94%D7%A7%D7%A6%D7%90%D7%94%22+%22%D7%9B%D7%99%D7%A8%D7%95%D7%A8%D7%92%D7%99%D7%94+%D7%91%D7%99%D7%A0%D7%95%D7%A0%D7%99%D7%AA%22+%222026%22&amp;hl=he&amp;gl=IL&amp;ceid=IL:he</link><language>iw</language><webMaster>news-webmaster@google.com</webMaster><copyright>Copyright © 2026 Google. All rights reserved. This XML feed"
     }
   ],
   "candidate_official_urls": [
