@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-22T21:48:56.109762+00:00",
+  "checked_at_utc": "2026-11-24T02:55:52.839896+00:00",
   "source_host": "apps.land.gov.il",
   "status": "ok",
   "tenders": {
@@ -545,10 +545,10 @@
         ],
         "KhalYaadRashi": 1,
         "StatusMichraz": 1,
-        "StatusMichrazMurchav": 1,
+        "StatusMichrazMurchav": 2,
         "ReadyForHagasha": null,
         "HagashaMekuvenet": true,
-        "official_message": "המכרז טרם נפתח להגשת הצעות",
+        "official_message": "המכרז טרם נפתח להגשת הצעות,עדיין לא פורסמה חוברת למכרז",
         "submission_state": "not_open_according_to_official_message",
         "documents": [
           {
@@ -916,10 +916,10 @@
         ],
         "KhalYaadRashi": 1,
         "StatusMichraz": 1,
-        "StatusMichrazMurchav": 1,
+        "StatusMichrazMurchav": 2,
         "ReadyForHagasha": null,
         "HagashaMekuvenet": true,
-        "official_message": "המכרז טרם נפתח להגשת הצעות",
+        "official_message": "המכרז טרם נפתח להגשת הצעות,עדיין לא פורסמה חוברת למכרז",
         "submission_state": "not_open_according_to_official_message",
         "documents": [
           {
@@ -1040,10 +1040,10 @@
         ],
         "KhalYaadRashi": 1,
         "StatusMichraz": 1,
-        "StatusMichrazMurchav": 1,
+        "StatusMichrazMurchav": 2,
         "ReadyForHagasha": null,
         "HagashaMekuvenet": true,
-        "official_message": "המכרז טרם נפתח להגשת הצעות",
+        "official_message": "המכרז טרם נפתח להגשת הצעות,עדיין לא פורסמה חוברת למכרז",
         "submission_state": "not_open_according_to_official_message",
         "documents": [
           {
