@@ -1,11 +1,21 @@
 {
-  "checked_at_utc": "2026-11-23T13:47:25.315762+00:00",
+  "checked_at_utc": "2026-11-24T14:21:07.933853+00:00",
   "source_kind": "third-party public mirror of official Ministry of Health RSS; discovery only",
   "mirror": "https://feeder.co/discover/ff5b8f88c5/gov-il-he-departments-publications",
   "original_official_feed": "https://www.gov.il/he/api/PublicationApi/rss/104cb0f4-d65a-4692-b590-94af928c19c0",
   "live_official_feed_access": false,
   "coverage_complete": false,
   "items": [
+    {
+      "title": "מידעון המערך לבטיחות הטיפול - נובמבר 2026",
+      "official_url": "https://www.gov.il/he/departments/publications/reports/patient-safety-division-newsletter-november-2026",
+      "verified_original_document": false
+    },
+    {
+      "title": "דוח סיכום פעילות השקייה בקולחים לשנת 2025",
+      "official_url": "https://www.gov.il/he/departments/publications/reports/bsv-ratag-2025",
+      "verified_original_document": false
+    },
     {
       "title": "דרוש/ה סטודנט/ית למכרז קיבוצי 2 משרות (אגף רגולציה כלכלית)",
       "official_url": "https://www.gov.il/he/departments/publications/drushim/jobs---81092155---81091935",
@@ -54,16 +64,6 @@
     {
       "title": "סטודנט/ית (התנדבות ושירות לאומי)",
       "official_url": "https://www.gov.il/he/departments/publications/drushim/job------81161064",
-      "verified_original_document": false
-    },
-    {
-      "title": "קול קורא למחקרים משותפים העוסקים בכח אדם במערכות בריאות משתנות: Transforming the Health and Care Workforce for Sustainable and Resilient Systems",
-      "official_url": "https://www.gov.il/he/departments/publications/Call_for_bids/transforming-health-care-workforce-sustainable-resilient-systems",
-      "verified_original_document": false
-    },
-    {
-      "title": "לייעוץ בתחום מדדי הבטיחות עבור המערך לבטיחות הטיפול",
-      "official_url": "https://www.gov.il/he/departments/publications/Call_for_bids/m94-2026",
       "verified_original_document": false
     }
   ],
