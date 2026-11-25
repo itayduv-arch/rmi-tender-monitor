@@ -1,77 +1,15 @@
 {
-  "checked_at_utc": "2026-11-25T08:37:11.583414+00:00",
+  "checked_at_utc": "2026-11-25T23:50:38.135399+00:00",
   "source_kind": "third-party public mirror of official Ministry of Health RSS; discovery only",
   "mirror": "https://feeder.co/discover/ff5b8f88c5/gov-il-he-departments-publications",
   "original_official_feed": "https://www.gov.il/he/api/PublicationApi/rss/104cb0f4-d65a-4692-b590-94af928c19c0",
   "live_official_feed_access": false,
   "coverage_complete": false,
-  "items": [
-    {
-      "title": "סטודנט/ית בריאות הנפש",
-      "official_url": "https://www.gov.il/he/departments/publications/drushim/jobs----81082142",
-      "verified_original_document": false
-    },
-    {
-      "title": "שיפוץ והתאמה לסיעוד מורכב, מבנה 108 - שמואל הרופא",
-      "official_url": "https://www.gov.il/he/departments/publications/Call_for_bids/ma07-2026",
-      "verified_original_document": false
-    },
-    {
-      "title": "מידעון המערך לבטיחות הטיפול - נובמבר 2026",
-      "official_url": "https://www.gov.il/he/departments/publications/reports/patient-safety-division-newsletter-november-2026",
-      "verified_original_document": false
-    },
-    {
-      "title": "דוח סיכום פעילות השקייה בקולחים לשנת 2025",
-      "official_url": "https://www.gov.il/he/departments/publications/reports/bsv-ratag-2025",
-      "verified_original_document": false
-    },
-    {
-      "title": "דרוש/ה סטודנט/ית למכרז קיבוצי 2 משרות (אגף רגולציה כלכלית)",
-      "official_url": "https://www.gov.il/he/departments/publications/drushim/jobs---81092155---81091935",
-      "verified_original_document": false
-    },
-    {
-      "title": "קול קורא למחקרים משותפים עם חוקרים ממדינות אירופה",
-      "official_url": "https://www.gov.il/he/departments/publications/Call_for_bids/cfb-nanodiagncd2027",
-      "verified_original_document": false
-    },
-    {
-      "title": "דו\"ח מתווה הרפורמה במתכונת הסטאז' ברפואה - מאי 2025",
-      "official_url": "https://www.gov.il/he/departments/publications/reports/report-outlining-reform-internship--medicine-may2025",
-      "verified_original_document": false
-    },
-    {
-      "title": "קול קורא למימון מחקרים בנושא: “Understand Model and Stop AMR Transmission\"",
-      "official_url": "https://www.gov.il/he/departments/publications/Call_for_bids/understand-model-stop-amr-transmission",
-      "verified_original_document": false
-    },
-    {
-      "title": "סטודנט/ית (מעבדות בריאות הציבור)",
-      "official_url": "https://www.gov.il/he/departments/publications/drushim/jobs-81100074",
-      "verified_original_document": false
-    },
-    {
-      "title": "סטודנט/ית (הדרכה)",
-      "official_url": "https://www.gov.il/he/departments/publications/drushim/jobs----81089557",
-      "verified_original_document": false
-    },
-    {
-      "title": "דוח ניטור מחוללי תחלואה נשימתית לשבוע 45 שהסתיים בתאריך 14.11.2026",
-      "official_url": "https://www.gov.il/he/departments/publications/reports/flu-14112026",
-      "verified_original_document": false
-    },
-    {
-      "title": "דרוש/ה סטודנט/ית (כלכלה במחשוב)",
-      "official_url": "https://www.gov.il/he/departments/publications/drushim/jobs--81099265",
-      "verified_original_document": false
-    }
-  ],
+  "items": [],
   "matching_items": [],
   "notes": [
     "Do not treat Feeder titles as a Ministry of Health licence or signed allocation announcement. Open the linked official notice and documents when accessible."
   ],
-  "mirror_http_status": 200,
-  "mirror_titles_extracted": 12,
-  "mirror_readable": true
+  "mirror_http_status": 503,
+  "error": "HTTPError: 503 Server Error: Service Temporarily Unavailable for url: https://feeder.co/discover/ff5b8f88c5/gov-il-he-departments-publications"
 }
