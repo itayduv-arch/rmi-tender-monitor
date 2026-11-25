@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "checked_at_utc": "2026-11-24T02:54:33.629695+00:00",
+  "checked_at_utc": "2026-11-25T00:46:08.911641+00:00",
   "source_host": "apps.land.gov.il",
   "api_base": "https://apps.land.gov.il/MichrazimSite/api/",
   "status": "ok",
@@ -172,7 +172,7 @@
       "pdf_count_expected": 7,
       "pdf_count_verified": 7,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-11-24T02:57:46.296488+00:00",
+      "browser_checked_at_utc": "2026-11-25T00:49:42.621514+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
@@ -185,7 +185,7 @@
       "SgiraDate": "2026-12-30T12:00:00+02:00",
       "UpdateDate": "2026-10-29T08:58:20.683+02:00",
       "StatusMichraz": 1,
-      "StatusMichrazMurchav": 1,
+      "StatusMichrazMurchav": 2,
       "ReadyForHagasha": null,
       "YechidotDiur": 26,
       "KodYeudMichraz": 1,
@@ -216,7 +216,7 @@
       "MatziaCanLimit": false,
       "location_label": "גנות",
       "official_url": "https://apps.land.gov.il/MichrazimSite/#/michraz/20250182",
-      "official_message": "המכרז טרם נפתח להגשת הצעות",
+      "official_message": "המכרז טרם נפתח להגשת הצעות,עדיין לא פורסמה חוברת למכרז",
       "documents": [
         {
           "RowID": 136377,
@@ -293,7 +293,7 @@
       ],
       "document_count": 8,
       "submission_state": "not_open_according_to_official_message",
-      "fingerprint": "d588b383e4c4610d7149ee8816630f9ab0aa61fe44f0cedbe480a8e17b6fd35f",
+      "fingerprint": "2b2d082c96082128e702c0542c5ae4a8a542a18c655a5be08584a6975bcaf6d9",
       "pdf_checks": {
         "full_publication": {
           "sha256": "667cd167740b55e3e332c68455815261df56ff4d97194138cc243e66221c8628",
@@ -381,7 +381,7 @@
       "pdf_count_expected": 9,
       "pdf_count_verified": 9,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-11-24T02:57:46.296488+00:00",
+      "browser_checked_at_utc": "2026-11-25T00:49:42.621514+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
@@ -591,7 +591,7 @@
       "pdf_count_expected": 9,
       "pdf_count_verified": 9,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-11-24T02:57:46.296488+00:00",
+      "browser_checked_at_utc": "2026-11-25T00:49:42.621514+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
@@ -689,7 +689,7 @@
       "pdf_count_expected": 3,
       "pdf_count_verified": 3,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-11-24T02:57:46.296488+00:00",
+      "browser_checked_at_utc": "2026-11-25T00:49:42.621514+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
@@ -986,6 +986,17 @@
           "PtichaDate": "2024-03-25T14:00:00+02:00"
         },
         {
+          "MichrazID": 20230011,
+          "MichrazName": "11/2023",
+          "Shchuna": "גני אזר",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2023-03-02T00:00:00+02:00",
+          "SgiraDate": "2023-08-28T12:00:00+03:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2023-06-07T00:00:00+03:00"
+        },
+        {
           "MichrazID": 20230049,
           "MichrazName": "49/2023",
           "Shchuna": "גני אז\"ר",
@@ -1017,17 +1028,6 @@
           "SgiraDate": "2023-09-13T12:00:00+03:00",
           "PublishedChoveret": true,
           "PtichaDate": "2023-06-01T00:00:00+03:00"
-        },
-        {
-          "MichrazID": 20230011,
-          "MichrazName": "11/2023",
-          "Shchuna": "גני אזר",
-          "KodYeshuv": 8600,
-          "KodYeudMichraz": 2,
-          "PirsumDate": "2023-03-02T00:00:00+02:00",
-          "SgiraDate": "2023-08-28T12:00:00+03:00",
-          "PublishedChoveret": true,
-          "PtichaDate": "2023-06-07T00:00:00+03:00"
         }
       ]
     },
@@ -1198,17 +1198,6 @@
           "PtichaDate": "2015-11-30T00:00:00+02:00"
         },
         {
-          "MichrazID": 20150027,
-          "MichrazName": "27/2015",
-          "Shchuna": " ",
-          "KodYeshuv": 8600,
-          "KodYeudMichraz": 2,
-          "PirsumDate": "2015-01-29T00:00:00+02:00",
-          "SgiraDate": "2015-06-15T12:00:00+03:00",
-          "PublishedChoveret": true,
-          "PtichaDate": "2015-03-30T00:00:00+03:00"
-        },
-        {
           "MichrazID": 20150026,
           "MichrazName": "26/2015",
           "Shchuna": " ",
@@ -1220,15 +1209,15 @@
           "PtichaDate": "2015-03-30T00:00:00+03:00"
         },
         {
-          "MichrazID": 20140246,
-          "MichrazName": "246/2014",
-          "Shchuna": " שיכון הצנחנים",
+          "MichrazID": 20150027,
+          "MichrazName": "27/2015",
+          "Shchuna": " ",
           "KodYeshuv": 8600,
-          "KodYeudMichraz": 1,
-          "PirsumDate": "2014-08-06T00:00:00+03:00",
-          "SgiraDate": "2014-12-15T12:00:00+02:00",
+          "KodYeudMichraz": 2,
+          "PirsumDate": "2015-01-29T00:00:00+02:00",
+          "SgiraDate": "2015-06-15T12:00:00+03:00",
           "PublishedChoveret": true,
-          "PtichaDate": "2014-09-29T00:00:00+03:00"
+          "PtichaDate": "2015-03-30T00:00:00+03:00"
         },
         {
           "MichrazID": 20140245,
@@ -1240,6 +1229,17 @@
           "SgiraDate": "2014-12-15T12:00:00+02:00",
           "PublishedChoveret": true,
           "PtichaDate": "2014-10-06T00:00:00+03:00"
+        },
+        {
+          "MichrazID": 20140246,
+          "MichrazName": "246/2014",
+          "Shchuna": " שיכון הצנחנים",
+          "KodYeshuv": 8600,
+          "KodYeudMichraz": 1,
+          "PirsumDate": "2014-08-06T00:00:00+03:00",
+          "SgiraDate": "2014-12-15T12:00:00+02:00",
+          "PublishedChoveret": true,
+          "PtichaDate": "2014-09-29T00:00:00+03:00"
         },
         {
           "MichrazID": 20140247,
@@ -1323,16 +1323,29 @@
     },
     "coverage_warning": "Kfar Azar belongs to Ramat Gan; aliases גני אזר/גני אז״ר are included, and broader Ramat Gan residential entries are reviewed separately. A record without a locality label may require parcel/map confirmation; zero verified entries does not prove no tender exists. CBS locality codes and name aliases for newly watched villages are discovery clues; confirm with RMI tender details and never treat a zero count as exhaustive."
   },
-  "changes": [],
+  "changes": [
+    {
+      "tender": "182/2025",
+      "field": "StatusMichrazMurchav",
+      "previous": 1,
+      "current": 2
+    },
+    {
+      "tender": "182/2025",
+      "field": "official_message",
+      "previous": "המכרז טרם נפתח להגשת הצעות",
+      "current": "המכרז טרם נפתח להגשת הצעות,עדיין לא פורסמה חוברת למכרז"
+    }
+  ],
   "errors": [],
   "notes": [
     "No submission-open claim without direct official confirmation of an active application form.",
     "A newly detected tender is a candidate until its official details have been verified."
   ],
-  "search_rows": 10242,
+  "search_rows": 10243,
   "pdf_complete": true,
   "verified_coverage": "All named tender detail endpoints and complete RMI search were readable.",
-  "changes_count": 0,
+  "changes_count": 2,
   "browser_coverage_verified": 4,
   "browser_coverage_expected": 4,
   "browser_coverage_complete": true
