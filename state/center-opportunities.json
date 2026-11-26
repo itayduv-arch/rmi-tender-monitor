@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-25T00:47:26.447135+00:00",
+  "checked_at_utc": "2026-11-26T00:24:10.463369+00:00",
   "source_host": "apps.land.gov.il",
   "status": "ok",
   "tenders": {
@@ -329,8 +329,8 @@
         "MichrazID": 20260082,
         "MichrazName": "82/2026",
         "PirsumDate": "2026-06-02T00:00:00+03:00",
-        "PtichaDate": "2026-10-05T00:00:00+03:00",
-        "SgiraDate": "2026-12-01T12:00:00+02:00",
+        "PtichaDate": "2026-11-23T00:00:00+02:00",
+        "SgiraDate": "2026-12-28T12:00:00+02:00",
         "KodYeshuv": 8700,
         "Shchuna": "",
         "KodYeudMichraz": 1,
@@ -343,13 +343,31 @@
         "KhalYaadRashi": 1,
         "StatusMichraz": 1,
         "StatusMichrazMurchav": 2,
-        "ReadyForHagasha": null,
+        "ReadyForHagasha": true,
         "HagashaMekuvenet": true,
-        "official_message": "המכרז טרם נפתח להגשת הצעות,עדיין לא פורסמה חוברת למכרז",
-        "submission_state": "not_open_according_to_official_message",
+        "official_message": "המכרז יפתח להגשת הצעות 21 יום לפני מועד הסגירה",
+        "submission_state": "likely_open_requires_form_confirmation",
         "documents": [
           {
-            "RowID": 131479,
+            "RowID": 1,
+            "DocName": "חוברת המכרז.pdf",
+            "Teur": "חוברת המכרז",
+            "UpdateDate": "2026-11-25T12:27:52.313+02:00",
+            "PirsumType": 2,
+            "MahutMismachID": 0,
+            "FileType": "application/pdf"
+          },
+          {
+            "RowID": 139208,
+            "DocName": "פרסום דחיית מועדים.pdf",
+            "Teur": "פרסום דחיית מועדים",
+            "UpdateDate": "2026-11-23T00:00:00+02:00",
+            "PirsumType": 3,
+            "MahutMismachID": 0,
+            "FileType": "application/pdf"
+          },
+          {
+            "RowID": 139209,
             "DocName": "פרסום דחיית מועדים.pdf",
             "Teur": "פרסום דחיית מועדים",
             "UpdateDate": "2026-08-03T00:00:00+03:00",
@@ -358,7 +376,7 @@
             "FileType": "application/pdf"
           },
           {
-            "RowID": 131480,
+            "RowID": 139210,
             "DocName": "פרסום ראשון.pdf",
             "Teur": "פרסום ראשון",
             "UpdateDate": "2026-06-02T00:00:00+03:00",
@@ -367,15 +385,15 @@
             "FileType": "application/pdf"
           }
         ],
-        "document_count": 2,
+        "document_count": 4,
         "MichrazFullDocument": {
           "MichrazID": 20260082,
-          "Size": 255388,
+          "Size": 443425,
           "FileType": "application/pdf",
           "RowID": -1,
           "Teur": "מסמך הפרסום המלא",
           "DocName": "מסמך הפרסום המלא.pdf",
-          "UpdateDate": "2026-11-24T11:50:30.543+02:00",
+          "UpdateDate": "2026-11-25T12:29:00.133+02:00",
           "Url": null,
           "MahutMismachID": 0,
           "PirsumType": 2
