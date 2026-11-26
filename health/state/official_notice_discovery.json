@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-25T23:46:18.461336+00:00",
+  "checked_at_utc": "2026-11-26T23:59:09.171940+00:00",
   "official_page": "https://www.gov.il/he/pages/competitive-procedure-surgical-positions-northern-district",
   "known_official_pdf": "https://www.gov.il/BlobFolder/publicsharing/competitive-procedure-surgical-positions-northern-district/he/files_invitation-to-tender_competitive-procedure-surgical-positions-northern-district.pdf",
   "source_statuses": [
@@ -18,7 +18,7 @@
       "url": "https://www.bing.com/search?format=rss&q=site%3Agov.il%20%22competitive-procedure-surgical-positions-northern-district%22",
       "official_source": false,
       "http_status": 200,
-      "bytes": 5428,
+      "bytes": 5440,
       "content_type": "text/xml; charset=utf-8",
       "indexed_official_urls": 0,
       "contains_known_notice_slug": true,
@@ -41,19 +41,25 @@
       "source": "google-search",
       "url": "https://www.google.com/search?q=site%3Agov.il%20%22competitive-procedure-surgical-positions-northern-district%22&hl=he&num=30",
       "official_source": false,
-      "http_status": 429,
-      "bytes": 3951,
-      "content_type": "text/html",
-      "error": "Non-200 or implausibly large response"
+      "http_status": 200,
+      "bytes": 93401,
+      "content_type": "text/html; charset=UTF-8",
+      "indexed_official_urls": 0,
+      "contains_known_notice_slug": true,
+      "mentions_operative_terms": true,
+      "short_excerpt": "<!DOCTYPE html><html dir=\"rtl\" lang=\"iw-US\"><head><title>Google Search</title><style>body{background-color:#fff}</style><script nonce=\"shPH2MmKjh7xP2jyQxh1Wg\">window.google = window.google || {};window.google.c = window.google.c || {cap:0};</script></head><body><noscript><style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=0McIa9rLEMCf0PEP2OmM-Qo\" http-equiv=\"refresh\"><div style=\"display:block\">יש ללחוץ על <a href=\"/httpservice/retry/enablejs?sei=0McIa9rLEMCf0PEP2OmM-Qo\">כאן</a> אם לא מועברים לדף הנכון תוך מספר שניות.</div></noscript><script nonce=\"shPH2MmKjh7xP2jyQxh1Wg\">(function(){var sctm=false"
     },
     {
       "source": "google-search-broad",
       "url": "https://www.google.com/search?q=site%3Agov.il/BlobFolder%20%22%D7%A2%D7%9E%D7%93%D7%95%D7%AA%20%D7%9B%D7%99%D7%A8%D7%95%D7%A8%D7%92%D7%99%D7%95%D7%AA%20%D7%91%D7%99%D7%A0%D7%95%D7%A0%D7%99%D7%95%D7%AA%22%20%22%D7%A6%D7%A4%D7%95%D7%9F%22&hl=he&num=30",
       "official_source": false,
-      "http_status": 429,
-      "bytes": 4322,
-      "content_type": "text/html",
-      "error": "Non-200 or implausibly large response"
+      "http_status": 200,
+      "bytes": 93344,
+      "content_type": "text/html; charset=UTF-8",
+      "indexed_official_urls": 0,
+      "contains_known_notice_slug": false,
+      "mentions_operative_terms": false,
+      "short_excerpt": "<!DOCTYPE html><html dir=\"rtl\" lang=\"iw-US\"><head><title>Google Search</title><style>body{background-color:#fff}</style><script nonce=\"SmhMIMlePrXi56Z3sSQ5wQ\">window.google = window.google || {};window.google.c = window.google.c || {cap:0};</script></head><body><noscript><style>table,div,span,p{display:none}</style><meta content=\"0;url=/httpservice/retry/enablejs?sei=0McIa4iIFI2f0PEPnsDUmAw\" http-equiv=\"refresh\"><div style=\"display:block\">יש ללחוץ על <a href=\"/httpservice/retry/enablejs?sei=0McIa4iIFI2f0PEPnsDUmAw\">כאן</a> אם לא מועברים לדף הנכון תוך מספר שניות.</div></noscript><script nonce=\"SmhMIMlePrXi56Z3sSQ5wQ\">(function(){var sctm=false"
     },
     {
       "source": "google-news-rss",
