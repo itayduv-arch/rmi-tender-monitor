@@ -16,7 +16,7 @@ from pypdf import PdfReader
 ROOT = "https://apps.land.gov.il"
 BASE = ROOT + "/MichrazimSite/"
 API = BASE + "api/"
-WATCH = {"470/2025": "הוד השרון", "182/2025": "גנות", "149/2025": "צופית", "112/2026": "כפר טרומן"}
+WATCH = {"470/2025": "הוד השרון", "182/2025": "גנות", "149/2025": "צופית", "112/2026": "כפר טרומן", "82/2026": "רעננה"}
 # Location code lists help to discover candidates, not establish tender status.
 # Confirm every potential tender from official RMI details before notifying users.
 LOCATION_CODES = {
@@ -172,6 +172,35 @@ def collect_official_pdfs(session: requests.Session, raw: dict) -> tuple[dict, l
                     samples.append(p.extract_text() or "")
                 entry["text_excerpt_unreviewed"] = " ".join(samples)[:3500]
                 entry["text_extraction_succeeded"] = bool(entry["text_excerpt_unreviewed"].strip())
+                # Save original public tender booklet and page-level text for manual review.
+                # Never treat extracted text as verified eligibility or pricing.
+                if "חוברת" in str(doc.get("Teur") or doc.get("DocName") or ""):
+                    folder = Path("reports/booklets") / str(id_)
+                    folder.mkdir(parents=True, exist_ok=True)
+                    stem = str(int(doc.get("RowID")))
+                    (folder / (stem + ".pdf")).write_bytes(res.content)
+                    pages = [{"page": i + 1, "text": p.extract_text() or ""}
+                             for i, p in enumerate(reader.pages)]
+                    (folder / (stem + ".json")).write_text(
+                        json.dumps(pages, ensure_ascii=False, indent=2), encoding="utf-8")
+                    entry["booklet_artifact_path"] = f"booklets/{id_}/{stem}.pdf"
+                    entry["booklet_text_artifact_path"] = f"booklets/{id_}/{stem}.json"
+                    # Keep a bounded relevant-page excerpt in the accessible snapshot.
+                    terms = ("ערבות", "פיתוח", "מילואים", "חסר דיור", "חסרי דיור",
+                             "מחיר", "מגרש", "זכאות", "הרשמה", "הגרלה", "הנחה")
+                    selected = [p for p in pages if any(t in p["text"] or t[::-1] in p["text"] for t in terms)]
+                    review = []
+                    budget = 35000
+                    for p in selected:
+                        if budget <= 0:
+                            break
+                        chunk = p["text"][:min(3500, budget)]
+                        review.append({"page": p["page"], "text": chunk})
+                        budget -= len(chunk)
+                    entry["booklet_review_pages_unverified"] = review
+                    entry["booklet_text_pages"] = len(pages)
+                    entry["booklet_review_pages_omitted"] = len(selected) - len(review)
+
             except Exception as error:
                 entry["text_extraction_succeeded"] = False
                 entry["text_extraction_error"] = type(error).__name__
