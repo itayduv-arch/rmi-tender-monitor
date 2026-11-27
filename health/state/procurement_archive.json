@@ -1,16 +1,55 @@
 {
-  "checked_at_utc": "2026-11-27T00:02:22.579270+00:00",
+  "checked_at_utc": "2026-11-27T23:46:13.478606+00:00",
   "index_url": "https://mr.gov.il/ilgstorefront/he/news/details/230920201036",
   "procurement_data_current": false,
   "allocation_publications_full_coverage": false,
-  "retrieval_verified": false,
-  "rows_parsed": 0,
-  "candidate_rows": [],
-  "files": [],
+  "retrieval_verified": true,
+  "rows_parsed": 24893,
+  "candidate_rows": [
+    {
+      "file": "פלט מכרזים_B.xls/XML-Spreadsheet",
+      "row": 6589,
+      "matched_terms": [
+        "הרדמה כללית"
+      ],
+      "excerpt": "614836 | משרד הבריאות | משרד הבריאות | מכרז פומבי | 57/2018 | לקבלת שירותי יועץ הרדמה כללית וסדציה לאגף לבריאות השן במשרד הבריאות | סגור | 17.04.2018 | 16.05.2018 | 15.05.2018 | 12:00:00 | תרופות ,שרותי חינוך ,שירותים צבוריים (חשמל,גז,מים) ,שירותים למגזר הצבורי ,שירותי תקשורת ,שירותי רופאים מומחים ,שירותי רווחה סוציאליים ,שירותי ניהול, יעוץ ומנהל ,שירותי מזון בריאותי ,שירותי כוח אדם ,שירותי יעוץ משפטי ,שירותי יעוץ לניהול ,שירותי טיפול בריאותי ,שירותי חינוך והכשרה ,שירותי בריאות ,ניהול נכסים ,כיתות הדרכה"
+    },
+    {
+      "file": "פלט מכרזים_B.xls/XML-Spreadsheet",
+      "row": 6982,
+      "matched_terms": [
+        "הרדמה כללית"
+      ],
+      "excerpt": "632645 | משרד הבריאות | משרד הבריאות | מכרז פומבי | 60/2019 | 60/2019-לקבלת שירותי יועץ הרדמה כללית וסדציה לאגף לבריאות השן במשרד  הבריאות | סגור | 04.04.2019 | 16.05.2019 | 15.05.2019 | 12:00:00 | ציוד רפואי ,ציוד לדיאליזה ,ציוד כירורגי ,ציוד וטרינרי ,ציוד הדרכה ולימוד רפואי ,עזרה ראשונה ,ניהול נכסים ,מוצרים לטיפול והשגחה בחולים ,מוצרים לבדיקות וניטור חולים ,מוצרים במתן עירויים לעורקים וורידים ,מוצרי חבישה ,מוצרי החייאה ,לבוש רפואי ,הזנה אינטרלי ,אבזרים אורטפדיים ,אבזרי תמיכה למוגבלים"
+    },
+    {
+      "file": "פלט מכרזים_B.xls/XML-Spreadsheet",
+      "row": 18894,
+      "matched_terms": [
+        "הרדמה כללית"
+      ],
+      "excerpt": "4000553138 | משרד הבריאות | משרד הבריאות | מכרז פומבי | 59/2022 | מכרז 59/2022 לקבלת שירותי יעוץ הרדמה כללית וסדציה לאגף לבריאות השן במשרד הבריאות | סגור | 06.06.2022 | 06.06.2022 | 04.07.2022 | 12:00:00 | שירותי טיפול בריאותי ,שירותי ניהול, יעוץ ומנהל"
+    }
+  ],
+  "files": [
+    {
+      "name": "פלט מכרזים_B.xls",
+      "bytes": 36364746,
+      "format": "SpreadsheetML XML 2003",
+      "rows": 24893,
+      "parsed": true
+    }
+  ],
   "limitations": [
     "Monthly procurement listings do not necessarily contain allocation committee publications on gov.il.",
     "Text matches are leads only: an original signed tender PDF and eligibility/location/deadline must be verified independently."
   ],
-  "error": "SSLError: HTTPSConnectionPool(host='mr.gov.il', port=443): Max retries exceeded with url: /ilgstorefront/he/news/details/230920201036 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1011)')))",
-  "candidate_count": 0
+  "index_status": 200,
+  "candidate_archive_links_found": 1,
+  "archive_url": "https://mr.gov.il/ilgstorefront/medias/Tenders-01112026.zip?context=bWFzdGVyfHJvb3R8MjM5NzQxMXxhcHBsaWNhdGlvbi96aXB8aGYxL2g5YS85NDMyNzcxMTMzNDcwLnppcHxlMTA1NmYzODFjYmJmNzhhYTZhNDRjYWM3OGE3NDc5YjhiZjA4NzhmNDI4NWY3NWE4YmFkYjhiYzkyMDEzMmJm",
+  "report_stamp": "01112026",
+  "archive_http_status": 200,
+  "archive_content_type": "application/zip;charset=UTF-8",
+  "archive_sha256": "94a61d607cccbbda7a50627087df4ef422cd99e6383f6aec15de9856cd3c2ba3",
+  "candidate_count": 3
 }
