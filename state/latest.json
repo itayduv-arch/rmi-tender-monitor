@@ -1,6 +1,6 @@
 {
   "schema_version": 3,
-  "checked_at_utc": "2026-11-26T18:29:04.688906+00:00",
+  "checked_at_utc": "2026-11-27T00:36:36.216269+00:00",
   "source_host": "apps.land.gov.il",
   "api_base": "https://apps.land.gov.il/MichrazimSite/api/",
   "status": "ok",
@@ -172,7 +172,7 @@
       "pdf_count_expected": 7,
       "pdf_count_verified": 7,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-11-26T18:32:16.002740+00:00",
+      "browser_checked_at_utc": "2026-11-27T00:40:27.467007+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
@@ -381,7 +381,7 @@
       "pdf_count_expected": 9,
       "pdf_count_verified": 9,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-11-26T18:32:16.002740+00:00",
+      "browser_checked_at_utc": "2026-11-27T00:40:27.467007+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
@@ -591,7 +591,7 @@
       "pdf_count_expected": 9,
       "pdf_count_verified": 9,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-11-26T18:32:16.002740+00:00",
+      "browser_checked_at_utc": "2026-11-27T00:40:27.467007+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
@@ -689,7 +689,7 @@
       "pdf_count_expected": 3,
       "pdf_count_verified": 3,
       "browser_form_state": "official_page_explicitly_not_open",
-      "browser_checked_at_utc": "2026-11-26T18:32:16.002740+00:00",
+      "browser_checked_at_utc": "2026-11-27T00:40:27.467007+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": true,
       "browser_visible_links": []
@@ -911,7 +911,7 @@
       "pdf_count_expected": 5,
       "pdf_count_verified": 5,
       "browser_form_state": "unverified",
-      "browser_checked_at_utc": "2026-11-26T18:32:16.002740+00:00",
+      "browser_checked_at_utc": "2026-11-27T00:40:27.467007+00:00",
       "browser_checked_official_page": true,
       "browser_negative_message_visible": false,
       "browser_visible_links": []
