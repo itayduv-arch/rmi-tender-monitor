@@ -1,5 +1,5 @@
 {
-  "checked_at_utc": "2026-11-27T00:38:01.413760+00:00",
+  "checked_at_utc": "2026-11-27T18:42:16.948960+00:00",
   "source_host": "apps.land.gov.il",
   "status": "ok",
   "tenders": {
@@ -298,102 +298,6 @@
           "Teur": "מסמך הפרסום המלא",
           "DocName": "מסמך הפרסום המלא.pdf",
           "UpdateDate": "2026-08-26T10:59:18.883+03:00",
-          "Url": null,
-          "MahutMismachID": 0,
-          "PirsumType": 2
-        }
-      },
-      "published_full_document_metadata_present": true,
-      "warning": "Documents are metadata only. Browser submission form and PDF content not verified in this probe."
-    },
-    "82/2026": {
-      "lead_location_unverified": "רעננה",
-      "official_url": "https://apps.land.gov.il/MichrazimSite/#/michraz/20260082",
-      "official_detail_confirmed": true,
-      "search_index_fields": {
-        "MichrazID": null,
-        "MichrazName": null,
-        "KodYeshuv": null,
-        "Shchuna": null,
-        "KodYeudMichraz": null,
-        "PirsumDate": null,
-        "PtichaDate": null,
-        "SgiraDate": null,
-        "PublishedChoveret": null,
-        "YechidotDiur": null,
-        "Mismach": null,
-        "StatusMichraz": null,
-        "StatusMichrazMurchav": null
-      },
-      "details": {
-        "MichrazID": 20260082,
-        "MichrazName": "82/2026",
-        "PirsumDate": "2026-06-02T00:00:00+03:00",
-        "PtichaDate": "2026-11-23T00:00:00+02:00",
-        "SgiraDate": "2026-12-28T12:00:00+02:00",
-        "KodYeshuv": 8700,
-        "Shchuna": "",
-        "KodYeudMichraz": 1,
-        "YechidotDiur": 1,
-        "MechirSafMichraz": null,
-        "SchumArvut": 5000,
-        "Uchlusiyot": [
-          1
-        ],
-        "KhalYaadRashi": 1,
-        "StatusMichraz": 1,
-        "StatusMichrazMurchav": 2,
-        "ReadyForHagasha": true,
-        "HagashaMekuvenet": true,
-        "official_message": "המכרז יפתח להגשת הצעות 21 יום לפני מועד הסגירה",
-        "submission_state": "likely_open_requires_form_confirmation",
-        "documents": [
-          {
-            "RowID": 1,
-            "DocName": "חוברת המכרז.pdf",
-            "Teur": "חוברת המכרז",
-            "UpdateDate": "2026-11-25T12:27:52.313+02:00",
-            "PirsumType": 2,
-            "MahutMismachID": 0,
-            "FileType": "application/pdf"
-          },
-          {
-            "RowID": 139208,
-            "DocName": "פרסום דחיית מועדים.pdf",
-            "Teur": "פרסום דחיית מועדים",
-            "UpdateDate": "2026-11-23T00:00:00+02:00",
-            "PirsumType": 3,
-            "MahutMismachID": 0,
-            "FileType": "application/pdf"
-          },
-          {
-            "RowID": 139209,
-            "DocName": "פרסום דחיית מועדים.pdf",
-            "Teur": "פרסום דחיית מועדים",
-            "UpdateDate": "2026-08-03T00:00:00+03:00",
-            "PirsumType": 3,
-            "MahutMismachID": 0,
-            "FileType": "application/pdf"
-          },
-          {
-            "RowID": 139210,
-            "DocName": "פרסום ראשון.pdf",
-            "Teur": "פרסום ראשון",
-            "UpdateDate": "2026-06-02T00:00:00+03:00",
-            "PirsumType": 3,
-            "MahutMismachID": 0,
-            "FileType": "application/pdf"
-          }
-        ],
-        "document_count": 4,
-        "MichrazFullDocument": {
-          "MichrazID": 20260082,
-          "Size": 443425,
-          "FileType": "application/pdf",
-          "RowID": -1,
-          "Teur": "מסמך הפרסום המלא",
-          "DocName": "מסמך הפרסום המלא.pdf",
-          "UpdateDate": "2026-11-25T12:29:00.133+02:00",
           "Url": null,
           "MahutMismachID": 0,
           "PirsumType": 2
