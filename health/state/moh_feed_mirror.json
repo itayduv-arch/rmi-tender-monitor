@@ -1,15 +1,77 @@
 {
-  "checked_at_utc": "2026-11-25T23:50:38.135399+00:00",
+  "checked_at_utc": "2026-11-27T00:04:19.250909+00:00",
   "source_kind": "third-party public mirror of official Ministry of Health RSS; discovery only",
   "mirror": "https://feeder.co/discover/ff5b8f88c5/gov-il-he-departments-publications",
   "original_official_feed": "https://www.gov.il/he/api/PublicationApi/rss/104cb0f4-d65a-4692-b590-94af928c19c0",
   "live_official_feed_access": false,
   "coverage_complete": false,
-  "items": [],
+  "items": [
+    {
+      "title": "תחלואת מעיים זיהומית, לשבוע שמסתיים ב-14/11/2026",
+      "official_url": "https://www.gov.il/he/departments/publications/reports/maiim-14112026",
+      "verified_original_document": false
+    },
+    {
+      "title": "עו\"ס מרכז/ת אחראי/ת מחלות ממושכות (ניהול 3א-ניהול 3ו)-לתקופה זמנית עד שנה",
+      "official_url": "https://www.gov.il/he/departments/publications/drushim/jobs-80024486",
+      "verified_original_document": false
+    },
+    {
+      "title": "סרטן השד: דוח בקרת איכות על התוכנית הלאומית לגילוי סרטן השד, 2024-2016",
+      "official_url": "https://www.gov.il/he/departments/publications/reports/breast-cancer-2016-2024",
+      "verified_original_document": false
+    },
+    {
+      "title": "אזרח/ית ותיק/ה (בריאות הסביבה)",
+      "official_url": "https://www.gov.il/he/departments/publications/drushim/job------81137093",
+      "verified_original_document": false
+    },
+    {
+      "title": "למשרד הבריאות דרושים רכז/ת לשכה בכיר/ה א' – (מינהלי 17-15) למשרה זמנית מילוי מקום עד שנה",
+      "official_url": "https://www.gov.il/he/departments/publications/drushim/job---81085920",
+      "verified_original_document": false
+    },
+    {
+      "title": "דוח ניטור מחוללי תחלואה נשימתית לשבוע 46 שהסתיים בתאריך 21.11.2026",
+      "official_url": "https://www.gov.il/he/departments/publications/reports/flu-21112026",
+      "verified_original_document": false
+    },
+    {
+      "title": "דרוש/ה סטודנט/ית (רכש)- מכרז קיבוצי ל 3 משרות",
+      "official_url": "https://www.gov.il/he/departments/publications/drushim/job-----81158044---81123581---81060960",
+      "verified_original_document": false
+    },
+    {
+      "title": "למשרד הבריאות דרושים - מעריך/ה טכנולוגיות רפואיות (אחיות/פארארפואיים/רוקחים/מח\"ר/ב13-ב15/א5ים-א6ים/א1-א3 / 41-39) למשרה זמנית מילוי מקום עד שנה",
+      "official_url": "https://www.gov.il/he/departments/publications/drushim/job------81010202",
+      "verified_original_document": false
+    },
+    {
+      "title": "למשרד הבריאות דרושים עובד/ת מעבדה / עובד/ת מעבדה מתקדמ/ת (ביוכימאי-מיקרובי/הנדסאים/מהנדסים/ ה-א2/ 38-40) למשרה זמנית מילוי מקום עד שנה",
+      "official_url": "https://www.gov.il/he/departments/publications/drushim/job------81006491",
+      "verified_original_document": false
+    },
+    {
+      "title": "סטודנט/ית בריאות הנפש",
+      "official_url": "https://www.gov.il/he/departments/publications/drushim/jobs----81082142",
+      "verified_original_document": false
+    },
+    {
+      "title": "שיפוץ והתאמה לסיעוד מורכב, מבנה 108 - שמואל הרופא",
+      "official_url": "https://www.gov.il/he/departments/publications/Call_for_bids/ma07-2026",
+      "verified_original_document": false
+    },
+    {
+      "title": "מידעון המערך לבטיחות הטיפול - נובמבר 2026",
+      "official_url": "https://www.gov.il/he/departments/publications/reports/patient-safety-division-newsletter-november-2026",
+      "verified_original_document": false
+    }
+  ],
   "matching_items": [],
   "notes": [
     "Do not treat Feeder titles as a Ministry of Health licence or signed allocation announcement. Open the linked official notice and documents when accessible."
   ],
-  "mirror_http_status": 503,
-  "error": "HTTPError: 503 Server Error: Service Temporarily Unavailable for url: https://feeder.co/discover/ff5b8f88c5/gov-il-he-departments-publications"
+  "mirror_http_status": 200,
+  "mirror_titles_extracted": 12,
+  "mirror_readable": true
 }
