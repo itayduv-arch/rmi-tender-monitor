@@ -16,7 +16,7 @@ from pypdf import PdfReader
 ROOT = "https://apps.land.gov.il"
 BASE = ROOT + "/MichrazimSite/"
 API = BASE + "api/"
-WATCH = {"470/2025": "הוד השרון", "182/2025": "גנות", "149/2025": "צופית", "112/2026": "כפר טרומן", "82/2026": "רעננה"}
+WATCH = {"470/2025": "הוד השרון", "182/2025": "גנות", "149/2025": "צופית", "112/2026": "כפר טרומן"}
 # Location code lists help to discover candidates, not establish tender status.
 # Confirm every potential tender from official RMI details before notifying users.
 LOCATION_CODES = {
@@ -39,6 +39,7 @@ LOCATION_CODES = {
 # Places awaiting a directly verified municipality code. Match locality names in
 # official search fields, and keep them as review candidates (not a complete scan).
 LOCATION_NAME_ALIASES = {
+    "גני יהודה": ("גני יהודה", "גני-יהודה", "סביון-גני יהודה", "גנות יכין"),
     "בית נחמיה": ("בית נחמיה",),
     "גינתון": ("גינתון",),
     "בית חנן": ("בית חנן",),
@@ -307,6 +308,7 @@ def discover(items: list[dict], prev: dict | None) -> dict:
         "coverage_warning": (
             "Kfar Azar belongs to Ramat Gan; aliases גני אזר/גני אז״ר are included, "
             "and broader Ramat Gan residential entries are reviewed separately. "
+            "Ganei Yehuda name matches are reviewed separately and all Savyon code 587 residential rows remain in the Savyon review pool. "
             "A record without a locality label may require parcel/map confirmation; "
             "zero verified entries does not prove no tender exists. "
             "CBS locality codes and name aliases for newly watched villages are discovery "

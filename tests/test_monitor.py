@@ -131,5 +131,17 @@ class MonitorTests(unittest.TestCase):
                "KodYeshuv":12347,"KodYeudMichraz":9,"Shchuna":"גינתון"}]
         self.assertEqual(discover(rows,None)["candidate_count"]["גינתון"],0)
 
+    def test_ganei_yehuda_alias_and_savyon_pool(self):
+        rows = [
+            {"MichrazID":20260901,"KodYeshuv":587,"KodYeudMichraz":1,"Shchuna":"גני-יהודה"},
+            {"MichrazID":20260902,"KodYeshuv":587,"KodYeudMichraz":1,"Shchuna":""},
+            {"MichrazID":20260903,"KodYeshuv":9999,"KodYeudMichraz":1,"Shchuna":"גני יהודה"},
+            {"MichrazID":20260904,"KodYeshuv":9999,"KodYeudMichraz":1,"Shchuna":"גני תקווה"},
+            {"MichrazID":20260905,"KodYeshuv":587,"KodYeudMichraz":9,"Shchuna":"גני יהודה"},
+        ]
+        d = discover(rows, None)
+        self.assertEqual(d["candidate_count"]["גני יהודה"], 2)
+        self.assertEqual(d["candidate_count"]["סביון"], 2)
+
 if __name__ == "__main__":
     unittest.main()
